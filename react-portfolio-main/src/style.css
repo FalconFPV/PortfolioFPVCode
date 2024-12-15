@@ -1,5 +1,6 @@
 html {
   --imp-text-color: hsl(29, 90%, 48%);
+  --imp-background-color: #242424;
 }
 
 html {
@@ -517,7 +518,7 @@ html {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: #343e47;
+  background-color: var(--imp-background-color);
   bottom: 0 !important;
 }
 .footer-copywright {
@@ -811,7 +812,7 @@ html {
   margin-top: 8vh;
   color: #fff;
   width: 100%;
-  background-color: #343E47;
+  background-color: var(--imp-background-color);
   padding: 10vh;
 }
 

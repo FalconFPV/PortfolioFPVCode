@@ -89,12 +89,6 @@ const certifications = [
       url: "https://openwebinars.net/cert/EbAH",
    },
    {
-      name: "Google Analytics (GA4)",
-      img: GoogleCert,
-      desc: "Certificate of completion for the Google Analytics (GA4) course by Google.",
-      url: "https://skillshop.credential.net/af561d09-2002-4e04-a582-1b3523780970",
-   },
-   {
       name: "English B2 Certificate",
       img: B2Cert,
       desc: "Certificate of completion B2 level of English by the Official Language School (British Council)",
