@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/banner_joancompany.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Joan Company - Portfolio</title>
+  <meta name="description" content="Self Developed personal website build with React.js">
+      <script type="text/javascript">
+        (function (l) {
+          if (l.search[1] === "/") {
+            var decoded = l.search
+              .slice(1)
+              .split("&")
+              .map(function (s) {
+                return s.replace(/~and~/g, "&");
+              })
+              .join("?");
+            window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+          }
+        })(window.location);
+      </script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D9N4129539"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-D9N4129539');
+</script>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
