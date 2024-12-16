@@ -1,6 +1,6 @@
 html {
   --imp-text-color: hsl(29, 90%, 48%);
-  --imp-background-color: #242424;
+  --imp-background-color: #0D0D0D;
 }
 
 html {
@@ -752,15 +752,19 @@ html {
   width: 100%;
 }
 
-.about-card-container{
+.about-card-container, .drone-card-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+#fleet{
+  margin-top: 8vh;
+}
+
 @media screen and (max-width: 1260px) {
-  .about-card-container {
+  .about-card-container, .drone-card-container {
     flex-direction: column !important;
   }
 }
@@ -1395,16 +1399,16 @@ blockquote h1{
     flex-wrap: wrap;
 }
 
-.certifications{
+.drones{
   margin-top: 2vh;
 }
 
-.certifications  a{
+.drones  a{
   text-decoration: none !important;
   color: inherit !important;
 }
 
-.certifications  a:hover{
+.drones  a:hover{
   text-decoration: none !important;
   color: inherit !important;
 }

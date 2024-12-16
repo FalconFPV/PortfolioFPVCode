@@ -101,7 +101,7 @@ function NavBar() {
                      Services
                   </Nav.Link>
                </Nav.Item>
-               <Nav.Item>
+               {/* <Nav.Item>
                   <Nav.Link
                      href="#"
                      onClick={(e) => {
@@ -115,7 +115,7 @@ function NavBar() {
                      />{" "}
                      Projects
                   </Nav.Link>
-               </Nav.Item>
+               </Nav.Item> */}
                {/* <Nav.Item>
                   <Nav.Link
                   to="/resume"

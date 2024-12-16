@@ -102,13 +102,13 @@ function Home() {
               <About />
            </Row>
         </Container>
-        <Container fluid className="home-about-section" id="about">
+        {/* <Container fluid className="home-about-section" id="about">
            <Row className="about" id="projects">
               <Card className="quote-card-view">
                  <Projects />
               </Card>
            </Row>
-        </Container>
+        </Container> */}
         <Container fluid className="home-about-section" id="about">
            <Container className="home-social-container">
               <Row>

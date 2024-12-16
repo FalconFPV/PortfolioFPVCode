@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Aboutcard from "./AboutCard";
-import SkillsSection from "./SkillSection";
+import Services from "./Services";
+import OurFleet from "./OurFleet";
 
 function About() {
   return (
@@ -11,8 +12,9 @@ function About() {
            <Row className="about">
               <Aboutcard />
               <div className="skill-section-container" id="skills">
-                 <SkillsSection />
+                 <Services />
               </div>
+              <OurFleet />
            </Row>
         </Row>
      </Container>
