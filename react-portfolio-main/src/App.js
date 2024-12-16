@@ -11,6 +11,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./components/ScrollToTop";
 import ResumeNew from "./components/Resume/ResumeNew";
 import ResumeOld from "./components/Resume/ResumeOld";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
    const [load, updateLoad] = useState(true);
@@ -19,7 +21,7 @@ function App() {
       const timer = setTimeout(() => {
          updateLoad(false);
       }, 1300);
-
+      Aos.init();
       return () => clearTimeout(timer);
    }, []);
 

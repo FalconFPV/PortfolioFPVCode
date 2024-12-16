@@ -1713,3 +1713,35 @@ blockquote h1{
 .cv-section-sidebar ul{
   font-size: 13pt;
 }
+
+.cta-btn-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh;
+  padding-inline: 2vh;
+  border: 2px solid var(--imp-text-color);
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.cta-btn{
+  color: var(--imp-text-color);
+}
+
+.cta-btn-div a:hover{
+  text-decoration: none; 
+  color: var(--imp-text-color);
+}
+
+.cta-btn-div a{
+  height: 100%;
+}
+
+.cta-btn-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}

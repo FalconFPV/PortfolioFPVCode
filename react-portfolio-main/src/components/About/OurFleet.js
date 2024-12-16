@@ -32,7 +32,7 @@ const Drones = [
 function DroneFleet() {
 
    return (
-      <Card className="quote-card-view" id="fleet">
+      <Card className="quote-card-view" id="fleet" data-aos="zoom-in" data-aos-duration="2000">
          <Card.Body>
             <div className="drone-card-container">
                <div className="drones">

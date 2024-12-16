@@ -23,7 +23,7 @@ function NavBar() {
          }
 
          // Define section positions
-         const sections = ["about", "skills", "projects"];
+         const sections = ["about", "skills", "contact"];
          let currentSection = "";
 
          for (let i = sections.length - 1; i >= 0; i--) {
@@ -100,6 +100,19 @@ function NavBar() {
                   >
                      <AiOutlineDeploymentUnit style={{ marginBottom: "2px" }} />{" "}
                      Services
+                  </Nav.Link>
+               </Nav.Item>
+               <Nav.Item>
+                  <Nav.Link
+                     href="#"
+                     onClick={(e) => {
+                        e.preventDefault();
+                        handleNavClick("contact");
+                     }}
+                     className={activeNav === "contact" ? "act" : ""}
+                  >
+                     <AiOutlineDeploymentUnit style={{ marginBottom: "2px" }} />{" "}
+                     Contact
                   </Nav.Link>
                </Nav.Item>
                {/* <Nav.Item>

@@ -5,7 +5,7 @@ import TypeWriter from "./TypeWriter";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Card from "react-bootstrap/Card";
-import { FaArrowDown } from "react-icons/fa";
+import { FaArrowDown, FaPen } from "react-icons/fa";
 
 function Home() {
      useEffect(() => {
@@ -14,7 +14,6 @@ function Home() {
         tag.src = "https://www.youtube.com/iframe_api";
         const firstScriptTag = document.getElementsByTagName("script")[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
         // Configurar el reproductor de YouTube
         window.onYouTubeIframeAPIReady = () => {
            new window.YT.Player("player", {
@@ -109,7 +108,7 @@ function Home() {
               </Card>
            </Row>
         </Container> */}
-        <Container fluid className="home-about-section" id="about">
+        <Container fluid className="home-about-section" id="contact" data-aos="zoom-in" data-aos-duration="1000">
            <Container className="home-social-container">
               <Row>
                  <Col md={12} className="home-about-social">
@@ -124,20 +123,24 @@ function Home() {
                     <SocialMedia />
                  </Col>
               </Row>
+              <Row>
+                  <div className="cta-btn-container">
+                     <div className="cta-btn-div">
+                        <a 
+                           className="cta-btn" 
+                           href="https://docs.google.com/forms/d/e/1FAIpQLScttTC38g4qO3ZFL5hi9E4DnJXgops8htUur4ebKZJGeaOO_Q/viewform?usp=sharing" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                        >
+                           <span className="arrow-right">
+                              <FaPen style={{ marginRight: "8px" }} />
+                              Envíame un mensaje
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+               </Row>
            </Container>
-        </Container>
-        <Container fluid className="home-about-section" id="about">
-           <div className="skill-section-container" id="skills">
-              <h1>Contact</h1>
-              <iframe
-                 src="https://docs.google.com/forms/d/e/1FAIpQLSd7tZ0XV9bJdK9o6V2iR7Z2w4Z5Q5Kq8QlNpZn3J6w3wWU2Gw/viewform?embedded=true"
-                 width="100%"
-                 height="1000"
-                 frameborder="0"
-                 marginheight="0"
-                 marginwidth="0"
-              ></iframe>
-           </div>
         </Container>
      </section>
   );
