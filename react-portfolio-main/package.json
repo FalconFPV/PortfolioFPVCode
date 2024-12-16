@@ -1,7 +1,7 @@
 {
   "name": "joancp-portfolio",
   "version": "0.1.0",
-  "homepage": "https://falconfpv.github.io/Portfolio",
+  "homepage": "https://falconfpv.github.io/PortfolioFalcon",
   "private": true,
   "dependencies": {
     "@svgr/cli": "^8.1.0",
