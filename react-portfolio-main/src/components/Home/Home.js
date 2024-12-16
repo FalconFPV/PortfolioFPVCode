@@ -59,7 +59,7 @@ function Home() {
                  <div className="home-header">
                     <div className="home-first">
                        <h1 style={{ paddingBottom: 15 }} className="heading">
-                          Hello!{" "}
+                          Wellcome!{" "}
                           <span
                              className="wave"
                              role="img"
@@ -125,6 +125,19 @@ function Home() {
                  </Col>
               </Row>
            </Container>
+        </Container>
+        <Container fluid className="home-about-section" id="about">
+           <div className="skill-section-container" id="skills">
+              <h1>Contact</h1>
+              <iframe
+                 src="https://docs.google.com/forms/d/e/1FAIpQLSd7tZ0XV9bJdK9o6V2iR7Z2w4Z5Q5Kq8QlNpZn3J6w3wWU2Gw/viewform?embedded=true"
+                 width="100%"
+                 height="1000"
+                 frameborder="0"
+                 marginheight="0"
+                 marginwidth="0"
+              ></iframe>
+           </div>
         </Container>
      </section>
   );

@@ -85,7 +85,8 @@ function NavBar() {
                      }}
                      className={activeNav === "about" ? "act" : ""}
                   >
-                     <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                     <AiOutlineUser style={{ marginBottom: "2px" }} /> My
+                     History
                   </Nav.Link>
                </Nav.Item>
                <Nav.Item>
