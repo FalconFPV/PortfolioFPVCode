@@ -6,8 +6,11 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Card from "react-bootstrap/Card";
 import { FaArrowDown, FaPen } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+   const { t } = useTranslation();
+   
      useEffect(() => {
         // Cargar la API de IFrame de YouTube
         const tag = document.createElement("script");
@@ -58,19 +61,19 @@ function Home() {
                  <div className="home-header">
                     <div className="home-first">
                        <h1 style={{ paddingBottom: 15 }} className="heading">
-                          Wellcome!{" "}
+                          {t("welcome")}{" "}
                           <span
                              className="wave"
                              role="img"
                              aria-labelledby="wave"
                           >
-                             👋🏻
+                             {t("handshake")}
                           </span>
                        </h1>
 
                        <h1 className="heading-name">
-                          I'm
-                          <strong className="main-name"> Joan Company</strong>
+                          {t("intro")}
+                          <strong className="main-name"> {t("name")}</strong>
                        </h1>
                        <div className="heading-type">
                           <TypeWriter />
@@ -78,7 +81,7 @@ function Home() {
                        <div className="show-work" id="xl">
                           <a href="#about">
                              <span className="show-work-text">
-                                View my work
+                                {t("view_work")}
                                 <FaArrowDown style={{ marginLeft: "8px" }} />
                              </span>
                           </a>
@@ -88,7 +91,7 @@ function Home() {
                  <div className="show-work" id="xs">
                     <a href="#about">
                        <span className="show-work-text">
-                          View my work
+                           {t("view_work")}
                           <FaArrowDown style={{ marginLeft: "8px" }} />
                        </span>
                     </a>
@@ -112,13 +115,12 @@ function Home() {
            <Container className="home-social-container">
               <Row>
                  <Col md={12} className="home-about-social">
-                    <h1>Get in Touch</h1>
+                    <h1>{t("get_in_touch")}</h1>
                     <p>
                        {" "}
-                       Whether you want to get in touch, or talk about a project
-                       collaboration.
+                       {t("contact_message")}
                        <br />
-                       <strong>Feel free to connect with me</strong>
+                       <strong>{t("send_message")}</strong>
                     </p>
                     <SocialMedia />
                  </Col>
@@ -134,7 +136,7 @@ function Home() {
                         >
                            <span className="arrow-right">
                               <FaPen style={{ marginRight: "8px" }} />
-                              Envíame un mensaje
+                              {t("send_message")}
                            </span>
                         </a>
                      </div>

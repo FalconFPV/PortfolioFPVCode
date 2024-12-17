@@ -2,17 +2,21 @@ import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
+import Flag from "react-world-flags";
 import {
    AiOutlineUser,
    AiOutlineDeploymentUnit,
    AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { useTranslation } from "react-i18next";
 
 function NavBar() {
-   // const [expand, updateExpanded] = useState(false);
+   const { t, i18n } = useTranslation();
+   const [expand, updateExpanded] = useState(false);
    const [navColour, updateNavbar] = useState(false);
    const [activeNav, setActiveNav] = useState("");
+   const [language, setLanguage] = useState("es"); // Estado para la bandera (español por defecto)
 
    useEffect(() => {
       const scrollHandler = () => {
@@ -57,14 +61,28 @@ function NavBar() {
       }
    };
 
+   // Función para alternar la bandera
+   const toggleLanguage = () => {
+      setLanguage((prevLanguage) => {
+         const newLanguage = prevLanguage === "es" ? "en" : "es";
+         i18n.changeLanguage(newLanguage); // Cambia el idioma
+         return newLanguage; // Actualiza el estado de la bandera
+      });
+   };   
+
    return (
       <Navbar
-         // expanded={expand}
+         expanded={expand}
          fixed="top"
-         // expand="md"
+         expand="md"
          className={navColour ? "sticky" : "navbar"}
       >
-         {/* <Navbar.Toggle
+         <Nav.Item>
+            <Nav.Link onClick={toggleLanguage} style={{ cursor: "pointer" }}>
+               <Flag code={language === "es" ? "es" : "gb"} style={{ width: "30px" }} />
+            </Nav.Link>
+         </Nav.Item>
+         <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             onClick={() => {
                updateExpanded(expand ? false : "expanded");
@@ -73,7 +91,7 @@ function NavBar() {
             <span></span>
             <span></span>
             <span></span>
-         </Navbar.Toggle> */}
+         </Navbar.Toggle>
          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
                <Nav.Item>
@@ -85,8 +103,8 @@ function NavBar() {
                      }}
                      className={activeNav === "about" ? "act" : ""}
                   >
-                     <AiOutlineUser style={{ marginBottom: "2px" }} /> My
-                     History
+                     <AiOutlineUser style={{ marginBottom: "2px" }} /> 
+                     {t("my_history")}
                   </Nav.Link>
                </Nav.Item>
                <Nav.Item>
@@ -99,7 +117,7 @@ function NavBar() {
                      className={activeNav === "skills" ? "act" : ""}
                   >
                      <AiOutlineDeploymentUnit style={{ marginBottom: "2px" }} />{" "}
-                     Services
+                     {t("services")}
                   </Nav.Link>
                </Nav.Item>
                <Nav.Item>
@@ -112,7 +130,7 @@ function NavBar() {
                      className={activeNav === "contact" ? "act" : ""}
                   >
                      <AiOutlineDeploymentUnit style={{ marginBottom: "2px" }} />{" "}
-                     Contact
+                     {t("contact")}
                   </Nav.Link>
                </Nav.Item>
                {/* <Nav.Item>

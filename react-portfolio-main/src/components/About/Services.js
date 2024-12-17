@@ -9,36 +9,39 @@ import {
 } from "react-icons/fa";
 // Importar iconos lenguajes
 import ServiceCard from "./ServiceCard";
-
-const services = [
-   {
-      name: "Aerial Photography and Videography",
-      icon: <FaCamera />, // Ícono de fotografía
-      desc: "Capturing high-quality aerial photos or videos for real estate, events, and personal projects.",
-   },
-   {
-      name: "Real Estate Drone Services",
-      icon: <FaHome />, // Ícono de inmobiliaria
-      desc: "Showcasing properties with professional aerial photos and videos to attract potential buyers.",
-   },
-   {
-      name: "Event Coverage",
-      icon: <FaCalendar />, // Ícono de eventos
-      desc: "Providing unique aerial footage for weddings, sports, concerts, and other special occasions.",
-   },
-   {
-      name: "Inspections and Surveys",
-      icon: <FaWrench />, // Ícono de inspecciones
-      desc: "Performing drone inspections for roofs, construction sites, and hard-to-reach areas with precision and safety.",
-   },
-   {
-      name: "Landscapes and Tourism",
-      icon: <FaMountain />, // Ícono de paisajes
-      desc: "Creating captivating aerial views for tourism promotion, outdoor activities, or personal collections.",
-   },
-];
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+   const { t } = useTranslation();
+
+   const services = [
+      {
+         name: t("aerial_photography"),
+         icon: <FaCamera />, // Ícono de fotografía
+         desc: t("aerial_photography_desc"),
+      },
+      {
+         name: t("real_estate_services"),
+         icon: <FaHome />, // Ícono de inmobiliaria
+         desc: t("real_estate_services_desc"),
+      },
+      {
+         name: t("event_coverage"),
+         icon: <FaCalendar />, // Ícono de eventos
+         desc: t("event_coverage_desc"),
+      },
+      {
+         name: t("inspections_surveys"),
+         icon: <FaWrench />, // Ícono de inspecciones
+         desc: t("inspections_surveys_desc"),
+      },
+      {
+         name: t("landscapes_tourism"),
+         icon: <FaMountain />, // Ícono de paisajes
+         desc: t("landscapes_tourism_desc"),
+      },
+   ];
+
    return (
       <div>
          {/* <h1>Technichal Skills</h1>
@@ -62,7 +65,7 @@ const Services = () => {
          </div> */}
          <div className="frame-hab-container">
             <div className="habilities">
-               <h1>Services</h1>
+               <h1>{t("services")}</h1>
                <div className="hab-container">
                   {services.map((service, index) => (
                      <ServiceCard

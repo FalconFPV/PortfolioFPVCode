@@ -2,8 +2,11 @@ import React, { useEffect, useRef } from "react";
 import Card from "react-bootstrap/Card";
 import myImg from "../../Assets/banner_joancompany.png";
 import Carousel from "react-bootstrap/Carousel"; 
+import { useTranslation } from "react-i18next";
+
 
 function AboutCard() {
+      const { t } = useTranslation();
    const containersRef = useRef([]); // Inicializamos como un array vacío
    const carouselImages = [
       {
@@ -81,26 +84,18 @@ function AboutCard() {
             >
                <div className="about-text-container">
                   <blockquote className="blockquote mb-0">
-                     <h1 id="about-title">My History</h1>
+                     <h1 id="about-title">{t("my_history")}</h1>
                      <h4 className="heading-title">
-                        De un hobby a una pasión profesional
+                        {t("history_title")}
                      </h4>
                      <p className="heading-description blockquote">
-                        Mi nombre es{" "}
-                        <span className="purple">Joan Company</span>, más
-                        conocido como <span className="purple">Falcon</span>,
-                        tengo 21 años y actualmente soy Piloto de Drones
-                        Profesional, desarrollador web y analista de márketing
-                        SEO.
+                        {t("namis")}{" "}
+                        <span className="purple">{t("name")}</span>
+                        {t("wellknown")}<span className="purple">{t("falcon")}</span>,
+                        {t("history_content")}
                      </p>
                      <p className="heading-description blockquote">
-                        Mi pasión por los drones comenzó a los 13 años,
-                        inspirado por mi padre, quien volaba aviones RC. Este
-                        hobby no solo me introdujo al fascinante mundo de los
-                        drones de carreras, sino que también me brindó la
-                        oportunidad de conocer a personas increíbles y
-                        participar en competiciones nacionales e
-                        internacionales.
+                        {t("history_content_2")}
                      </p>
                   </blockquote>
                </div>
@@ -131,25 +126,17 @@ function AboutCard() {
                </div>
                <div className="about-text-container">
                   <blockquote className="blockquote mb-0">
-                     <h4 className="heading-title">Destacados:</h4>
+                     <h4 className="heading-title">{t("highlights_title")}</h4>
                      <ul className="heading-description blockquote">
-                        <li>
-                           Liga Balear de Drones de Carreras (Campeón Baleares)
-                        </li>
-                        <li>
-                           Iberian Drone League (con el equipo MTS en Toledo)
-                        </li>
-                        <li>Mollerussa Drone Party (2019 y 2020)</li>
-                        <li>
-                           Drone Champions League, representando al{" "}
-                           <span className="purple">Spain Drone Team</span>
+                        <li>{t("highlight_1")}</li>
+                        <li>{t("highlight_2")}</li>
+                        <li>{t("highlight_3")}</li>
+                        <li>{t("highlight_4")}{" "}
+                           <span className="purple">{t("sdt")}</span>
                         </li>
                      </ul>
                      <p className="heading-description blockquote">
-                        La experiencia adquirida en estas competiciones me llevó
-                        a dedicarme profesionalmente a la filmación con drones,
-                        aportando creatividad y precisión a proyectos
-                        audiovisuales.
+                        {t("experience_summary")}
                      </p>
                   </blockquote>
                </div>

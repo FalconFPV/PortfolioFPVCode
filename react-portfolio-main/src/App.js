@@ -13,6 +13,8 @@ import ResumeNew from "./components/Resume/ResumeNew";
 import ResumeOld from "./components/Resume/ResumeOld";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import "./i18n"; // Importa la configuración de i18next
+import { Suspense } from "react";
 
 function App() {
    const [load, updateLoad] = useState(true);
@@ -28,7 +30,8 @@ function App() {
    return (
       <Router basename="/PortfolioFalcon">
          <div className="App" id={load ? "no-scroll" : "scroll"}>
-            <Navbar />
+            <Suspense fallback={<div>Loading...</div>}>
+               <Navbar />
             <ScrollToTop />
             <Switch>
                <Route path="/" exact component={Home} />
@@ -37,6 +40,7 @@ function App() {
             </Switch>
             <Footer />
             <ScrollToTopButton />
+            </Suspense>
          </div>
          <Preloader load={load} />
       </Router>
