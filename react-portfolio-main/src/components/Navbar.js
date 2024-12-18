@@ -10,7 +10,7 @@ import {
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
-
+import LofoFalcon from "../Assets/Falcon FPV.png";
 function NavBar() {
    const { t, i18n } = useTranslation();
    const [expand, updateExpanded] = useState(false);
@@ -77,20 +77,9 @@ function NavBar() {
          expand="md"
          className={navColour ? "sticky" : "navbar"}
       >
-         <Nav.Item>
-            <Nav.Link
-               onClick={toggleLanguage}
-               style={{ cursor: "pointer" }}
-               title={
-                  language === "es" ? "Cambiar a inglés" : "Switch to Spanish"
-               }
-            >
-               <Flag
-                  code={language === "es" ? "es" : "gb"}
-                  className="lang-flag" // Texto dinámico
-               />
-            </Nav.Link>
-         </Nav.Item>
+         <Navbar.Brand href="#home">
+            <img src={LofoFalcon} className="logo" alt="brand" style={{}} />
+         </Navbar.Brand>
          <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             onClick={() => {
@@ -103,6 +92,22 @@ function NavBar() {
          </Navbar.Toggle>
          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
+               <Nav.Item>
+                  <Nav.Link
+                     onClick={toggleLanguage}
+                     style={{ cursor: "pointer" }}
+                     title={
+                        language === "es"
+                           ? "Cambiar a inglés"
+                           : "Switch to Spanish"
+                     }
+                  >
+                     <Flag
+                        code={language === "es" ? "es" : "gb"}
+                        className="lang-flag" // Texto dinámico
+                     />
+                  </Nav.Link>
+               </Nav.Item>
                <Nav.Item>
                   <Nav.Link
                      href="#"
