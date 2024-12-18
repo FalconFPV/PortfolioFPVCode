@@ -1,0 +1,31 @@
+.animated-element {
+   display: inline-block;
+}
+
+/* Animación arriba abajo suave */
+@keyframes shake {
+   0% { transform: translateY(0px); }
+   50% { transform: translateY(3px); }
+   100% { transform: translateY(0px); }
+}
+
+/* Aplica la animación solo cuando la clase está activa */
+.shake-animation {
+   animation: shake 2s ease-in;
+   animation-iteration-count: 10;
+}
+
+/* Animacion de rotacion a los dos lados suave */
+@keyframes rotate {
+   0% { transform: rotate(0deg); }
+   50% { transform: rotate(5deg); }
+   75% { transform: rotate(-10deg); }
+   100% { transform: rotate(0deg); }
+}
+
+/* Aplica la animación solo cuando la clase está activa */
+.rotate-animation {
+   animation: rotate 2s ease-in;
+   animation-iteration-count: 3;
+}
+

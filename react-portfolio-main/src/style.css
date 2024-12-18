@@ -1745,3 +1745,8 @@ blockquote h1{
   align-items: center;
   margin-top: 2rem;
 }
+
+.lang-flag{
+  width: 30px;
+  border-radius: 2px;
+}

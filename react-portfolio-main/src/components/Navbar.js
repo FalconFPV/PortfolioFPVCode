@@ -78,8 +78,17 @@ function NavBar() {
          className={navColour ? "sticky" : "navbar"}
       >
          <Nav.Item>
-            <Nav.Link onClick={toggleLanguage} style={{ cursor: "pointer" }}>
-               <Flag code={language === "es" ? "es" : "gb"} style={{ width: "30px" }} />
+            <Nav.Link
+               onClick={toggleLanguage}
+               style={{ cursor: "pointer" }}
+               title={
+                  language === "es" ? "Cambiar a inglés" : "Switch to Spanish"
+               }
+            >
+               <Flag
+                  code={language === "es" ? "es" : "gb"}
+                  className="lang-flag" // Texto dinámico
+               />
             </Nav.Link>
          </Nav.Item>
          <Navbar.Toggle
@@ -103,7 +112,7 @@ function NavBar() {
                      }}
                      className={activeNav === "about" ? "act" : ""}
                   >
-                     <AiOutlineUser style={{ marginBottom: "2px" }} /> 
+                     <AiOutlineUser style={{ marginBottom: "2px" }} />
                      {t("my_history")}
                   </Nav.Link>
                </Nav.Item>

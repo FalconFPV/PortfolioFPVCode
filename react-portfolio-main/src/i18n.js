@@ -6,8 +6,8 @@ i18n
    .use(HttpBackend) // Cargar archivos externos
    .use(initReactI18next) // Integración con React
    .init({
-      fallbackLng: "en", // Idioma predeterminado
-      lng: "en", // Idioma inicial
+      fallbackLng: "es", // Idioma predeterminado
+      lng: "es", // Idioma inicial
       backend: {
          loadPath: "/PortfolioFalcon/locales/{{lng}}/labels_{{lng}}.json", // Ruta a los archivos XML
       },

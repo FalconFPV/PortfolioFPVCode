@@ -7,6 +7,7 @@ import Projects from "../Projects/Projects";
 import Card from "react-bootstrap/Card";
 import { FaArrowDown, FaPen } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import Animations from "../../Animations";
 
 function Home() {
    const { t } = useTranslation();
@@ -82,7 +83,9 @@ function Home() {
                           <a href="#about">
                              <span className="show-work-text">
                                 {t("view_work")}
-                                <FaArrowDown style={{ marginLeft: "8px" }} />
+                                <Animations animationType="shake-animation">
+                                   <FaArrowDown style={{ marginLeft: "8px" }} />
+                                </Animations>
                              </span>
                           </a>
                        </div>
@@ -91,7 +94,7 @@ function Home() {
                  <div className="show-work" id="xs">
                     <a href="#about">
                        <span className="show-work-text">
-                           {t("view_work")}
+                          {t("view_work")}
                           <FaArrowDown style={{ marginLeft: "8px" }} />
                        </span>
                     </a>
@@ -111,7 +114,13 @@ function Home() {
               </Card>
            </Row>
         </Container> */}
-        <Container fluid className="home-about-section" id="contact" data-aos="zoom-in" data-aos-duration="1000">
+        <Container
+           fluid
+           className="home-about-section"
+           id="contact"
+           data-aos="zoom-in"
+           data-aos-duration="1000"
+        >
            <Container className="home-social-container">
               <Row>
                  <Col md={12} className="home-about-social">
@@ -126,22 +135,24 @@ function Home() {
                  </Col>
               </Row>
               <Row>
-                  <div className="cta-btn-container">
-                     <div className="cta-btn-div">
-                        <a 
-                           className="cta-btn" 
-                           href="https://docs.google.com/forms/d/e/1FAIpQLScttTC38g4qO3ZFL5hi9E4DnJXgops8htUur4ebKZJGeaOO_Q/viewform?usp=sharing" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                        >
-                           <span className="arrow-right">
-                              <FaPen style={{ marginRight: "8px" }} />
-                              {t("send_message")}
-                           </span>
-                        </a>
-                     </div>
-                  </div>
-               </Row>
+                 <div className="cta-btn-container">
+                    <div className="cta-btn-div">
+                       <a
+                          className="cta-btn"
+                          href="https://docs.google.com/forms/d/e/1FAIpQLScttTC38g4qO3ZFL5hi9E4DnJXgops8htUur4ebKZJGeaOO_Q/viewform?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                       >
+                          <span className="arrow-right">
+                              <Animations animationType="rotate-animation">
+                                <FaPen style={{ marginRight: "8px" }} />
+                               </Animations>
+                             {t("message_form")}
+                          </span>
+                       </a>
+                    </div>
+                 </div>
+              </Row>
            </Container>
         </Container>
      </section>
