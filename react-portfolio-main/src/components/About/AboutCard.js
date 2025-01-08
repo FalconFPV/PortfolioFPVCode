@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Card from "react-bootstrap/Card";
-import myImg from "../../Assets/banner_joancompany.png";
+import myImg from "../../Assets/banner_joancompany3.png";
 import Carousel from "react-bootstrap/Carousel"; 
 import { useTranslation } from "react-i18next";
 
@@ -10,16 +10,20 @@ function AboutCard() {
    const containersRef = useRef([]); // Inicializamos como un array vacío
    const carouselImages = [
       {
-         src: require("../../Assets/Drones/diatone.webp"),
-         alt: "Competición en la Liga Balear",
+         src: require("../../Assets/bdr.jpg"),
+         alt: "Balearic Drone Racing",
       },
       {
-         src: require("../../Assets/Drones/diatone.webp"),
-         alt: "Iberian Drone League en Toledo",
+         src: require("../../Assets/toledo.jpg"),
+         alt: "Iberian Drone League - Toledo",
       },
       {
-         src: require("../../Assets/Drones/diatone.webp"),
+         src: require("../../Assets/mdp.jpg"),
          alt: "Mollerussa Drone Party 2020",
+      },
+      {
+         src: require("../../Assets/dcl.gif"),
+         alt: "Drone Champions League 2020",
       },
    ];
 
