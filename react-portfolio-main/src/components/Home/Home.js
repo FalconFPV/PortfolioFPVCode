@@ -12,6 +12,39 @@ import video from "../../Assets/Video2.mp4"; // Importa el archivo de video
 
 function Home() {
    const { t } = useTranslation();
+/*
+        useEffect(() => {
+           // Cargar la API de IFrame de YouTube
+           const tag = document.createElement("script");
+           tag.src = "https://www.youtube.com/iframe_api";
+           const firstScriptTag = document.getElementsByTagName("script")[0];
+           firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+           // Configurar el reproductor de YouTube
+           window.onYouTubeIframeAPIReady = () => {
+              new window.YT.Player("player", {
+                 videoId: "s9n47lkKqVk", // Reemplaza con tu ID de video
+                 playerVars: {
+                    autoplay: 1,
+                    mute: 1,
+                    start: 0,
+                    end: 100, // 2 minutos
+                    loop: 1,
+                    playlist: "s9n47lkKqVk", // Reemplaza con tu ID de video para que funcione el loop
+                 },
+                 events: {
+                    onReady: (event) => {
+                       event.target.playVideo();
+                    },
+                    onStateChange: (event) => {
+                       if (event.data === window.YT.PlayerState.ENDED) {
+                          event.target.seekTo(0); // Reinicia el video al inicio
+                       }
+                    },
+                 },
+              });
+           };
+        }, []);
+        */
   return (
      <section>
         <Container fluid className="home-section" id="home">
@@ -22,7 +55,7 @@ function Home() {
                     <video
                        id="player"
                        className="y-video"
-                       src={video} // Usa la variable importada
+                       src={video} 
                        autoPlay
                        muted
                        playsInline
@@ -49,7 +82,7 @@ function Home() {
                        <div className="heading-type">
                           <TypeWriter />
                        </div>
-                       <div className="show-work" id="xl">
+                       <div className="show-work">
                           <a href="#about">
                              <span className="show-work-text">
                                 {t("view_work")}
@@ -61,14 +94,6 @@ function Home() {
                        </div>
                     </div>
                  </div>
-                 <div className="show-work" id="xs">
-                    <a href="#about">
-                       <span className="show-work-text">
-                          {t("view_work")}
-                          <FaArrowDown style={{ marginLeft: "8px" }} />
-                       </span>
-                    </a>
-                 </div>
               </Row>
            </Row>
         </Container>
@@ -77,13 +102,6 @@ function Home() {
               <About />
            </Row>
         </Container>
-        {/* <Container fluid className="home-about-section" id="about">
-           <Row className="about" id="projects">
-              <Card className="quote-card-view">
-                 <Projects />
-              </Card>
-           </Row>
-        </Container> */}
         <Container
            fluid
            className="home-about-section"

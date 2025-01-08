@@ -1310,6 +1310,14 @@ blockquote h1{
   padding-inline: 2vh;
   border: 2px solid var(--imp-text-color);
   border-radius: 20px;
+  position: relative;
+  top: 25vh;
+}
+
+@media screen and (max-width: 1030px){
+  .show-work{
+    top: 15vh;
+  } 
 }
 
 .show-work-text{
