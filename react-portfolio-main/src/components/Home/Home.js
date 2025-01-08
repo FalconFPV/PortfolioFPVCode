@@ -8,56 +8,25 @@ import Card from "react-bootstrap/Card";
 import { FaArrowDown, FaPen } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Animations from "../../Animations";
+import video from "../../Assets/Video.mp4"; // Importa el archivo de video
 
 function Home() {
    const { t } = useTranslation();
-   
-     useEffect(() => {
-        // Cargar la API de IFrame de YouTube
-        const tag = document.createElement("script");
-        tag.src = "https://www.youtube.com/iframe_api";
-        const firstScriptTag = document.getElementsByTagName("script")[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        // Configurar el reproductor de YouTube
-        window.onYouTubeIframeAPIReady = () => {
-           new window.YT.Player("player", {
-              videoId: "s9n47lkKqVk", // Reemplaza con tu ID de video
-              playerVars: {
-                 autoplay: 1,
-                 mute: 1,
-                 start: 0,
-                 end: 100, // 2 minutos
-                 loop: 1,
-                 playlist: "s9n47lkKqVk", // Reemplaza con tu ID de video para que funcione el loop
-              },
-              events: {
-                 onReady: (event) => {
-                    event.target.playVideo();
-                 },
-                 onStateChange: (event) => {
-                    if (event.data === window.YT.PlayerState.ENDED) {
-                       event.target.seekTo(0); // Reinicia el video al inicio
-                    }
-                 },
-              },
-           });
-        };
-     }, []);
   return (
      <section>
         <Container fluid className="home-section" id="home">
            <Row className="home-content">
               <Row className="home-row">
                  <div className="video-background">
-                    <div id="player" className="y-video"></div>
-                    {/* <video
+                    {/* <div id="player" className="y-video"></div> */}
+                    <video
                        id="player"
                        className="y-video"
-                       src="../../Assets/Video.mp4"
-                       autoplay
+                       src={video} // Usa la variable importada
+                       autoPlay
                        muted
                        loop
-                    ></video> */}
+                    ></video>
                  </div>
                  <div className="home-header">
                     <div className="home-first">
@@ -144,9 +113,9 @@ function Home() {
                           rel="noopener noreferrer"
                        >
                           <span className="arrow-right">
-                              <Animations animationType="rotate-animation">
+                             <Animations animationType="rotate-animation">
                                 <FaPen style={{ marginRight: "8px" }} />
-                               </Animations>
+                             </Animations>
                              {t("message_form")}
                           </span>
                        </a>
