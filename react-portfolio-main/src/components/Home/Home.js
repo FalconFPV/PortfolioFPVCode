@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 import { FaArrowDown, FaPen } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Animations from "../../Animations";
-import video from "../../Assets/Video.mp4"; // Importa el archivo de video
+import video from "../../Assets/Video2.mp4"; // Importa el archivo de video
 
 function Home() {
    const { t } = useTranslation();
@@ -25,6 +25,7 @@ function Home() {
                        src={video} // Usa la variable importada
                        autoPlay
                        muted
+                       playsInline
                        loop
                     ></video>
                  </div>
