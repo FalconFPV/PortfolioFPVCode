@@ -108,9 +108,9 @@ const ServiceCard = ({ name, icon, desc, delay, img }) => {
    return (
       <Card
          ref={cardRef}
-         className={isVisible ? "visible" : ""}
+         className={isVisible ? "service visible" : "service"}
          delay={delay}
-         style={{ backgroundImage: `url(${img})`, backgroundBlendMode: "overlay" }}
+         style={{ backgroundImage: `url(${img})` }}
       >
          <IconContainer>
             <Icon>{icon}</Icon>

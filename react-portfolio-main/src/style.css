@@ -910,6 +910,24 @@ html {
   margin-top: 6vh;
 }
 
+.service::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.8); /* Oscurecimiento del 50% */
+   z-index: 1; /* Coloca esta capa debajo del contenido */
+   border-radius: 10px;
+}
+
+.service > * {
+   position: relative; /* Asegura que el contenido esté encima de la capa oscura */
+   z-index: 2;
+   color: white; /* Asegúrate de que el texto sea legible */
+}
+
 .frame-hab-container {
   display: flex;
   flex-direction: row;
