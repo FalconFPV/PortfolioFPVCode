@@ -102,10 +102,13 @@ function NavBar() {
                            : "Switch to Spanish"
                      }
                   >
-                     <Flag
-                        code={language === "es" ? "es" : "gb"}
-                        className="lang-flag" // Texto dinámico
-                     />
+                     <div className="lang-container">
+                        <span>{language === "es" ? "ES |" : "EN |"} </span>
+                        <Flag
+                           code={language === "es" ? "es" : "gb"}
+                           className="lang-flag" // Texto dinámico
+                        />
+                     </div>
                   </Nav.Link>
                </Nav.Item>
                <Nav.Item>

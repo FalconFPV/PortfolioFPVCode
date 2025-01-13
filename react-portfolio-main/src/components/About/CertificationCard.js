@@ -46,18 +46,9 @@ const Card = styled.div`
    &.visible {
       opacity: 1;
       transform: translateY(0);
-      animation: ${pulse} 2s; /* Efecto de pulso mientras es visible */
+      /*animation: ${pulse} 2s;*/ /* Efecto de pulso mientras es visible */
    }
 
-   /* Aplica hover solo si hasLink es true */
-   ${(props) =>
-      props.hasLink &&
-      css`
-         &:hover {
-            transform: translateY(-15px);
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-         }
-      `}
 `;
 
 // Estilo para la imagen de la certificación
@@ -121,10 +112,11 @@ const CertificationCard = ({ name, img, desc, url, delay }) => {
          className={isVisible ? "visible" : ""}
          delay={delay}
          hasLink={hasLink}
+         id="droneCard"
       >
          {hasLink ? (
             <a href={url} target="_blank" rel="noopener noreferrer">
-               <Image src={img} alt={name} />
+               <img className="drone" src={img} alt={name} />
                <div className="cert-text">
                   <Name>{name}</Name>
                   <Description>{desc}</Description>
@@ -132,7 +124,7 @@ const CertificationCard = ({ name, img, desc, url, delay }) => {
             </a>
          ) : (
             <div>
-               <Image src={img} alt={name} />
+               <img className="drone" src={img} alt={name} />
                <div className="cert-text">
                   <Name>{name}</Name>
                   <Description>{desc}</Description>

@@ -1,5 +1,5 @@
 html {
-  --imp-text-color: hsl(29, 90%, 48%);
+  --imp-text-color: #F76008;
   --imp-background-color: #0D0D0D;
 }
 
@@ -167,6 +167,11 @@ html {
 
 .logo {
   height: 2.4em !important;
+}
+
+.logoPreloader{
+  height: 5em;
+  position: absolute;
 }
 
 .navbar-nav .nav-link {
@@ -1448,6 +1453,15 @@ blockquote h1{
     flex-wrap: wrap;
 }
 
+#droneCard{
+  padding: 0;
+}
+
+.drone{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .drones{
   margin-top: 2vh;
 }
@@ -1468,6 +1482,7 @@ blockquote h1{
   align-items: center;
   flex-direction: column;
   height: 180px;
+  padding: 20px;
 }
 
 /* --------- */
@@ -1756,4 +1771,14 @@ blockquote h1{
 .lang-flag{
   width: 30px;
   border-radius: 2px;
+}
+
+.lang-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-container span{
+  margin-right: 10px;
 }

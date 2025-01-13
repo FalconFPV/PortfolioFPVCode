@@ -45,7 +45,7 @@ const Card = styled.div`
    &.visible {
       opacity: 1;
       transform: translateY(0);
-      animation: ${pulse} 2s ; /* Efecto de pulso mientras es visible */
+      /*animation: ${pulse} 2s ;*/ /* Efecto de pulso mientras es visible */
    }
 `;
 
@@ -76,7 +76,7 @@ const Description = styled.p`
    color: #fff;
 `;
 
-const ServiceCard = ({ name, icon, desc, delay }) => {
+const ServiceCard = ({ name, icon, desc, delay, img }) => {
    const [isVisible, setIsVisible] = useState(false);
    const cardRef = useRef(null);
 
@@ -106,7 +106,12 @@ const ServiceCard = ({ name, icon, desc, delay }) => {
    }, []);
 
    return (
-      <Card ref={cardRef} className={isVisible ? "visible" : ""} delay={delay}>
+      <Card
+         ref={cardRef}
+         className={isVisible ? "visible" : ""}
+         delay={delay}
+         style={{ backgroundImage: `url(${img})`, backgroundBlendMode: "overlay" }}
+      >
          <IconContainer>
             <Icon>{icon}</Icon>
          </IconContainer>

@@ -11,7 +11,7 @@ function About() {
            {/* <Row className="img-about"></Row> */}
            <Row className="about">
               <Aboutcard />
-              <div className="skill-section-container" id="skills" data-aos="fade-up" data-aos-duration="1500">
+              <div className="skill-section-container" id="skills" data-aos="fade-up" data-aos-duration="2000">
                  <Services />
               </div>
               <OurFleet />

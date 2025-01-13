@@ -10,6 +10,11 @@ import {
 // Importar iconos lenguajes
 import ServiceCard from "./ServiceCard";
 import { useTranslation } from "react-i18next";
+import aerial from "../../Assets/ServiceImg/aerial.webp";
+import realEstate from "../../Assets/ServiceImg/realstate.webp";
+import event from "../../Assets/ServiceImg/wedding.webp";
+import inspection from "../../Assets/ServiceImg/inspec.webp";
+import landscape from "../../Assets/ServiceImg/tourism.webp";
 
 const Services = () => {
    const { t } = useTranslation();
@@ -19,26 +24,31 @@ const Services = () => {
          name: t("aerial_photography"),
          icon: <FaCamera />, // Ícono de fotografía
          desc: t("aerial_photography_desc"),
+         img: aerial,
       },
       {
          name: t("real_estate_services"),
          icon: <FaHome />, // Ícono de inmobiliaria
          desc: t("real_estate_services_desc"),
+         img: realEstate,
       },
       {
          name: t("event_coverage"),
          icon: <FaCalendar />, // Ícono de eventos
          desc: t("event_coverage_desc"),
+         img: event,
       },
       {
          name: t("inspections_surveys"),
          icon: <FaWrench />, // Ícono de inspecciones
          desc: t("inspections_surveys_desc"),
+         img: inspection,
       },
       {
          name: t("landscapes_tourism"),
          icon: <FaMountain />, // Ícono de paisajes
          desc: t("landscapes_tourism_desc"),
+         img: landscape,
       },
    ];
 
@@ -74,6 +84,7 @@ const Services = () => {
                         icon={service.icon}
                         desc={service.desc}
                         delay={`${index * 0.1}s`} 
+                        img={service.img}
                      />
                   ))}
                </div>

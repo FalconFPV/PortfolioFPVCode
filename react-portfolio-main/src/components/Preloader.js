@@ -1,23 +1,5 @@
-// import React from "react";
-// import Loader from "react-loader-spinner";
-// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-
-// function Preloader({ load }) {
-//    return (
-//       <div id="preloader" className={load ? "visible" : "hidden"}>
-//          <Loader
-//             type="Oval"
-//             color="var(--imp-text-color)"
-//             height={100}
-//             width={100}
-//          />
-//       </div>
-//    );
-// }
-
-// export default Preloader;
-
 import React, { useEffect, useState } from "react";
+import LofoFalcon from "../Assets/Falcon FPV.png";
 
 function Preloader({ load }) {
    const [progress, setProgress] = useState(0);
@@ -66,6 +48,7 @@ function Preloader({ load }) {
                strokeDashoffset={offset}
             />
          </svg>
+         <img src={LofoFalcon} className="logoPreloader" alt="logoFalcon" />
       </div>
    );
 }

@@ -34,7 +34,7 @@ function DroneFleet() {
    ];
 
    return (
-      <Card className="quote-card-view" id="fleet" data-aos="zoom-in" data-aos-duration="2000">
+      <Card className="quote-card-view" id="fleet" data-aos="fade-up" data-aos-duration="2000">
          <Card.Body>
             <div className="drone-card-container">
                <div className="drones">
