@@ -6,7 +6,7 @@ import Flag from "react-world-flags";
 import {
    AiOutlineUser,
    AiOutlineDeploymentUnit,
-   AiOutlineFundProjectionScreen,
+   AiOutlineMail,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
@@ -27,7 +27,7 @@ function NavBar() {
          }
 
          // Define section positions
-         const sections = ["about", "skills", "contact"];
+         const sections = ["about", "skills"];
          let currentSection = "";
 
          for (let i = sections.length - 1; i >= 0; i--) {
@@ -137,18 +137,20 @@ function NavBar() {
                      {t("services")}
                   </Nav.Link>
                </Nav.Item>
-               <Nav.Item>
-                  <Nav.Link
-                     href="#"
-                     onClick={(e) => {
-                        e.preventDefault();
-                        handleNavClick("contact");
-                     }}
-                     className={activeNav === "contact" ? "act" : ""}
-                  >
-                     <AiOutlineDeploymentUnit style={{ marginBottom: "2px" }} />{" "}
-                     {t("contact")}
-                  </Nav.Link>
+               <Nav.Item className="nav-contact-button">
+                  <div className="nav-contact-button-container">
+                     <Nav.Link
+                        href="#"
+                        onClick={(e) => {
+                           e.preventDefault();
+                           handleNavClick("contact");
+                        }}
+                        // className={activeNav === "contact" ? "act" : ""}
+                     >
+                        <AiOutlineMail style={{ marginBottom: "2px" }} />{" "}
+                        {t("contact")}
+                     </Nav.Link>
+                  </div>
                </Nav.Item>
                {/* <Nav.Item>
                   <Nav.Link

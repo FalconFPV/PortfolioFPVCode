@@ -260,7 +260,7 @@ html {
   height: 100%;
   transform: translate(-50%, -50%) scale(1.5); /* Ajusta el zoom aquí */
   pointer-events: none; /* Para que el video no sea interactivo */
-  filter: grayscale(100%); /* Aplica el filtro en blanco y negro */
+  /* filter: grayscale(100%); */
   opacity: 0.2;
 }
 
@@ -1380,6 +1380,40 @@ blockquote h1{
   color: var(--imp-text-color) !important; /* Color del texto del enlace activo */
   font-weight: bold !important; /* Opcional, hace el texto más destacado */
 }
+
+.nav-contact-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px !important;
+}
+
+.nav-contact-button-container{
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--imp-text-color) !important;
+  border-radius: 14px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-contact-button{
+    margin-left: 0 !important;
+  }  
+}
+
+.nav-contact-button-container > .nav-link:hover {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.nav-contact-button-container > .nav-link {
+  font-weight: 600 !important;
+}
+
+.animate-like
 
 .nav-link:hover {
   color: var(--imp-text-color) !important; /* Color del texto al pasar el cursor */
