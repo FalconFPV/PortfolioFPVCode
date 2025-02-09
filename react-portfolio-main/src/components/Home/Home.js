@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SocialMedia from "../SocialMedia";
 import TypeWriter from "./TypeWriter";
@@ -45,6 +45,19 @@ function Home() {
            };
         }, []);
         */
+   
+     const videoRef = useRef(null);
+
+     useEffect(() => {
+        const timeout = setTimeout(() => {
+           if (videoRef.current) {
+              videoRef.current.play(); // Reproducir el video después de X segundos
+           }
+        }, 1200); 
+
+        return () => clearTimeout(timeout); // Limpiar el timeout al desmontar el componente
+     }, []);
+   
   return (
      <section>
         <Container fluid className="home-section" id="home">
@@ -55,24 +68,24 @@ function Home() {
                     <video
                        id="player"
                        className="y-video"
-                       src={video} 
-                       autoPlay
+                       src={video}
                        muted
                        playsInline
                        loop
+                       ref={videoRef} // Referencia al elemento <video>
                     ></video>
                  </div>
                  <div className="home-header">
                     <div className="home-first">
                        <h1 style={{ paddingBottom: 15 }} className="heading">
                           {t("welcome")}{" "}
-                          <span
+                          {/* <span
                              className="wave"
                              role="img"
                              aria-labelledby="wave"
                           >
                              {t("handshake")}
-                          </span>
+                          </span> */}
                        </h1>
 
                        <h1 className="heading-name">
