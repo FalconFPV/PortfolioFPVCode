@@ -1923,7 +1923,7 @@ blockquote h1{
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: var(--gap);
   animation: scroll-x var(--duration) linear infinite;
 }
@@ -1991,6 +1991,10 @@ blockquote h1{
     width: 250px;
     justify-content: flex-start;
     margin-left: 1vh;
+  }
+
+  .marquee__group{
+    justify-content: center;
   }
 
   .marquee__item-text{
