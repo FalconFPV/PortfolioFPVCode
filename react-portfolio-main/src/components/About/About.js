@@ -23,7 +23,7 @@ function About() {
               <OurFleet />
               <div
                  className="skill-section-testimonials-container"
-                 id="skills"
+                 id="testimonials"
                  data-aos="fade-up"
                  data-aos-duration="2000"
               >

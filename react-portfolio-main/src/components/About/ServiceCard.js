@@ -112,11 +112,13 @@ const ServiceCard = ({ name, icon, desc, delay, img }) => {
          delay={delay}
          style={{ backgroundImage: `url(${img})` }}
       >
-         <IconContainer>
-            <Icon>{icon}</Icon>
-         </IconContainer>
-         <Name>{name}</Name>
-         <Description>{desc}</Description>
+         <div className="service-content">
+            <IconContainer>
+               <Icon>{icon}</Icon>
+            </IconContainer>
+            <Name>{name}</Name>
+            <Description>{desc}</Description>
+         </div>
       </Card>
    );
 };

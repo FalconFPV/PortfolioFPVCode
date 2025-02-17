@@ -859,7 +859,8 @@ html {
   color: #fff;
   width: 100%;
   background-color: var(--imp-background-color);
-  padding: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .skill-section-testimonials-container{
@@ -874,13 +875,6 @@ html {
 .hability-label{
   text-align: left;
   font-family: "montserratmedium";
-}
-
-@media screen and (max-width: 768px){
-  .skill-section-container{
-    padding: 2vh;
-    padding-top: 10vh;
-  }
 }
 
 .bar-container{
@@ -905,10 +899,10 @@ html {
 }
 
 .hab-container{
-  margin-top: 5vh;
+  margin-top: 10vh;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -926,15 +920,61 @@ html {
    left: 0;
    width: 100%;
    height: 100%;
-   background: rgba(0, 0, 0, 0.8); /* Oscurecimiento del 50% */
+   background: rgba(0, 0, 0, 0.5); /* Oscurecimiento del 50% */
    z-index: 1; /* Coloca esta capa debajo del contenido */
-   border-radius: 10px;
 }
 
 .service > * {
    position: relative; /* Asegura que el contenido esté encima de la capa oscura */
    z-index: 2;
    color: white; /* Asegúrate de que el texto sea legible */
+}
+
+.service{
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0px !important;
+  border: 0px !important;
+  height: 70vh !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.service-content>h3{
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.service-content>p{
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px){
+  .hab-container>div:nth-child(2n)>div{
+    margin-left: 50%;
+  }
+
+  .hab-container>div:nth-child(2n+1)>div{
+    margin-right: 50%;
+  }
+
+  .service-content>p{
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .service{
+    background-position: center;
+  }
 }
 
 .frame-hab-container {
@@ -950,10 +990,6 @@ html {
   .frame-hab-container{
     flex-direction: column;
   }
-}
-
-.frameworks, .habilities{
-  margin: 2vh;
 }
 
 .about-section {

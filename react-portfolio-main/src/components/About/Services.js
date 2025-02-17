@@ -10,11 +10,11 @@ import {
 // Importar iconos lenguajes
 import ServiceCard from "./ServiceCard";
 import { useTranslation } from "react-i18next";
-import aerial from "../../Assets/ServiceImg/aerial.webp";
-import realEstate from "../../Assets/ServiceImg/realstate.webp";
-import event from "../../Assets/ServiceImg/wedding.webp";
-import inspection from "../../Assets/ServiceImg/inspec.webp";
-import landscape from "../../Assets/ServiceImg/tourism.webp";
+import aerial from "../../Assets/ServiceImg/aerial.jpeg";
+import realEstate from "../../Assets/ServiceImg/realstate.jpg";
+import event from "../../Assets/ServiceImg/wedding.jpg";
+import inspection from "../../Assets/ServiceImg/inspec.jpg";
+import fpv from "../../Assets/ServiceImg/fpv.jpg";
 
 const Services = () => {
    const { t } = useTranslation();
@@ -45,34 +45,15 @@ const Services = () => {
          img: inspection,
       },
       {
-         name: t("landscapes_tourism"),
+         name: t("fpv"),
          icon: <FaMountain />, // Ícono de paisajes
-         desc: t("landscapes_tourism_desc"),
-         img: landscape,
+         desc: t("fpv_desc"),
+         img: fpv,
       },
    ];
 
    return (
       <div>
-         {/* <h1>Technichal Skills</h1>
-         <div
-            className="skills"
-            style={{
-               display: "flex",
-               flexWrap: "wrap",
-               justifyContent: "center",
-            }}
-         >
-            {skills.map((skill, index) => (
-               <CircularProgressBar
-                  key={index}
-                  percentage={skill.percentage}
-                  experience={skill.experience}
-                  text={skill.name}
-                  Component={skill.Component}
-               />
-            ))}
-         </div> */}
          <div className="frame-hab-container">
             <div className="habilities">
                <h1>{t("services")}</h1>

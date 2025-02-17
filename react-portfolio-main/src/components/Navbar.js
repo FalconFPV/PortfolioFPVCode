@@ -7,6 +7,8 @@ import {
    AiOutlineUser,
    AiOutlineDeploymentUnit,
    AiOutlineMail,
+   AiOutlineRocket,
+   AiOutlineStar
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
@@ -27,7 +29,7 @@ function NavBar() {
          }
 
          // Define section positions
-         const sections = ["about", "skills"];
+         const sections = ["about", "skills", "fleet", "testimonials"];
          let currentSection = "";
 
          for (let i = sections.length - 1; i >= 0; i--) {
@@ -137,6 +139,32 @@ function NavBar() {
                      {t("services")}
                   </Nav.Link>
                </Nav.Item>
+               <Nav.Item>
+                  <Nav.Link
+                     href="#"
+                     onClick={(e) => {
+                        e.preventDefault();
+                        handleNavClick("fleet");
+                     }}
+                     className={activeNav === "fleet" ? "act" : ""}
+                  >
+                     <AiOutlineRocket style={{ marginBottom: "2px" }} />{" "}
+                     {t("equipo_tecnologia")}
+                  </Nav.Link>
+               </Nav.Item>
+               <Nav.Item>
+                  <Nav.Link
+                     href="#"
+                     onClick={(e) => {
+                        e.preventDefault();
+                        handleNavClick("testimonials");
+                     }}
+                     className={activeNav === "testimonials" ? "act" : ""}
+                  >
+                     <AiOutlineStar style={{ marginBottom: "2px" }} />{" "}
+                     {t("opiniones")}
+                  </Nav.Link>
+               </Nav.Item>
                <Nav.Item className="nav-contact-button">
                   <div className="nav-contact-button-container">
                      <Nav.Link
@@ -145,28 +173,12 @@ function NavBar() {
                            e.preventDefault();
                            handleNavClick("contact");
                         }}
-                        // className={activeNav === "contact" ? "act" : ""}
                      >
                         <AiOutlineMail style={{ marginBottom: "2px" }} />{" "}
                         {t("contact")}
                      </Nav.Link>
                   </div>
                </Nav.Item>
-               {/* <Nav.Item>
-                  <Nav.Link
-                     href="#"
-                     onClick={(e) => {
-                        e.preventDefault();
-                        handleNavClick("projects");
-                     }}
-                     className={activeNav === "projects" ? "act" : ""}
-                  >
-                     <AiOutlineFundProjectionScreen
-                        style={{ marginBottom: "2px" }}
-                     />{" "}
-                     Projects
-                  </Nav.Link>
-               </Nav.Item> */}
                {/* <Nav.Item>
                   <Nav.Link
                   to="/resume"
