@@ -1,6 +1,6 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
-import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 function SocialMedia() {
   return (

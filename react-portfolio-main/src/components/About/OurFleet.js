@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import CertificationCard from "./CertificationCard";
 import Drone5inch from "../../Assets/Drones/fpv.jpeg";

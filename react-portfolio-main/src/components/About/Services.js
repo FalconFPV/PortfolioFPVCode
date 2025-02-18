@@ -4,7 +4,6 @@ import {
    FaCalendar,
    FaWrench,
    FaMountain,
-   FaVideo,
    FaCamera,
 } from "react-icons/fa";
 // Importar iconos lenguajes

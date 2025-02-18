@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import styled, { keyframes, css } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // Definir la animación de entrada
 const fadeInUp = keyframes`
@@ -52,13 +52,13 @@ const Card = styled.div`
 `;
 
 // Estilo para la imagen de la certificación
-const Image = styled.img`
-   width: 280px !important;
-   height: 200px !important;
-   object-fit: cover;
-   margin-bottom: 15px;
-   border-radius: 15px;
-`;
+// const Image = styled.img`
+//    width: 280px !important;
+//    height: 200px !important;
+//    object-fit: cover;
+//    margin-bottom: 15px;
+//    border-radius: 15px;
+// `;
 
 // Estilo para el nombre de la certificación
 const Name = styled.h3`

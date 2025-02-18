@@ -19,13 +19,14 @@ const Animations = ({ children, animationType }) => {
          { threshold: 0.1 } // Se activa si al menos el 10% del elemento es visible
       );
 
-      if (elementRef.current) {
-         observer.observe(elementRef.current);
+      const currentElement = elementRef.current; // Guardamos la referencia actual
+
+      if (currentElement) {
+         observer.observe(currentElement);
       }
 
-      // Cleanup del observer
       return () => {
-         if (elementRef.current) observer.unobserve(elementRef.current);
+         if (currentElement) observer.unobserve(currentElement);
       };
    }, []);
 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { NavLink } from "react-router-dom";
 import Flag from "react-world-flags";
 import {
    AiOutlineUser,
@@ -10,7 +9,6 @@ import {
    AiOutlineRocket,
    AiOutlineStar
 } from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
 import LofoFalcon from "../Assets/Falcon FPV.png";
 function NavBar() {
