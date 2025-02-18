@@ -3,8 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import SocialMedia from "../SocialMedia";
 import TypeWriter from "./TypeWriter";
 import About from "../About/About";
-import Projects from "../Projects/Projects";
-import Card from "react-bootstrap/Card";
 import { FaArrowDown, FaPen } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Animations from "../../Animations";

@@ -109,6 +109,7 @@ function NavBar() {
                         <Flag
                            code={language === "es" ? "es" : "gb"}
                            className="lang-flag" // Texto dinámico
+                           alt="Language flag"
                         />
                      </div>
                   </Nav.Link>

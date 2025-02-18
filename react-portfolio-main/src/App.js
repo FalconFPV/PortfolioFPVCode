@@ -9,8 +9,6 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./components/ScrollToTop";
-import ResumeNew from "./components/Resume/ResumeNew";
-import ResumeOld from "./components/Resume/ResumeOld";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./i18n"; // Importa la configuración de i18next
@@ -35,8 +33,6 @@ function App() {
             <ScrollToTop />
             <Switch>
                <Route path="/" exact component={Home} />
-               <Route path="/resume" exact component={ResumeNew} />
-               <Route path="/resumeold" exact component={ResumeOld} />
             </Switch>
             <Footer />
             <ScrollToTopButton />
