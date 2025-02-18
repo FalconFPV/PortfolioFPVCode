@@ -76,7 +76,7 @@ function NavBar() {
       <Navbar
          expanded={expand}
          fixed="top"
-         expand="md"
+         expand="xl"
          className={navColour ? "sticky" : "navbar"}
       >
          <Navbar.Brand href="#home">
@@ -180,17 +180,6 @@ function NavBar() {
                      </Nav.Link>
                   </div>
                </Nav.Item>
-               {/* <Nav.Item>
-                  <Nav.Link
-                  to="/resume"
-                  onClick={(e) => {
-                        handleNavClick("resume");
-                  }}
-                  className={activeNav === "resume" ? "active" : ""}
-                  >
-                  <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-                  </Nav.Link>
-               </Nav.Item> */}
             </Nav>
          </Navbar.Collapse>
       </Navbar>

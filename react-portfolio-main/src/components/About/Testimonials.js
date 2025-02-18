@@ -1,18 +1,21 @@
 import LogoWall from "./LogoWall";
+import t1 from "../../Assets/Testimonials/t1.webp";
+import t2 from "../../Assets/Testimonials/t2.webp";
+import t3 from "../../Assets/Testimonials/t3.webp";
 
 const testimonials = [
    {
-      photo: "https://15f8034cdff6595cbfa1-1dd67c28d3aade9d3442ee99310d18bd.ssl.cf3.rackcdn.com/uploaded_thumb_big/a20a8b7a06b5a726408f68df59ba9c3d/fotografia_de_carnet_y_pasaporte_yenes_fotografos.png",
+      photo: t1,
       name: "Ana Pérez",
       opinion: `"¡El servicio fue excelente! Estoy muy satisfecho con el resultado."`,
    },
    {
-      photo: "https://15f8034cdff6595cbfa1-1dd67c28d3aade9d3442ee99310d18bd.ssl.cf3.rackcdn.com/uploaded_thumb_big/a20a8b7a06b5a726408f68df59ba9c3d/fotografia_de_carnet_y_pasaporte_yenes_fotografos.png",
+      photo: t2,
       name: "Julian Gómez",
       opinion: `"Gran experiencia. Definitivamente lo recomendaría."`,
    },
    {
-      photo: "https://15f8034cdff6595cbfa1-1dd67c28d3aade9d3442ee99310d18bd.ssl.cf3.rackcdn.com/uploaded_thumb_big/a20a8b7a06b5a726408f68df59ba9c3d/fotografia_de_carnet_y_pasaporte_yenes_fotografos.png",
+      photo: t3,
       name: "Silvia Martínez",
       opinion: `"Atención al detalle impresionante. ¡Volveré a contratarlos!"`,
    },

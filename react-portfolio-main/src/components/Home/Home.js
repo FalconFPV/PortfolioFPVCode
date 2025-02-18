@@ -124,10 +124,9 @@ function Home() {
               <Row>
                  <Col md={12} className="home-about-social">
                     <h1>{t("get_in_touch")}</h1>
+                    <p>{t("contact_message_part1")}</p>
+                    <p>{t("contact_message_part2")}</p>
                     <p>
-                       {" "}
-                       {t("contact_message")}
-                       <br />
                        <strong>{t("send_message")}</strong>
                     </p>
                     <SocialMedia />

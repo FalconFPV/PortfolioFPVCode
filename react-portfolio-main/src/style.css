@@ -434,6 +434,10 @@ html {
   margin-bottom: 5vh;
 }
 
+.home-about-social>h1{
+  margin-bottom: 5vh;
+}
+
 .home-about-description {
   color: #414141 !important;
   padding-top: 100px !important;
@@ -527,10 +531,43 @@ html {
 .footer-copywright {
   text-align: center !important;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-body .home-about-social-links{
+  padding-top: 0px !important;
+}
+
+.contact-info-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.aesa-logos{
+  height: 50px;
+  margin-inline: 10px;
+  margin-top: 10px;
+}
+
+.footer-terms, .footer-terms a{
+  color: rgb(80, 80, 80);
 }
 
 .footer-body {
   text-align: center !important;
+  margin-top: 20px;
+}
+
+.footer-body .home-about-social-links .social-icons {
+  padding-left: 0;
+}
+
+.contact-info-footer>p{
+  margin-bottom: 0;
+  margin-left: 8px;
 }
 
 .footer-body .home-social-icons {
@@ -545,6 +582,19 @@ html {
 
   .footer-body {
     text-align: center !important;
+    margin-top: 4px;
+  }
+
+  .home-about-social-links{
+    margin-bottom: 0;
+  }
+
+  .footer-body:last-child{
+    margin-bottom: 10px;
+  }
+
+  .footer-terms{
+    font-size: small;
   }
 }
 
@@ -955,6 +1005,32 @@ html {
 
 .service-content>p{
   font-weight: 600;
+}
+
+.service-content a{
+  color: var(--imp-text-color);
+  text-decoration: none;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease-out;
+  background-color: var(--color-text);
+  padding-inline: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 14px;
+}
+
+.service-content>a>svg{
+  margin-left: 6px;
+}
+
+.service-content a:hover{
+  color: var(--color-text);
+  text-decoration: none;
+  background-color: var(--imp-text-color);
+  transition-delay: 100ms;
 }
 
 @media screen and (min-width: 768px){

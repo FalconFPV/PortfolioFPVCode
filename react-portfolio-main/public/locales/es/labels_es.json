@@ -44,9 +44,15 @@
     "mavic_pro_desc": "La mejor opción para capturar imágenes estables y fluidas en videografía profesional y paisajes.",
     "dji_neo": "DJI Neo",
     "dji_neo_desc": "Perfecto para uso en interiores, proporcionando maniobrabilidad precisa y segura.",
-    "get_in_touch": "Contacta conmigo",
-    "contact_message": "Ya sea que quieras ponerte en contacto o hablar sobre una colaboración de proyecto.",
-    "send_message": "No dudes en envíame un mensaje",
+    "get_in_touch": "¿Hablamos?",
+    "contact_message_part1": "Cuéntame tu idea o proyecto y te asesoraré en todo lo que necesites.",
+    "contact_message_part2": "Puedes llamarme, escribirme un correo, un mensaje de Whatsapp o rellenar el siguiente formulario, tú eliges 😉",
+    "send_message": "¡Estoy deseando conocer tu proyecto!",
     "message_form": "Formulario de contacto",
-    "developed_by": "Desarrollado por Joan Company Pastor 💻"
+    "developed_by": "Desarrollado por Joan Company",
+    "terms_and_conditions": "Términos y Condiciones",
+    "privacy_policy": "Política de Privacidad",
+    "social_media": "Mis redes sociales",
+    "aesa": "Piloto certificado ante AESA cumpliendo con la actual normativa de EASA",
+    "learn_more": "Saber más"
 }

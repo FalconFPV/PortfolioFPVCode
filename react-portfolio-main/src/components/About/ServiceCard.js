@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { useTranslation } from "react-i18next";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 // Definir la animación de entrada
 const fadeInUp = keyframes`
@@ -76,9 +78,10 @@ const Description = styled.p`
    color: #fff;
 `;
 
-const ServiceCard = ({ name, icon, desc, delay, img }) => {
+const ServiceCard = ({ name, icon, desc, delay, img, link }) => {
    const [isVisible, setIsVisible] = useState(false);
    const cardRef = useRef(null);
+   const { t } = useTranslation();
 
    useEffect(() => {
       const observer = new IntersectionObserver(
@@ -118,6 +121,10 @@ const ServiceCard = ({ name, icon, desc, delay, img }) => {
             </IconContainer>
             <Name>{name}</Name>
             <Description>{desc}</Description>
+            <a href={link}>
+               {t("learn_more")}
+               <AiOutlineArrowRight />
+            </a>
          </div>
       </Card>
    );
