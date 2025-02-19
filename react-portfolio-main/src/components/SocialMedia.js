@@ -17,7 +17,7 @@ function SocialMedia() {
         </li>
         <li className="social-icons">
            <a
-              href="https://www.youtube.com/@falconfpv9584"
+              href="https://www.youtube.com/@JoanCompany-FalconFPV"
               target="_blank"
               rel="noreferrer"
               className="icon-colour home-social-icons"

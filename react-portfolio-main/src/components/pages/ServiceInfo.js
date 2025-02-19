@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Contact from "../Home/Contact";
 import { useTranslation } from "react-i18next";
 
 const ServiceInfo = ({ title, subtitle, image, description }) => {
@@ -20,11 +19,6 @@ const ServiceInfo = ({ title, subtitle, image, description }) => {
              <span>/</span>
              <span>{title}</span>
           </div>
-          <div className="service-info-details-container">
-             <h4 className="service-info-details-title">{description}</h4>
-             <p className="service-info-description"></p>
-          </div>
-          <Contact />
        </div>
     );
 };

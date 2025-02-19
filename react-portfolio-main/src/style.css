@@ -1078,6 +1078,18 @@ html {
     z-index: 1;
 }
 
+.service-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#service-info-card{
+  margin-top: 8vh;
+}
+
 .page-breadcrumb{
   color: #fff;
   width: 100%;

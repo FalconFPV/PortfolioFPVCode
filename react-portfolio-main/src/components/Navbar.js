@@ -27,6 +27,8 @@ function NavBar() {
       "/events",
       "/inspections",
       "/fpv",
+      "/policy",
+      "/conditions"
    ];
    const isServicePage = serviceRoutes.includes(location.pathname);
    useEffect(() => {
@@ -88,7 +90,7 @@ function NavBar() {
          expand="xl"
          className={navColour ? "sticky" : "navbar"}
       >
-         <Navbar.Brand href="#home">
+         <Navbar.Brand href={isServicePage ? "/PortfolioFalcon" : "#home"}>
             <img src={LofoFalcon} className="logo" alt="brand" style={{}} />
          </Navbar.Brand>
          <Navbar.Toggle

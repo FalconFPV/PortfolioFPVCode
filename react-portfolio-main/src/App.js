@@ -18,6 +18,8 @@ import RealEstate from "./components/pages/RealEstate";
 import Events from "./components/pages/Events";
 import Inspections from "./components/pages/Inspections";
 import FPV from "./components/pages/FPV";
+import Policy from "./components/Policy";
+import Conditions from "./components/Conditions";
 
 function App() {
    const [load, updateLoad] = useState(true);
@@ -38,6 +40,8 @@ function App() {
                <ScrollToTop />
                <Switch>
                   <Route path="/" exact component={Home} />
+                  <Route path="/policy" component={Policy} />
+                  <Route path="/conditions" component={Conditions} />
                   <Route
                      path="/aerial-photography"
                      component={AerialPhotography}
