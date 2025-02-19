@@ -18,43 +18,44 @@ import fpv from "../../Assets/ServiceImg/fpv.jpg";
 const Services = () => {
    const { t } = useTranslation();
 
-   const services = [
-      {
-         name: t("aerial_photography"),
-         icon: <FaCamera />, // Ícono de fotografía
-         desc: t("aerial_photography_desc"),
-         img: aerial,
-         link: "/aerial-photography"
-      },
-      {
-         name: t("real_estate_services"),
-         icon: <FaHome />, // Ícono de inmobiliaria
-         desc: t("real_estate_services_desc"),
-         img: realEstate,
-         link: "/real-estate"
-      },
-      {
-         name: t("event_coverage"),
-         icon: <FaCalendar />, // Ícono de eventos
-         desc: t("event_coverage_desc"),
-         img: event,
-         link: "/events"
-      },
-      {
-         name: t("inspections_surveys"),
-         icon: <FaWrench />, // Ícono de inspecciones
-         desc: t("inspections_surveys_desc"),
-         img: inspection,
-         link: "/inspections"
-      },
-      {
-         name: t("fpv"),
-         icon: <FaMountain />, // Ícono de paisajes
-         desc: t("fpv_desc"),
-         img: fpv,
-         link: "/fpv"
-      },
-   ];
+const services = [
+   {
+      name: t("aerial_photography"),
+      icon: <FaCamera />,
+      desc: t("aerial_photography_desc"),
+      img: aerial,
+      link: "aerial-photography",
+   },
+   {
+      name: t("real_estate_services"),
+      icon: <FaHome />,
+      desc: t("real_estate_services_desc"),
+      img: realEstate,
+      link: "real-estate",
+   },
+   {
+      name: t("event_coverage"),
+      icon: <FaCalendar />,
+      desc: t("event_coverage_desc"),
+      img: event,
+      link: "events",
+   },
+   {
+      name: t("inspections_surveys"),
+      icon: <FaWrench />,
+      desc: t("inspections_surveys_desc"),
+      img: inspection,
+      link: "inspections",
+   },
+   {
+      name: t("fpv"),
+      icon: <FaMountain />,
+      desc: t("fpv_desc"),
+      img: fpv,
+      link: "fpv",
+   },
+];
+
 
    return (
       <div>

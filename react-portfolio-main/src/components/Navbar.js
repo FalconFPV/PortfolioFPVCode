@@ -11,13 +11,24 @@ import {
 } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import LofoFalcon from "../Assets/Falcon FPV.png";
+import { useLocation } from "react-router-dom"; // Importa useLocation
+
 function NavBar() {
    const { t, i18n } = useTranslation();
    const [expand, updateExpanded] = useState(false);
    const [navColour, updateNavbar] = useState(false);
    const [activeNav, setActiveNav] = useState("");
    const [language, setLanguage] = useState("es"); // Estado para la bandera (español por defecto)
+   const location = useLocation(); // Obtiene la ruta actual
 
+   const serviceRoutes = [
+      "/aerial-photography",
+      "/real-estate",
+      "/events",
+      "/inspections",
+      "/fpv",
+   ];
+   const isServicePage = serviceRoutes.includes(location.pathname);
    useEffect(() => {
       const scrollHandler = () => {
          if (window.scrollY >= 20) {
@@ -54,7 +65,7 @@ function NavBar() {
 
    const handleNavClick = (sectionId) => {
       setActiveNav(sectionId);
-      // updateExpanded(false);
+      updateExpanded(false);
       const section = document.getElementById(sectionId);
       if (section) {
          section.scrollIntoView({ behavior: "smooth" });
@@ -68,7 +79,7 @@ function NavBar() {
          i18n.changeLanguage(newLanguage); // Cambia el idioma
          return newLanguage; // Actualiza el estado de la bandera
       });
-   };   
+   };
 
    return (
       <Navbar
@@ -112,58 +123,78 @@ function NavBar() {
                      </div>
                   </Nav.Link>
                </Nav.Item>
-               <Nav.Item>
-                  <Nav.Link
-                     href="#"
-                     onClick={(e) => {
-                        e.preventDefault();
-                        handleNavClick("about");
-                     }}
-                     className={activeNav === "about" ? "act" : ""}
-                  >
-                     <AiOutlineUser style={{ marginBottom: "2px" }} />
-                     {t("my_history")}
-                  </Nav.Link>
-               </Nav.Item>
-               <Nav.Item>
-                  <Nav.Link
-                     href="#"
-                     onClick={(e) => {
-                        e.preventDefault();
-                        handleNavClick("skills");
-                     }}
-                     className={activeNav === "skills" ? "act" : ""}
-                  >
-                     <AiOutlineDeploymentUnit style={{ marginBottom: "2px" }} />{" "}
-                     {t("services")}
-                  </Nav.Link>
-               </Nav.Item>
-               <Nav.Item>
-                  <Nav.Link
-                     href="#"
-                     onClick={(e) => {
-                        e.preventDefault();
-                        handleNavClick("fleet");
-                     }}
-                     className={activeNav === "fleet" ? "act" : ""}
-                  >
-                     <AiOutlineRocket style={{ marginBottom: "2px" }} />{" "}
-                     {t("equipo_tecnologia")}
-                  </Nav.Link>
-               </Nav.Item>
-               <Nav.Item>
-                  <Nav.Link
-                     href="#"
-                     onClick={(e) => {
-                        e.preventDefault();
-                        handleNavClick("testimonials");
-                     }}
-                     className={activeNav === "testimonials" ? "act" : ""}
-                  >
-                     <AiOutlineStar style={{ marginBottom: "2px" }} />{" "}
-                     {t("opiniones")}
-                  </Nav.Link>
-               </Nav.Item>
+               {!isServicePage && (
+                  <>
+                     <Nav.Item>
+                        <Nav.Link
+                           href="#"
+                           onClick={(e) => {
+                              e.preventDefault();
+                              handleNavClick("about");
+                           }}
+                           className={activeNav === "about" ? "act" : ""}
+                        >
+                           <AiOutlineUser style={{ marginBottom: "2px" }} />
+                           {t("my_history")}
+                        </Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link
+                           href="#"
+                           onClick={(e) => {
+                              e.preventDefault();
+                              handleNavClick("skills");
+                           }}
+                           className={activeNav === "skills" ? "act" : ""}
+                        >
+                           <AiOutlineDeploymentUnit
+                              style={{ marginBottom: "2px" }}
+                           />{" "}
+                           {t("services")}
+                        </Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link
+                           href="#"
+                           onClick={(e) => {
+                              e.preventDefault();
+                              handleNavClick("fleet");
+                           }}
+                           className={activeNav === "fleet" ? "act" : ""}
+                        >
+                           <AiOutlineRocket style={{ marginBottom: "2px" }} />{" "}
+                           {t("equipo_tecnologia")}
+                        </Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link
+                           href="#"
+                           onClick={(e) => {
+                              e.preventDefault();
+                              handleNavClick("testimonials");
+                           }}
+                           className={activeNav === "testimonials" ? "act" : ""}
+                        >
+                           <AiOutlineStar style={{ marginBottom: "2px" }} />{" "}
+                           {t("opiniones")}
+                        </Nav.Link>
+                     </Nav.Item>
+                  </>
+               )}
+
+               {isServicePage && (
+                  <>
+                     <Nav.Item>
+                        <Nav.Link
+                           href="/PortfolioFalcon"
+                        >
+                           <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
+                           {t("home")}
+                        </Nav.Link>
+                     </Nav.Item>
+                  </>
+               )}
+
                <Nav.Item className="nav-contact-button">
                   <div className="nav-contact-button-container">
                      <Nav.Link

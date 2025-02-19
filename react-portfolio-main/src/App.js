@@ -13,6 +13,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./i18n"; // Importa la configuración de i18next
 import { Suspense } from "react";
+import AerialPhotography from "./components/pages/AerialPhotography";
+import RealEstate from "./components/pages/RealEstate";
+import Events from "./components/pages/Events";
+import Inspections from "./components/pages/Inspections";
+import FPV from "./components/pages/FPV";
 
 function App() {
    const [load, updateLoad] = useState(true);
@@ -30,12 +35,20 @@ function App() {
          <div className="App" id={load ? "no-scroll" : "scroll"}>
             <Suspense fallback={<div>Loading...</div>}>
                <Navbar />
-            <ScrollToTop />
-            <Switch>
-               <Route path="/" exact component={Home} />
-            </Switch>
-            <Footer />
-            <ScrollToTopButton />
+               <ScrollToTop />
+               <Switch>
+                  <Route path="/" exact component={Home} />
+                  <Route
+                     path="/aerial-photography"
+                     component={AerialPhotography}
+                  />
+                  <Route path="/real-estate" component={RealEstate} />
+                  <Route path="/events" component={Events} />
+                  <Route path="/inspections" component={Inspections} />
+                  <Route path="/fpv" component={FPV} />
+               </Switch>
+               <Footer />
+               <ScrollToTopButton />
             </Suspense>
          </div>
          <Preloader load={load} />
