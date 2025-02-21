@@ -6,7 +6,7 @@ import aesa from "../Assets/AESA_Logo.png";
 import gobesp from "../Assets/gobesp.png";
 import easa from "../Assets/EASA_Logo.png";
 import { MdEmail, MdPhone } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 
 function Footer() {
   const { t } = useTranslation();
@@ -52,8 +52,8 @@ function Footer() {
            </Col>
            <Col md="6" className="footer-terms">
               <p>
-            <a href="/conditions">{t("terms_and_conditions")}</a>{" "}|{" "}
-                 <a href="/policy">{t("privacy_policy")}</a>
+                 <Link to="/conditions">{t("terms_and_conditions")}</Link> |{" "}
+                 <Link to="/policy">{t("privacy_policy")}</Link>
               </p>
            </Col>
         </Row>
