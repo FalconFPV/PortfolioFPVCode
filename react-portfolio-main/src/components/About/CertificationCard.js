@@ -51,17 +51,8 @@ const Card = styled.div`
 
 `;
 
-// Estilo para la imagen de la certificación
-// const Image = styled.img`
-//    width: 280px !important;
-//    height: 200px !important;
-//    object-fit: cover;
-//    margin-bottom: 15px;
-//    border-radius: 15px;
-// `;
-
 // Estilo para el nombre de la certificación
-const Name = styled.h3`
+const Name = styled.h2`
    margin-bottom: 15px;
    font-size: 24px;
    color: var(--imp-text-color);
@@ -74,7 +65,7 @@ const Description = styled.p`
 `;
 
 // Componente CertificationCard
-const CertificationCard = ({ name, img, desc, url, delay }) => {
+const CertificationCard = ({ name, img, desc, delay }) => {
    const [isVisible, setIsVisible] = useState(false);
    const cardRef = useRef(null);
 
@@ -103,34 +94,20 @@ const CertificationCard = ({ name, img, desc, url, delay }) => {
       };
    }, []);
 
-   // Comprobar si hay link (url no es "none")
-   const hasLink = url !== "none";
-
    return (
       <Card
          ref={cardRef}
          className={isVisible ? "visible" : ""}
          delay={delay}
-         hasLink={hasLink}
          id="droneCard"
       >
-         {hasLink ? (
-            <a href={url} target="_blank" rel="noopener noreferrer">
-               <img className="drone" src={img} alt={name} />
-               <div className="cert-text">
-                  <Name>{name}</Name>
-                  <Description>{desc}</Description>
-               </div>
-            </a>
-         ) : (
-            <div>
-               <img className="drone" src={img} alt={name} />
-               <div className="cert-text">
-                  <Name>{name}</Name>
-                  <Description>{desc}</Description>
-               </div>
+         <div>
+            <img className="drone" src={img} alt={name} />
+            <div className="cert-text">
+               <Name>{name}</Name>
+               <Description>{desc}</Description>
             </div>
-         )}
+         </div>
       </Card>
    );
 };

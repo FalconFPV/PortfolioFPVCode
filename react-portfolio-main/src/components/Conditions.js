@@ -8,7 +8,7 @@ const Conditions = () => {
        <div className="policy-conditions">
           <div className="policy-conditions-container">
              <h2>{t("terms_and_conditions")}</h2>
-             <p>Última actualización: 21-02-2025</p>
+             <p>{t("last_update")}</p>
           </div>
           <div className="page-breadcrumb">
              <a href="/PortfolioFalcon">{t("home")}</a>
@@ -24,7 +24,9 @@ const Conditions = () => {
              <Card.Body>
                 <div className="policy-conditions-content">
                    <div
-                      dangerouslySetInnerHTML={{ __html: t("conditions_content") }}
+                      dangerouslySetInnerHTML={{
+                         __html: t("conditions_content"),
+                      }}
                    />
                 </div>
              </Card.Body>

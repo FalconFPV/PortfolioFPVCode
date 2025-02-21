@@ -8,7 +8,7 @@ const Policy = () => {
        <div className="policy-conditions">
           <div className="policy-conditions-container">
              <h2>{t("privacy_policy")}</h2>
-             <p>Última actualización: 21-02-2025</p>
+             <p>{t("last_update")}</p>
           </div>
           <div className="page-breadcrumb">
              <a href="/PortfolioFalcon">{t("home")}</a>

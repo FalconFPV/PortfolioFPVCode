@@ -2,6 +2,7 @@ import LogoWall from "./LogoWall";
 import t1 from "../../Assets/Testimonials/t1.webp";
 import t2 from "../../Assets/Testimonials/t2.webp";
 import t3 from "../../Assets/Testimonials/t3.webp";
+import { useTranslation } from "react-i18next";
 
 const testimonials = [
    {
@@ -21,21 +22,25 @@ const testimonials = [
    },
 ];
 
-const Testimonials = () => (
-   <div className="testimonials-container">
-      <h1>Opiniones de clientes</h1>
-      <div className="testimonials">
-         <LogoWall
-            items={testimonials}
-            direction="horizontal"
-            pauseOnHover={true}
-            size="clamp(8rem, 1rem + 20vmin, 25rem)"
-            duration="60s"
-            bgColor="#060606"
-            bgAccentColor="#111111"
-         />
+const Testimonials = () => {
+   const { t } = useTranslation();
+
+   return (
+      <div className="testimonials-container">
+         <h1>{t("testimonials")}</h1>
+         <div className="testimonials">
+            <LogoWall
+               items={testimonials}
+               direction="horizontal"
+               pauseOnHover={true}
+               size="clamp(8rem, 1rem + 20vmin, 25rem)"
+               duration="60s"
+               bgColor="#060606"
+               bgAccentColor="#111111"
+            />
+         </div>
       </div>
-   </div>
-);
+   );
+};
 
 export default Testimonials;

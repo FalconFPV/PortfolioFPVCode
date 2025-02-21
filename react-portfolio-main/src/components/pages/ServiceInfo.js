@@ -12,7 +12,7 @@ const ServiceInfo = ({ title, subtitle, image, description }) => {
              className="service-info-container"
           >
              <h2 className="service-info-title">{title}</h2>
-             <h4 className="service-info-subtitle">{subtitle}</h4>
+             <h3 className="service-info-subtitle">{subtitle}</h3>
           </div>
           <div className="page-breadcrumb">
              <a href="/PortfolioFalcon">{t("home")}</a>

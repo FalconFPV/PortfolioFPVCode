@@ -553,7 +553,7 @@ html {
 }
 
 .footer-terms, .footer-terms a{
-  color: rgb(80, 80, 80);
+  color: rgb(123, 123, 123);
 }
 
 .footer-terms a:hover{
@@ -602,7 +602,7 @@ html {
   }
 }
 
-.footer h3 {
+.footer h2 {
   font-size: 1em;
   color: white !important;
   margin-top: 0.5em !important;
@@ -1002,7 +1002,7 @@ html {
   height: 100%;
 }
 
-.service-content>h3{
+.service-content>h2{
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -1131,6 +1131,7 @@ html {
 .service-info-subtitle{
   color: #fff;
   z-index: 2;
+  font-size: 1.4rem;
 }
 
 .frame-hab-container {
@@ -1417,6 +1418,10 @@ html {
 }
 .project-title {
   font-weight: bold;
+}
+
+.heading-title{
+  font-size: 1.5rem !important;
 }
 
 @media (max-width: 767px) {

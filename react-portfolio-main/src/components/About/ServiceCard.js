@@ -67,7 +67,7 @@ const Icon = styled.div`
    color: var(--imp-text-color);
 `;
 
-const Name = styled.h3`
+const Name = styled.h2`
    margin-bottom: 15px;
    font-size: 24px;
    color: var(--imp-text-color);

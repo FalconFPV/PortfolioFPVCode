@@ -23,18 +23,16 @@ function LogoWall({
       .join(" ");
 
    return (
-      <article
-         className={wrapperClass}
-      >
+      <article className={wrapperClass}>
          <div
             className={marqueeClass}
             onMouseEnter={() => pauseOnHover && setIsPaused(true)}
             onMouseLeave={() => pauseOnHover && setIsPaused(false)}
          >
             <div className="marquee__group">
-               {items.map((item, idx) => (
+               {items.map((item) => (
                   <div className="marquee__item">
-                     <img key={idx} src={item.photo} alt={item.name} />
+                     <img key={item.name} src={item.photo} alt={item.name} />
                      <div className="marquee__item-text">
                         <p>{item.name}</p>
                         <p>{item.opinion}</p>
@@ -43,10 +41,10 @@ function LogoWall({
                ))}
             </div>
             <div className="marquee__group" aria-hidden="true">
-               {items.map((item, idx) => (
+               {items.map((item) => (
                   <div className="marquee__item">
                      <img
-                        key={`dup1-${idx}`}
+                        key={`dup1-${item.name}`}
                         src={item.photo}
                         alt={item.name}
                      />

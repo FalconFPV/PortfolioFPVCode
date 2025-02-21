@@ -25,15 +25,22 @@
         })(window.location);
       </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPDF3J98M7"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+  setTimeout(() => {
+    let script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-SPDF3J98M7";
+    script.async = true;
+    document.head.appendChild(script);
 
-  gtag('config', 'G-SPDF3J98M7');
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-SPDF3J98M7");
+    };
+  }, 3000);
 </script>
+
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>

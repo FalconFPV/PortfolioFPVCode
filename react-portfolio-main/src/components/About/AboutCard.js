@@ -89,13 +89,11 @@ function AboutCard() {
                <div className="about-text-container">
                   <blockquote className="blockquote mb-0">
                      <h1 id="about-title">{t("my_history")}</h1>
-                     <h4 className="heading-title">
-                        {t("history_title")}
-                     </h4>
+                     <h2 className="heading-title">{t("history_title")}</h2>
                      <p className="heading-description blockquote">
-                        {t("namis")}{" "}
-                        <span className="purple">{t("name")}</span>
-                        {t("wellknown")}<span className="purple">{t("falcon")}</span>,
+                        {t("namis")} <span className="purple">{t("name")}</span>
+                        {t("wellknown")}
+                        <span className="purple">{t("falcon")}</span>,
                         {t("history_content")}
                      </p>
                      <p className="heading-description blockquote">
@@ -130,12 +128,13 @@ function AboutCard() {
                </div>
                <div className="about-text-container">
                   <blockquote className="blockquote mb-0">
-                     <h4 className="heading-title">{t("highlights_title")}</h4>
+                     <h2 className="heading-title">{t("highlights_title")}</h2>
                      <ul className="heading-description blockquote">
                         <li>{t("highlight_1")}</li>
                         <li>{t("highlight_2")}</li>
                         <li>{t("highlight_3")}</li>
-                        <li>{t("highlight_4")}{" "}
+                        <li>
+                           {t("highlight_4")}{" "}
                            <span className="purple">{t("sdt")}</span>
                         </li>
                      </ul>

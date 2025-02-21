@@ -17,7 +17,7 @@ function Footer() {
      <Container fluid className="footer">
         <Row>
            <Col md="6" className="footer-copywright">
-              <h3>{t("aesa")}</h3>
+              <h2>{t("aesa")}</h2>
               <div className="aesa">
                  <img className="aesa-logos" src={aesa} alt="AESA logo" />
                  <img
@@ -29,11 +29,11 @@ function Footer() {
               </div>
            </Col>
            <Col md="3" className="footer-body">
-              <h3>{t("social_media")}</h3>
+              <h2>{t("social_media")}</h2>
               <SocialMedia />
            </Col>
            <Col md="3" className="footer-body">
-              <h3>{t("contact")}</h3>
+              <h2>{t("contact")}</h2>
               <div className="contact-info-footer">
                  <MdEmail />
                  <p>joanfpv@gmail.com</p>
