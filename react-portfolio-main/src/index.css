@@ -1,42 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 @font-face {
-  font-family: 'RobotoLight';
-  src: url("./Assets/fonts/Roboto/Roboto-Light.ttf");
+  font-family: 'DMSansLight';
+  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-Light.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'RobotoMedium';
-  src: url("./Assets/fonts/Roboto/Roboto-Medium.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MontserratLight';
-  src: url("./Assets/fonts/Montserrat/static/Montserrat-Light.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MontserratMedium';
-  src: url("./Assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-family: 'DMSansMedium';
+  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-Medium.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: "MontserratLight", serif !important;
+  font-family: "DMSansLight", serif !important;
   background-color: rgb(4, 4, 4) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "MontserratMedium", serif !important;
+  font-family: "DMSansMedium", serif !important;
 }
 

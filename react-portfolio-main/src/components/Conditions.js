@@ -1,16 +1,35 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
+import Card from "react-bootstrap/Card";
 
 const Conditions = () => {
+    const { t } = useTranslation();
     return (
-        <div>
-            <h2>Terms and Conditions</h2>
-            <p>Please read these terms and conditions carefully before using our website.</p>
-            <ul>
-                <li>Condition 1: Description of the first condition.</li>
-                <li>Condition 2: Description of the second condition.</li>
-                <li>Condition 3: Description of the third condition.</li>
-            </ul>
-        </div>
+       <div className="policy-conditions">
+          <div className="policy-conditions-container">
+             <h2>{t("terms_and_conditions")}</h2>
+             <p>Última actualización: 21-02-2025</p>
+          </div>
+          <div className="page-breadcrumb">
+             <a href="/PortfolioFalcon">{t("home")}</a>
+             <span>/</span>
+             <span>{t("terms_and_conditions")}</span>
+          </div>
+          <Card
+             className="quote-card-view"
+             id="service-info-card"
+             data-aos="fade-up"
+             data-aos-duration="2000"
+          >
+             <Card.Body>
+                <div className="policy-conditions-content">
+                   <div
+                      dangerouslySetInnerHTML={{ __html: t("conditions_content") }}
+                   />
+                </div>
+             </Card.Body>
+          </Card>
+       </div>
     );
 };
 

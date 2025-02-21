@@ -28,10 +28,21 @@ function NavBar() {
       "/inspections",
       "/fpv",
       "/policy",
-      "/conditions"
+      "/conditions",
+   ];
+
+   const privacyPolicy = [
+      "/policy",
+      "/conditions",
    ];
    const isServicePage = serviceRoutes.includes(location.pathname);
+   const isPrivacyPolicyPage = privacyPolicy.includes(location.pathname);
    useEffect(() => {
+      const storedLanguage = localStorage.getItem("selectedLanguage");
+      if (storedLanguage) {
+         setLanguage(storedLanguage);
+         i18n.changeLanguage(storedLanguage);
+      }
       const scrollHandler = () => {
          if (window.scrollY >= 20) {
             updateNavbar(true);
@@ -75,11 +86,19 @@ function NavBar() {
    };
 
    // Función para alternar la bandera
+   // const toggleLanguage = () => {
+   //    setLanguage((prevLanguage) => {
+   //       const newLanguage = prevLanguage === "es" ? "en" : "es";
+   //       i18n.changeLanguage(newLanguage);
+   //       return newLanguage; 
+   //    });
+   // };
    const toggleLanguage = () => {
       setLanguage((prevLanguage) => {
          const newLanguage = prevLanguage === "es" ? "en" : "es";
-         i18n.changeLanguage(newLanguage); // Cambia el idioma
-         return newLanguage; // Actualiza el estado de la bandera
+         i18n.changeLanguage(newLanguage);
+         localStorage.setItem("selectedLanguage", newLanguage);
+         return newLanguage;
       });
    };
 
@@ -187,30 +206,31 @@ function NavBar() {
                {isServicePage && (
                   <>
                      <Nav.Item>
-                        <Nav.Link
-                           href="/PortfolioFalcon"
-                        >
+                        <Nav.Link href="/PortfolioFalcon">
                            <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
                            {t("home")}
                         </Nav.Link>
                      </Nav.Item>
                   </>
                )}
-
-               <Nav.Item className="nav-contact-button">
-                  <div className="nav-contact-button-container">
-                     <Nav.Link
-                        href="#"
-                        onClick={(e) => {
-                           e.preventDefault();
-                           handleNavClick("contact");
-                        }}
-                     >
-                        <AiOutlineMail style={{ marginBottom: "2px" }} />{" "}
-                        {t("contact")}
-                     </Nav.Link>
-                  </div>
-               </Nav.Item>
+               {!isPrivacyPolicyPage && (
+                  <>
+                     <Nav.Item className="nav-contact-button">
+                        <div className="nav-contact-button-container">
+                           <Nav.Link
+                              href="#"
+                              onClick={(e) => {
+                                 e.preventDefault();
+                                 handleNavClick("contact");
+                              }}
+                           >
+                              <AiOutlineMail style={{ marginBottom: "2px" }} />{" "}
+                              {t("contact")}
+                           </Nav.Link>
+                        </div>
+                     </Nav.Item>
+                  </>
+               )}
             </Nav>
          </Navbar.Collapse>
       </Navbar>
