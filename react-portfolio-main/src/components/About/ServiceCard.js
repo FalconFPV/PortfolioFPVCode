@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { useTranslation } from "react-i18next";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 // Definir la animación de entrada
 const fadeInUp = keyframes`
@@ -121,10 +122,10 @@ const ServiceCard = ({ name, icon, desc, delay, img, link }) => {
             </IconContainer>
             <Name>{name}</Name>
             <Description>{desc}</Description>
-            <a href={link}>
+            <Link to={link}>
                {t("learn_more")}
                <AiOutlineArrowRight />
-            </a>
+            </Link>
          </div>
       </Card>
    );
