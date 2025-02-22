@@ -837,6 +837,10 @@ html {
   width: 100%;
 }
 
+.drone-card-container, .drones, .cert-container{
+  width: 100%;
+}
+
 .about-card-container, .drone-card-container {
   display: flex;
   flex-direction: row;
@@ -974,7 +978,7 @@ html {
    left: 0;
    width: 100%;
    height: 100%;
-   background: rgba(0, 0, 0, 0.2); 
+   background: rgba(0, 0, 0, 0.4); 
    z-index: 1; /* Coloca esta capa debajo del contenido */
 }
 
@@ -1005,10 +1009,12 @@ html {
 .service-content>h2{
   font-weight: 800;
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .service-content>p{
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .service-content a{
@@ -1723,6 +1729,36 @@ blockquote h1{
   margin-top: 2vh;
 }
 
+.drones-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.drones-info{
+  text-align: justify;
+  font-weight: 600;
+  font-size: 16px;
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding-right: 4vh;
+  font-size: 1.1rem;
+}
+
+.drones-info strong{
+  color: var(--imp-text-color);
+  font-weight: 800;
+}
+
+.droneGallery-container{
+  flex: 0 0 60%;
+  max-width: 60%;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+
 .drones  a{
   text-decoration: none !important;
   color: inherit !important;
@@ -1740,6 +1776,23 @@ blockquote h1{
   flex-direction: column;
   height: 180px;
   padding: 20px;
+}
+
+@media screen and (max-width: 1200px){
+  .drones-container{
+    flex-direction: column;
+  }  
+  .drones-info{
+    padding: 0;
+    max-width: 100%;
+    flex: auto;
+    margin-inline: 2vh;
+  }
+
+  .droneGallery-container{
+    max-width: 100%;
+    flex: auto;
+  }
 }
 
 /* --------- */
@@ -2274,4 +2327,19 @@ blockquote h1{
 .policy-conditions-content a:hover{
   text-decoration: underline;
   color: var(--imp-text-color);
+}
+
+/* --------- */
+/* Circular gallery */
+/* --------- */
+
+.circular-gallery {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.circular-gallery:active {
+  cursor: grabbing;
 }

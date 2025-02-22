@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import SocialMedia from "../SocialMedia";
+import { Container, Row } from "react-bootstrap";
 import TypeWriter from "./TypeWriter";
 import About from "../About/About";
-import { FaArrowDown, FaPen } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Animations from "../../Animations";
 import video from "../../Assets/Video2.mp4"; // Importa el archivo de video
@@ -11,39 +10,6 @@ import Contact from "./Contact";
 
 function Home() {
    const { t } = useTranslation();
-/*
-        useEffect(() => {
-           // Cargar la API de IFrame de YouTube
-           const tag = document.createElement("script");
-           tag.src = "https://www.youtube.com/iframe_api";
-           const firstScriptTag = document.getElementsByTagName("script")[0];
-           firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-           // Configurar el reproductor de YouTube
-           window.onYouTubeIframeAPIReady = () => {
-              new window.YT.Player("player", {
-                 videoId: "s9n47lkKqVk", // Reemplaza con tu ID de video
-                 playerVars: {
-                    autoplay: 1,
-                    mute: 1,
-                    start: 0,
-                    end: 100, // 2 minutos
-                    loop: 1,
-                    playlist: "s9n47lkKqVk", // Reemplaza con tu ID de video para que funcione el loop
-                 },
-                 events: {
-                    onReady: (event) => {
-                       event.target.playVideo();
-                    },
-                    onStateChange: (event) => {
-                       if (event.data === window.YT.PlayerState.ENDED) {
-                          event.target.seekTo(0); // Reinicia el video al inicio
-                       }
-                    },
-                 },
-              });
-           };
-        }, []);
-        */
    
      const videoRef = useRef(null);
 
@@ -78,13 +44,6 @@ function Home() {
                     <div className="home-first">
                        <h1 style={{ paddingBottom: 15 }} className="heading">
                           {t("welcome")}{" "}
-                          {/* <span
-                             className="wave"
-                             role="img"
-                             aria-labelledby="wave"
-                          >
-                             {t("handshake")}
-                          </span> */}
                        </h1>
 
                        <h1 className="heading-name">
