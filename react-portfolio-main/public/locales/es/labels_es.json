@@ -1,7 +1,7 @@
 {
     "my_history": "Mi Historia",
     "services": "Servicios con Drones",
-    "equipo_tecnologia": "Equipo y Tecnología",
+    "equipo_tecnologia": "Drones",
     "opiniones": "Opiniones",
     "contact": "Contacto",
     "welcome": "¡Bienvenido!",
@@ -35,7 +35,7 @@
     "inspections_surveys_desc": "Realizando inspecciones con drones en techos, obras y áreas de difícil acceso con precisión y seguridad.",
     "fpv": "Grabaciones FPV y seguimiento",
     "fpv_desc": "Grabaciones de vehículos y sujetos en movimiento, obteniendo videos más impactantes y transmitiendo la acción y aventura en cada plano.",
-    "fleet_title": "Equipo y Tecnología",
+    "fleet_title": "Drones",
     "drones_desc": "<p>Contamos con una flota de&nbsp;<strong>drones de alta gama</strong>, diseñados para adaptarse a cualquier tipo de proyecto, ya sea comercial, creativo o técnico.</p><p>Nuestros <strong>drones estabilizados</strong>&nbsp;garantizan tomas suaves y profesionales, incluso en condiciones desafiantes. Equipados con sistemas de gimbal avanzados y cámaras de alta resolución,te ofrecen una estabilidad excepcional para capturar cada detalle con claridad y nitidez.</p><p>Además,&nbsp;<strong>disponemos de drones FPV (First Person View)</strong>, ideales para proyectos que requieren dinamismo y perspectivas únicas. Con una capacidad de maniobra incomparable, nuestros drones FPV te permiten explorar ángulos imposibles y crear secuencias impactantes llenas de adrenalina y creatividad.</p>",
     "fpv_5": "Drone FPV 5\"",
     "fpv_5_desc": "Ideal para tomas dinámicas y de alta velocidad, perfecto para deportes de acción y filmaciones cinemáticas.",

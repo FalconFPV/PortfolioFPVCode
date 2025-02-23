@@ -156,7 +156,7 @@ html {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .navbar-nav .nav-item a::after {
     display: none !important;
   }

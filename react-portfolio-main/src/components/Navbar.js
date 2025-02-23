@@ -85,14 +85,6 @@ function NavBar() {
       }
    };
 
-   // Función para alternar la bandera
-   // const toggleLanguage = () => {
-   //    setLanguage((prevLanguage) => {
-   //       const newLanguage = prevLanguage === "es" ? "en" : "es";
-   //       i18n.changeLanguage(newLanguage);
-   //       return newLanguage; 
-   //    });
-   // };
    const toggleLanguage = () => {
       setLanguage((prevLanguage) => {
          const newLanguage = prevLanguage === "es" ? "en" : "es";
@@ -155,7 +147,7 @@ function NavBar() {
                            }}
                            className={activeNav === "about" ? "act" : ""}
                         >
-                           <AiOutlineUser style={{ marginBottom: "2px" }} />
+                           <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
                            {t("my_history")}
                         </Nav.Link>
                      </Nav.Item>
