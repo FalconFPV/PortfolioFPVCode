@@ -1014,7 +1014,13 @@ html {
 
 .service-content>p{
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px){
+  .service-content>p{
+    font-size: 1rem;
+  }
 }
 
 .service-content a{
@@ -1190,6 +1196,17 @@ html {
   height: 40vh;
   background-position: center;
   background-size: cover;
+  padding-inline: 4vh;
+}
+
+@media screen and (max-width: 768px){
+  .service-info-title{
+    font-size: 1.5rem !important;
+  }
+  .service-info-subtitle{
+    font-size: 1rem !important;
+  }
+
 }
 
 .service-info-container::before {
@@ -1250,7 +1267,8 @@ html {
   font-weight: 800;
   color: var(--imp-text-color);
   text-transform: uppercase;
-  margin-top: 4vh;
+  margin-top: 74px;
+  margin-bottom: 20px;
   z-index: 2;
 }
 
@@ -1649,6 +1667,12 @@ html {
 
 blockquote{
   text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+  .about-text-container p, li{
+    font-size: 1rem !important;
+  }
 }
 
 blockquote h1{

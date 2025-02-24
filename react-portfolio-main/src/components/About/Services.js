@@ -40,13 +40,13 @@ const services = [
       img: event,
       link: "events",
    },
-   {
-      name: t("inspections_surveys"),
-      icon: <FaWrench />,
-      desc: t("inspections_surveys_desc"),
-      img: inspection,
-      link: "inspections",
-   },
+   // {
+   //    name: t("inspections_surveys"),
+   //    icon: <FaWrench />,
+   //    desc: t("inspections_surveys_desc"),
+   //    img: inspection,
+   //    link: "inspections",
+   // },
    {
       name: t("fpv"),
       icon: <FaMountain />,
