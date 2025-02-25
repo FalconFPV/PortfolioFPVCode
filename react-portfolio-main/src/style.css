@@ -2452,6 +2452,7 @@ blockquote h1{
   justify-content: baseline;
   align-items: baseline;
   width: 100%;
+  padding: 4vh;
 }
 
 .policy-conditions-content p{
