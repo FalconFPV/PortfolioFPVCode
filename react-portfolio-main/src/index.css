@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: 'DMSansLight';
-  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-Light.ttf");
+  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-Medium.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'DMSansMedium';
-  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-Medium.ttf");
+  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-SemiBold.ttf");
   font-weight: normal;
   font-style: normal;
 }

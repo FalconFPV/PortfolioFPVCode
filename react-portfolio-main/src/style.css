@@ -101,7 +101,6 @@ html {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   font-size: 1.2rem !important;
-  background-color: hsl(0, 0%, 5%);
 }
 
 .navbar-toggler {
@@ -329,9 +328,27 @@ html {
   height: 100%;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 610px) {
   .heading-name{
-    font-size: 2em !important;
+    order: 1;
+    font-size: 2.5em !important;
+    text-align: justify;
+  }
+  .heading{
+    order: 2;
+    font-size: 1.1em !important;
+  }
+  .show-work{
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .heading-name{
+    font-size: 3em !important;
+  }
+  .heading{
+    font-size: 1.1em !important;
   }
 }
 
@@ -362,13 +379,13 @@ html {
 }
 
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 20px !important;
+  padding-inline: 4vh;
+  font-size: 1.4em;
 }
 
 .heading-name {
-  font-size: 3em;
-  padding-left: 20px !important;
+  font-size: 5em;
+  padding-inline: 4vh;
   margin-bottom: 6vh;
 }
 
@@ -954,6 +971,10 @@ html {
 .habilities{
   height: 100%;
   width: -webkit-fill-available;
+}
+
+.habilities h1{
+  padding-inline: 4vh;
 }
 
 .hab-container{
@@ -2247,6 +2268,10 @@ blockquote h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.testimonials-container h1{
+  padding-inline: 4vh;
 }
 
 .testimonials{

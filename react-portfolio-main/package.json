@@ -4,6 +4,7 @@
   "homepage": "https://falconfpv.github.io/PortfolioFalcon",
   "private": true,
   "dependencies": {
+    "@react-spring/web": "^9.7.5",
     "@svgr/cli": "^8.1.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",

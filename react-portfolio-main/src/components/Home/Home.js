@@ -1,26 +1,28 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import TypeWriter from "./TypeWriter";
 import About from "../About/About";
 import { FaArrowDown } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Animations from "../../Animations";
-import video from "../../Assets/Video2.mp4"; // Importa el archivo de video
+import video from "../../Assets/Video2.mp4"; 
 import Contact from "./Contact";
+import SplitText from "./SplitText";
 
 function Home() {
    const { t } = useTranslation();
-   
-     const videoRef = useRef(null);
+  const [showText, setShowText] = useState(false);
+   const videoRef = useRef(null);
 
      useEffect(() => {
         const timeout = setTimeout(() => {
            if (videoRef.current) {
-              videoRef.current.play(); // Reproducir el video después de X segundos
+              videoRef.current.play();
            }
+            setShowText(true);
         }, 1200); 
 
-        return () => clearTimeout(timeout); // Limpiar el timeout al desmontar el componente
+        return () => clearTimeout(timeout); 
      }, []);
    
   return (
@@ -29,7 +31,6 @@ function Home() {
            <Row className="home-content">
               <Row className="home-row">
                  <div className="video-background">
-                    {/* <div id="player" className="y-video"></div> */}
                     <video
                        id="player"
                        className="y-video"
@@ -37,22 +38,36 @@ function Home() {
                        muted
                        playsInline
                        loop
-                       ref={videoRef} // Referencia al elemento <video>
+                       ref={videoRef}
                     ></video>
                  </div>
                  <div className="home-header">
                     <div className="home-first">
                        <h1 style={{ paddingBottom: 15 }} className="heading">
-                          {t("welcome")}{" "}
-                       </h1>
-
-                       <h1 className="heading-name">
-                          {t("intro")}
                           <strong className="main-name"> {t("name")}</strong>
+                          {" - "}
+                          {t("dronepilot")}
                        </h1>
-                       <div className="heading-type">
-                          <TypeWriter />
-                       </div>
+                       <h1 className="heading-name">
+                          {showText && (
+                             <SplitText
+                                text="Elevando tus proyectos a las alturas"
+                                className="text-2xl font-semibold text-center"
+                                delay={40}
+                                animationFrom={{
+                                   opacity: 0,
+                                   transform: "translate3d(0,50px,0)",
+                                }}
+                                animationTo={{
+                                   opacity: 1,
+                                   transform: "translate3d(0,0,0)",
+                                }}
+                                easing="easeOutCubic"
+                                threshold={0.2}
+                                rootMargin="-50px"
+                             />
+                          )}
+                       </h1>
                        <div className="show-work">
                           <a href="#about">
                              <span className="show-work-text">
