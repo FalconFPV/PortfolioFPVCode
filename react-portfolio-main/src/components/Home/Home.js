@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import TypeWriter from "./TypeWriter";
+// import TypeWriter from "./TypeWriter";
 import About from "../About/About";
 import { FaArrowDown } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -51,7 +51,7 @@ function Home() {
                        <h1 className="heading-name">
                           {showText && (
                              <SplitText
-                                text="Elevando tus proyectos a las alturas"
+                                text={t("slogan")}
                                 className="text-2xl font-semibold text-center"
                                 delay={40}
                                 animationFrom={{

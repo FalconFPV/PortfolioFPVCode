@@ -219,6 +219,13 @@ html {
   width: 100%;
 }
 
+nav#backGroundNavbar {
+    background-color: hsla(0, 0%, 13%, 0.587) !important;
+    transition: all 0.3sease -out 0s !important;
+    box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+    backdrop-filter: blur(15px) !important;
+}
+
 /* --------- */
 /* Home section */
 /* --------- */
