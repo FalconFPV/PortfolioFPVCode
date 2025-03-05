@@ -1796,8 +1796,6 @@ blockquote h1{
   font-weight: 600 !important;
 }
 
-.animate-like
-
 .nav-link:hover {
   color: var(--imp-text-color) !important; /* Color del texto al pasar el cursor */
 }
