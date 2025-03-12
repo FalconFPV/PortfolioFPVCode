@@ -86,5 +86,13 @@
     "t2_opinion": "Increíble profesionalidad y calidad en las tomas. Gracias a su trabajo, pudimos mostrar nuestra propiedad desde una perspectiva única.",
     "t3_opinion": "Joan es un piloto de drones excepcional. Su habilidad para capturar imágenes aéreas es impresionante. ¡Muy recomendable!",
     "t4_opinion": "El servicio de filmación con drones de Joan es excelente. Las tomas aéreas que capturó para nuestro evento fueron increíbles. ¡Gracias!",
-    "t5_opinion": "Mi experiencia con Joan ha sido satisfactoria. Me gustó el trabajo en equipo y la calidad de las tomas aéreas. Muchas gracias!"
+    "t5_opinion": "Mi experiencia con Joan ha sido satisfactoria. Me gustó el trabajo en equipo y la calidad de las tomas aéreas. Muchas gracias!",
+    "drones": "Drones",
+    "drones_info": "Todos los drones que uso a diario para mis trabajos de filmación aérea. Cada uno tiene sus propias características y ventajas, lo que me permite adaptarme a las necesidades de cada proyecto.",
+    "drones_stabilized": "Drones Estabilizados",
+    "drones_stabilized_info": "Drones con sistemas de estabilización avanzados para tomas suaves y profesionales.",
+    "drones_fpv": "Drones FPV",
+    "drones_fpv_info": "Drones de alta maniobrabilidad y velocidad para grabaciones dinámicas y emocionantes.",
+    "drones_fpvracing": "Otros Drones",
+    "drones_fpvracing_info": "Drones especializados en competiciones FPV Racing."
 }
