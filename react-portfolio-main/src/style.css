@@ -1,6 +1,7 @@
 html {
   --imp-text-color: #F76008;
   --imp-background-color: #0D0D0D;
+  --imp-background-light-color: #fafeff;
 }
 
 html {
@@ -1295,7 +1296,6 @@ nav#backGroundNavbar {
   font-weight: 800;
   color: var(--imp-text-color);
   text-transform: uppercase;
-  margin-top: 74px;
   margin-bottom: 20px;
   z-index: 2;
 }
@@ -1875,7 +1875,7 @@ blockquote h1{
 }
 
 /* --------- */
-/* CertificationCards */
+/* Drones */
 /* --------- */
 
 .cert-container {
@@ -1929,16 +1929,6 @@ blockquote h1{
   mask-repeat: no-repeat;
 }
 
-.drones  a{
-  text-decoration: none !important;
-  color: inherit !important;
-}
-
-.drones  a:hover{
-  text-decoration: none !important;
-  color: inherit !important;
-}
-
 .cert-text{
   display: flex;
   justify-content: center;
@@ -1963,6 +1953,33 @@ blockquote h1{
     max-width: 100%;
     flex: auto;
   }
+}
+
+.drones-btn{
+  color: var(--imp-text-color);
+  text-decoration: none;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease-out;
+  background-color: var(--color-text);
+  padding-inline: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 14px;
+  width: fit-content;
+}
+
+.drones-btn:hover{
+  color: var(--color-text);
+  text-decoration: none;
+  background-color: var(--imp-text-color);
+  transition-delay: 100ms;
+}
+
+.drones-btn svg{
+  margin-left: 6px;
 }
 
 /* --------- */
@@ -2326,6 +2343,9 @@ blockquote h1{
   );
   mask-size: cover;
   mask-repeat: no-repeat;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  height: 100%;
 }
 
 .marquee--vertical {
@@ -2403,8 +2423,9 @@ blockquote h1{
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #fff
+  border-radius: 14px;
+  border: 1px solid #fff;
+  background-color: var(--imp-background-color);
 }
 
 @media screen and (max-width: 768px){
@@ -2414,18 +2435,27 @@ blockquote h1{
     width: 250px;
     justify-content: flex-start;
     margin-left: 1vh;
+    height: 44vh;
   }
 
   .marquee__group{
     justify-content: center;
+    height: 100%;
   }
 
   .marquee__item-text{
-    height: 100px;
+    height: 100%;
+    padding-inline: 0 !important;
+  }
+
+  .marquee__item-text>p:last-child{
+    font-size: 16px;
   }
 
   .marquee__group img {
     margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -2441,6 +2471,7 @@ blockquote h1{
 
 .marquee__item-text>p:last-child{
   font-style: italic;
+  text-align: left;
 }
 
 /* --------- */
@@ -2472,7 +2503,6 @@ blockquote h1{
 }
 
 .policy-conditions-container h2{
-  margin-top: 74px;
   color: var(--imp-text-color);
 }
 
@@ -2517,4 +2547,153 @@ blockquote h1{
 
 .circular-gallery:active {
   cursor: grabbing;
+}
+
+/* --------- */
+/*  Works */
+/* --------- */
+
+
+.works{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 8vh;
+}
+
+.works-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  background-position: center;
+}
+
+.works-container p{
+  color: #fff;
+}
+
+.works-container h2{
+  color: var(--imp-text-color);
+}
+
+.works-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
+  width: 100%;
+  padding: 4vh;
+  background-color: var(--imp-background-light-color);
+}
+/* Expo imagenes */
+.masonry {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.masonry>div {
+  position: absolute;
+  will-change: transform, width, height, opacity;
+  padding: 10px;
+}
+
+.masonry>div>div {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.masonry>div>div:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.mansory-project{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+}
+
+.mansory-project h3{
+  background-color: var(--imp-text-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 14px;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+/* Expo videos yt */
+.expoyt {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.expoyt>div {
+  position: absolute;
+  will-change: transform, width, height, opacity;
+  padding: 10px;
+}
+
+.expoyt>div>div {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 14px;
+  box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.expoyt>div>div:hover {
+  transform: scale(1.08);
+  transition: 0.3s ease;
+}
+
+
+.expoyt-project {
+   position: absolute;
+   border-radius: 10px;
+   overflow: hidden;
+   background-color: #000;
+   display: flex;
+   flex-direction: column;
+}
+
+.expoyt-project iframe {
+   border: none;
+}
+
+.expoyt-project h3 {
+   margin: 0;
+   padding: 10px;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.5);
+   /* position: absolute; */
+   /* bottom: 0;
+   left: 0; */
+   width: 100%;
+   text-align: center;
+    font-size: 1rem;
 }

@@ -21,6 +21,7 @@ function About() {
                  <Services />
               </div>
               <OurFleet />
+              {/* Opiniones */}
               <div
                  className="skill-section-testimonials-container"
                  id="testimonials"

@@ -6,6 +6,8 @@ import MavicPro from "../../Assets/Drones/mavic.jpg";
 import Neo from "../../Assets/Drones/neo.png";
 import { useTranslation } from "react-i18next";
 import CircularGallery from "./CircularGallery";
+import { Link } from "react-router-dom";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 function DroneFleet() {
    const { t } = useTranslation();
@@ -52,6 +54,10 @@ function DroneFleet() {
                                  __html: t("drones_desc"),
                               }}
                            />
+                           <Link to={"/drones"} className="drones-btn">
+                              {t("fleet_btn")}
+                              <AiOutlineArrowRight />
+                           </Link>
                         </div>
                         <div
                            className="droneGallery-container"
@@ -59,9 +65,9 @@ function DroneFleet() {
                         >
                            <CircularGallery
                               items={DronesNew}
-                              bend={0.5}
+                              bend={0.6}
                               textColor="#ffffff"
-                              borderRadius={0.05}
+                              borderRadius={0.08}
                            />
                         </div>
                      </div>

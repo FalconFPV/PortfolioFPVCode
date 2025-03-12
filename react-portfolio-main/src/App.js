@@ -20,6 +20,7 @@ import Inspections from "./components/pages/Inspections";
 import FPV from "./components/pages/FPV";
 import Policy from "./components/Policy";
 import Conditions from "./components/Conditions";
+import Works from "./components/pages/Works";
 
 function App() {
    const [load, updateLoad] = useState(true);
@@ -40,6 +41,7 @@ function App() {
                <ScrollToTop />
                <Switch>
                   <Route path="/" exact component={Home} />
+                  <Route path="/works" component={Works} />
                   <Route path="/policy" component={Policy} />
                   <Route path="/conditions" component={Conditions} />
                   <Route

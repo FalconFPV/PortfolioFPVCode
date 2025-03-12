@@ -7,11 +7,12 @@ import {
    AiOutlineDeploymentUnit,
    AiOutlineMail,
    AiOutlineRocket,
-   AiOutlineStar
+   AiOutlineStar,
+   AiOutlineSolution
 } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import LofoFalcon from "../Assets/Falcon FPV.png";
-import { useLocation } from "react-router-dom"; // Importa useLocation
+import { NavLink, useLocation } from "react-router-dom"; // Importa useLocation
 
 function NavBar() {
    const { t, i18n } = useTranslation();
@@ -37,6 +38,7 @@ function NavBar() {
       "/conditions",
    ];
    const isServicePage = serviceRoutes.includes(location.pathname);
+   const isWorksPage = location.pathname === "/works";
    const isPrivacyPolicyPage = privacyPolicy.includes(location.pathname);
    useEffect(() => {
       const storedLanguage = localStorage.getItem("selectedLanguage");
@@ -115,9 +117,6 @@ function NavBar() {
          </Navbar.Brand>
          <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            // onClick={() => {
-            //    updateExpanded(expand ? false : "expanded");
-            // }}
             onClick={handleToggleClick} // Agrega el manejador de eventos aquí
          >
             <span></span>
@@ -146,7 +145,7 @@ function NavBar() {
                      </div>
                   </Nav.Link>
                </Nav.Item>
-               {!isServicePage && (
+               {!(isServicePage || isWorksPage) && (
                   <>
                      <Nav.Item>
                         <Nav.Link
@@ -189,6 +188,7 @@ function NavBar() {
                            {t("equipo_tecnologia")}
                         </Nav.Link>
                      </Nav.Item>
+                     {/* Opiniones */}
                      <Nav.Item>
                         <Nav.Link
                            href="#"
@@ -202,10 +202,20 @@ function NavBar() {
                            {t("opiniones")}
                         </Nav.Link>
                      </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link
+                           as={NavLink}
+                           to="/works"
+                           className={activeNav === "works" ? "act" : ""}
+                        >
+                           <AiOutlineSolution style={{ marginBottom: "2px" }} />{" "}
+                           {t("works")}
+                        </Nav.Link>
+                     </Nav.Item>
                   </>
                )}
 
-               {isServicePage && (
+               {(isServicePage || isWorksPage) && (
                   <>
                      <Nav.Item>
                         <Nav.Link href="/PortfolioFalcon">
