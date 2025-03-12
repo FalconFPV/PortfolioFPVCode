@@ -21,6 +21,7 @@ import FPV from "./components/pages/FPV";
 import Policy from "./components/Policy";
 import Conditions from "./components/Conditions";
 import Works from "./components/pages/Works";
+import Drones from "./components/pages/Drones";
 
 function App() {
    const [load, updateLoad] = useState(true);
@@ -42,6 +43,7 @@ function App() {
                <Switch>
                   <Route path="/" exact component={Home} />
                   <Route path="/works" component={Works} />
+                  <Route path="/drones" component={Drones} />
                   <Route path="/policy" component={Policy} />
                   <Route path="/conditions" component={Conditions} />
                   <Route
