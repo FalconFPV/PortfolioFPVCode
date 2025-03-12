@@ -32,13 +32,18 @@ function NavBar() {
       "/policy",
       "/conditions",
    ];
+   
+   const workdrones = [
+      "/drones",
+      "/works",
+   ];
 
    const privacyPolicy = [
       "/policy",
       "/conditions",
    ];
    const isServicePage = serviceRoutes.includes(location.pathname);
-   const isWorksPage = location.pathname === "/works";
+   const isWorksPage = workdrones.includes(location.pathname);
    const isPrivacyPolicyPage = privacyPolicy.includes(location.pathname);
    useEffect(() => {
       const storedLanguage = localStorage.getItem("selectedLanguage");
@@ -112,7 +117,9 @@ function NavBar() {
          className={navColour ? "sticky" : "navbar"}
          id={backGround ? "backGroundNavbar" : ""}
       >
-         <Navbar.Brand href={isServicePage ? "/PortfolioFalcon" : "#home"}>
+         <Navbar.Brand
+            href={isServicePage || isWorksPage || isPrivacyPolicyPage ? "/PortfolioFalcon" : "#home"}
+         >
             <img src={LofoFalcon} className="logo" alt="brand" style={{}} />
          </Navbar.Brand>
          <Navbar.Toggle

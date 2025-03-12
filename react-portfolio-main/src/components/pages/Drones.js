@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Contact from "../Home/Contact";
 
 const Drones = () => {
    const { t } = useTranslation();
@@ -14,6 +15,7 @@ const Drones = () => {
             <span>/</span>
             <span>{t("drones")}</span>
          </div>
+         <Contact />
       </div>
    );
 };

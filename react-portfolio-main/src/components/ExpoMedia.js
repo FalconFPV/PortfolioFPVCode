@@ -46,14 +46,14 @@ function ExpoMedia({ data }) {
          const column = heights.indexOf(Math.min(...heights));
          const x = (width / columns) * column;
          const y =
-            (heights[column] += (width / columns) * (9 / 16)) -
-            (width / columns) * (9 / 16);
+            (heights[column] += (width / columns) * (11 / 16)) -
+            (width / columns) * (11 / 16);
          return {
             ...child,
             x,
             y,
             width: width / columns,
-            height: (width / columns) * (9 / 16),
+            height: (width / columns) * (11 / 16),
          };
       });
       return [heights, gridItems];
@@ -98,6 +98,7 @@ function ExpoMedia({ data }) {
                >
                   {!loadedVideos[item.id] && (
                      <div
+                        className="expoyt-project-loader"
                         style={{
                            position: "absolute",
                            display: "flex",

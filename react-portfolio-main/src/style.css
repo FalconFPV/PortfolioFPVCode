@@ -2688,12 +2688,11 @@ blockquote h1{
 .expoyt-project h3 {
    margin: 0;
    padding: 10px;
-   color: white;
-   background-color: rgba(0, 0, 0, 0.5);
-   /* position: absolute; */
-   /* bottom: 0;
-   left: 0; */
+   color: var(--imp-text-color);
+   background-color: var(--imp-background-color);
+   font-weight: 800;
    width: 100%;
    text-align: center;
     font-size: 1rem;
+  margin-top: auto; 
 }
