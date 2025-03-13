@@ -33,24 +33,24 @@ const stabilizedDrones = [
 
 const fpvDrones = [
    {
-      name: "Diatone Taycan",
+      name: 'Diatone Taycan (3")',
       image: Diatone,
-      desc: "El Diatone Taycan es un drone de alta tecnología diseñado para operar en la naturaleza y proporcionar un entorno seguro y confiable.",
-      time: "Tiempo de vuelo de 27 min",
-      quality: "Grabación y fotos 4K",
-      distance: "Distancia máxima de 13 km",
-      speed: "Velocidad máxima de 65 km/h",
-      weight: "Peso 734 g",
+      desc: "El Diatone Taycan es un drone de alta tecnología diseñado para operar en espacios más reducidos y proporcionar un entorno seguro y confiable.",
+      time: "Tiempo de vuelo de 8 min",
+      quality: "Grabación y fotos 4K (GoPro)",
+      distance: "Distancia máxima de 5 km",
+      speed: "Velocidad máxima de 100 km/h",
+      weight: "Peso 380 g (sin GoPro)",
    },
    {
-      name: "Freestyle",
+      name: 'TBP Freestyle (5")',
       image: Freestyle,
-      desc: "El Freestyle es un drone de alta tecnología diseñado para operar en la naturaleza y proporcionar un entorno seguro y confiable.",
-      time: "Tiempo de vuelo de 27 min",
-      quality: "Grabación y fotos 4K",
-      distance: "Distancia máxima de 13 km",
-      speed: "Velocidad máxima de 65 km/h",
-      weight: "Peso 734 g",
+      desc: "El TBP Freestyle es un drone de alta tecnología diseñado para operar en la naturaleza y proporcionar un entorno seguro y confiable.",
+      time: "Tiempo de vuelo de 8 min",
+      quality: "Grabación y fotos 4K (GoPro)",
+      distance: "Distancia máxima de 5 km",
+      speed: "Velocidad máxima de 150 km/h",
+      weight: "Peso 354 g (sin GoPro)",
    },
 ];
 
@@ -68,58 +68,74 @@ const Drones = () => {
             <span>{t("drones")}</span>
          </div>
          <div className="drones-info-container">
-            <div className="drones-stabilized">
+            <div
+               className="drones-stabilized"
+               data-aos="fade-up"
+               data-aos-duration="2000"
+            >
                <h3>{t("drones_stabilized")}</h3>
                <p>{t("drones_stabilized_info")}</p>
                <hr />
                <div className="drones-stabilized-container">
                   {stabilizedDrones.map((drone, index) => (
                      <div key={index} className="drone-stabilized">
-                        <img src={drone.image} alt={drone.name} />
+                        <div className="drone-img">
+                           <img src={drone.image} alt={drone.name} />
+                        </div>
                         <h4>{drone.name}</h4>
                         <p>{drone.desc}</p>
                         <div className="drone-stabilized-info">
-                           <span><FaClock/>: {drone.time}</span>
+                           <span>
+                              <FaClock />: {drone.time}
+                           </span>
                            <span>
                               <FaVideo />: {drone.quality}
                            </span>
                            <span>
-                              <FaSignal/>: {drone.distance}
+                              <FaSignal />: {drone.distance}
                            </span>
                            <span>
-                              <FaRocket/>: {drone.speed}
+                              <FaRocket />: {drone.speed}
                            </span>
                            <span>
-                              <FaBalanceScale/>: {drone.weight}
+                              <FaBalanceScale />: {drone.weight}
                            </span>
                         </div>
                      </div>
                   ))}
                </div>
             </div>
-            <div className="drones-fpv">
+            <div
+               className="drones-fpv"
+               data-aos="fade-up"
+               data-aos-duration="2000"
+            >
                <h3>{t("drones_fpv")}</h3>
                <p>{t("drones_fpv_info")}</p>
                <hr />
                <div className="drones-fpv-container">
                   {fpvDrones.map((drone, index) => (
                      <div key={index} className="drone-fpv">
-                        <img src={drone.image} alt={drone.name} />
+                        <div className="drone-img">
+                           <img src={drone.image} alt={drone.name} />
+                        </div>
                         <h4>{drone.name}</h4>
                         <p>{drone.desc}</p>
                         <div className="drone-fpv-info">
-                           <span><FaClock/>: {drone.time}</span>
+                           <span>
+                              <FaClock />: {drone.time}
+                           </span>
                            <span>
                               <FaVideo />: {drone.quality}
                            </span>
                            <span>
-                              <FaSignal/>: {drone.distance}
+                              <FaSignal />: {drone.distance}
                            </span>
                            <span>
-                              <FaRocket/>: {drone.speed}
+                              <FaRocket />: {drone.speed}
                            </span>
                            <span>
-                              <FaBalanceScale/>: {drone.weight}
+                              <FaBalanceScale />: {drone.weight}
                            </span>
                         </div>
                      </div>
@@ -127,7 +143,11 @@ const Drones = () => {
                </div>
             </div>
             <div className="drones-fpv-container"></div>
-            <div className="drones-fpvracing">
+            <div
+               className="drones-fpvracing"
+               data-aos="fade-up"
+               data-aos-duration="2000"
+            >
                <h3>{t("drones_fpvracing")}</h3>
                <p>{t("drones_fpvracing_info")}</p>
                <hr />

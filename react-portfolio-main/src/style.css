@@ -2500,6 +2500,7 @@ blockquote h1{
 
 .policy-conditions-container p{
   color: #fff;
+  padding-inline: 4vh;
 }
 
 .policy-conditions-container h2{
@@ -2729,6 +2730,7 @@ blockquote h1{
 .drones-stabilized p, .drones-fpv p{
   font-size: 1rem;
   font-weight: 500;
+  margin-top: 1rem;
 }
 
 .drone-stabilized, .drone-fpv{
@@ -2741,19 +2743,40 @@ blockquote h1{
 }
 
 .drone-stabilized img, .drone-fpv img{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.drone-img{
   width: 50%;
-  height: 50%;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  position: relative;
+}
+
+.drone-img::before{
+  content: "";
+   position: absolute;
+   inset: 0;
+  box-shadow: inset -2px -2px 18px 22px var(--imp-background-light-color);
+  pointer-events: none;
+   z-index: 2;
 }
 
 .drone-fpv img{
-  margin-bottom: 4vh;
-  margin-top: 4vh;
   border-radius: 14px;
 }
 
 .drone-stabilized p, .drone-fpv p{
   text-align: center;
   width: 60%;;
+  margin-top: 1rem;
+}
+
+.drone-stabilized h4, .drone-fpv h4{
+  color: var(--imp-text-color);
 }
 
 .drones-stabilized-container, .drones-fpv-container{
@@ -2773,7 +2796,6 @@ blockquote h1{
 }
 
 .drone-stabilized-info span, .drone-fpv-info span{
-  color: var(--imp-text-color);
   font-weight: 800;
   margin-top: 10px;
   display: flex;
@@ -2787,8 +2809,17 @@ blockquote h1{
     flex-direction: column;
   }
 
-  .drone-stabilized img, .drone-fpv img{
+  .drone-img{
     width: 70%;
-    height: 70%;
+  }
+
+  .drones-info-container hr {
+    width: 70%;
+  }
+
+  .drone-stabilized p, .drone-fpv p {
+    text-align: justify;
+    width: 100%;
+    padding-inline: 4vh;
   }
 }
