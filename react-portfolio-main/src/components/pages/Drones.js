@@ -5,6 +5,7 @@ import Neo from "../../Assets/Drones/neoinfo.png";
 import Mavic from "../../Assets/Drones/mavicinfo.png";
 import Diatone from "../../Assets/Drones/diatone.webp";
 import Freestyle from "../../Assets/Drones/fpv.jpeg";
+import Racing from "../../Assets/Drones/racing.jpg";
 
 import { FaBalanceScale, FaClock, FaRocket, FaSignal, FaVideo } from "react-icons/fa";
 
@@ -48,9 +49,22 @@ const fpvDrones = [
       desc: "El TBP Freestyle es un drone de alta tecnología diseñado para operar en la naturaleza y proporcionar un entorno seguro y confiable.",
       time: "Tiempo de vuelo de 8 min",
       quality: "Grabación y fotos 4K (GoPro)",
-      distance: "Distancia máxima de 5 km",
+      distance: "Distancia máxima de 10 km",
       speed: "Velocidad máxima de 150 km/h",
       weight: "Peso 354 g (sin GoPro)",
+   },
+];
+
+const racingDrones = [
+   {
+      name: "SkyX - FalconFPV",
+      image: Racing,
+      desc: "Mi drone de carreras personalizado, diseñado para competir en carreras de drones y proporcionar las máximas prestaciones de velocidad y baja latencia.",
+      time: "Tiempo de vuelo (carrera) de 2 min",
+      quality: "Grabación de video Analógica (DVR)",
+      distance: "Distancia máxima de 5 km",
+      speed: "Velocidad máxima de 230 km/h",
+      weight: "Peso 220 g",
    },
 ];
 
@@ -86,19 +100,19 @@ const Drones = () => {
                         <p>{drone.desc}</p>
                         <div className="drone-stabilized-info">
                            <span>
-                              <FaClock />: {drone.time}
+                              <FaClock /> {drone.time}
                            </span>
                            <span>
-                              <FaVideo />: {drone.quality}
+                              <FaVideo /> {drone.quality}
                            </span>
                            <span>
-                              <FaSignal />: {drone.distance}
+                              <FaSignal /> {drone.distance}
                            </span>
                            <span>
-                              <FaRocket />: {drone.speed}
+                              <FaRocket /> {drone.speed}
                            </span>
                            <span>
-                              <FaBalanceScale />: {drone.weight}
+                              <FaBalanceScale /> {drone.weight}
                            </span>
                         </div>
                      </div>
@@ -123,19 +137,19 @@ const Drones = () => {
                         <p>{drone.desc}</p>
                         <div className="drone-fpv-info">
                            <span>
-                              <FaClock />: {drone.time}
+                              <FaClock /> {drone.time}
                            </span>
                            <span>
-                              <FaVideo />: {drone.quality}
+                              <FaVideo /> {drone.quality}
                            </span>
                            <span>
-                              <FaSignal />: {drone.distance}
+                              <FaSignal /> {drone.distance}
                            </span>
                            <span>
-                              <FaRocket />: {drone.speed}
+                              <FaRocket /> {drone.speed}
                            </span>
                            <span>
-                              <FaBalanceScale />: {drone.weight}
+                              <FaBalanceScale /> {drone.weight}
                            </span>
                         </div>
                      </div>
@@ -151,7 +165,34 @@ const Drones = () => {
                <h3>{t("drones_fpvracing")}</h3>
                <p>{t("drones_fpvracing_info")}</p>
                <hr />
-               <div className="drones-fpvracing-container"></div>
+               <div className="drones-fpvracing-container">
+                  {racingDrones.map((drone, index) => (
+                     <div key={index} className="drone-fpvracing">
+                        <div className="drone-img">
+                           <img src={drone.image} alt={drone.name} />
+                        </div>
+                        <h4>{drone.name}</h4>
+                        <p>{drone.desc}</p>
+                        <div className="drone-fpvracing-info">
+                           <span>
+                              <FaClock /> {drone.time}
+                           </span>
+                           <span>
+                              <FaVideo /> {drone.quality}
+                           </span>
+                           <span>
+                              <FaSignal /> {drone.distance}
+                           </span>
+                           <span>
+                              <FaRocket /> {drone.speed}
+                           </span>
+                           <span>
+                              <FaBalanceScale /> {drone.weight}
+                           </span>
+                        </div>
+                     </div>
+                  ))}
+               </div>
             </div>
          </div>
          <Contact />

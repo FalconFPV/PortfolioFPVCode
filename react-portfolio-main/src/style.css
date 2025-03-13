@@ -2715,34 +2715,36 @@ blockquote h1{
   background: var(--imp-text-color);
   height: 2px;
   width: 40%;
+  margin-bottom: 4vh;
 }
 
-.drones-stabilized, .drones-fpv{
+.drones-stabilized, .drones-fpv, .drones-fpvracing{
   padding: 4vh;
 }
 
-.drones-stabilized h3, .drones-fpv h3{
+.drones-stabilized h3, .drones-fpv h3, .drones-fpvracing h3{
   font-weight: 800;
   font-size: 1.75rem;
   margin-top: 4vh;
 }
 
-.drones-stabilized p, .drones-fpv p{
+.drones-stabilized p, .drones-fpv p, .drones-fpvracing p{
   font-size: 1rem;
   font-weight: 500;
   margin-top: 1rem;
 }
 
-.drone-stabilized, .drone-fpv{
+.drone-stabilized, .drone-fpv, .drone-fpvracing{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-bottom: 4vh;
 }
 
-.drone-stabilized img, .drone-fpv img{
+.drone-stabilized img, .drone-fpv img, .drone-fpvracing img{
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -2750,7 +2752,7 @@ blockquote h1{
 }
 
 .drone-img{
-  width: 50%;
+  width: 30vw;
   margin-top: 4vh;
   margin-bottom: 4vh;
   position: relative;
@@ -2765,21 +2767,21 @@ blockquote h1{
    z-index: 2;
 }
 
-.drone-fpv img{
+.drone-fpv img, .drone-fpvracing img{
   border-radius: 14px;
 }
 
-.drone-stabilized p, .drone-fpv p{
+.drone-stabilized p, .drone-fpv p, .drone-fpvracing p{
   text-align: center;
   width: 60%;;
   margin-top: 1rem;
 }
 
-.drone-stabilized h4, .drone-fpv h4{
+.drone-stabilized h4, .drone-fpv h4, .drone-fpvracing h4{
   color: var(--imp-text-color);
 }
 
-.drones-stabilized-container, .drones-fpv-container{
+.drones-stabilized-container, .drones-fpv-container, .drones-fpvracing-container{
   width: 100%;
   height: 100%;
   display: flex;
@@ -2788,24 +2790,28 @@ blockquote h1{
   align-items: center;
 }
 
-.drone-stabilized-info, .drone-fpv-info{
+.drone-stabilized-info, .drone-fpv-info, .drone-fpvracing-info{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.drone-stabilized-info span, .drone-fpv-info span{
+.drone-stabilized-info span, .drone-fpv-info span, .drone-fpvracing-info span{
   font-weight: 800;
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
+}
+
+.drone-stabilized-info span>svg, .drone-fpv-info span>svg, .drone-fpvracing-info span>svg{
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 990px){
-  .drones-stabilized-container, .drones-fpv-container{
+  .drones-stabilized-container, .drones-fpv-container, .drones-fpvracing-container{
     flex-direction: column;
   }
 
@@ -2817,9 +2823,8 @@ blockquote h1{
     width: 70%;
   }
 
-  .drone-stabilized p, .drone-fpv p {
+  .drone-stabilized p, .drone-fpv p, .drone-fpvracing p{
     text-align: justify;
     width: 100%;
-    padding-inline: 4vh;
   }
 }
