@@ -61,7 +61,7 @@
     "mavic_pro_desc": "The best option for capturing smooth and stable footage for professional videography and landscapes.",
     "dji_neo": "DJI Neo",
     "dji_neo_desc": "Perfect for indoor use, providing precise and safe maneuverability in enclosed spaces.",
-    "get_in_touch": "Get in touch",
+    "get_in_touch": "Let's talk!",
     "contact_message_part1": "Tell me about your idea or project, and I will advise you on everything you need.",
     "contact_message_part2": "You can call me, send me an email, a WhatsApp message, or fill out the following form, you choose 😉",
     "send_message": "I'm looking forward to hearing from you!",
@@ -88,5 +88,11 @@
     "t4_opinion": "I highly recommend Joan's services. He is a skilled drone pilot and videographer. The video he made for our company was top-notch and exceeded our expectations.",
     "t5_opinion": "Joan is a great professional. He filmed a promotional video for our hotel, and the aerial shots were stunning. He has a keen eye for detail and knows how to create visually appealing content.",
     "drones": "Drones",
-    "drones_info": "Drones that I use for my projects, each one with unique features and capabilities to adapt to different projects"
+    "drones_info": "Drones that I use for my projects, each one with unique features and capabilities to adapt to different projects",
+    "drones_stabilized": "Stabilized Drones",
+    "drones_stabilized_info": "Drones equipped with advanced stabilization systems to ensure smooth and professional shots",
+    "drones_fpv": "FPV Drones",
+    "drones_fpv_info": "FPV drones ideal for high-speed and dynamic shots, perfect for action sports and cinematic filming",
+    "drones_fpvracing": "Other FPV Racing Drones",
+    "drones_fpvracing_info": "Drones specially designed for FPV Drone Racing Competitions"
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Drone5inch from "../../Assets/Drones/fpv.jpeg";
-import Drone3inch from "../../Assets/Drones/diatone.webp";
+import Drone5inch from "../../Assets/Drones/fpv.jpg";
+import Drone3inch from "../../Assets/Drones/diatone.jpg";
 import MavicPro from "../../Assets/Drones/mavic.jpg";
-import Neo from "../../Assets/Drones/neo.png";
+import Neo from "../../Assets/Drones/neo.jpg";
 import { useTranslation } from "react-i18next";
 import CircularGallery from "./CircularGallery";
 import { Link } from "react-router-dom";
