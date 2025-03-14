@@ -123,7 +123,7 @@ function AboutCard() {
                               <p>{image.alt}</p>
                            </Carousel.Item>
                         ))}
-                     </Carousel>{" "}
+                     </Carousel>
                   </div>
                </div>
                <div className="about-text-container">

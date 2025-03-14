@@ -8,6 +8,17 @@ import { useTranslation } from "react-i18next";
 import CircularGallery from "./CircularGallery";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import BrutePower from "../../Assets/Sponsors/BrutePower.png";
+import Diatone from "../../Assets/Sponsors/Diatone.png";
+import FolienrabeLogo from "../../Assets/Sponsors/FolienrabeLogo.png";
+import Gemfan from "../../Assets/Sponsors/Gemfan.png";
+import iHobbies from "../../Assets/Sponsors/iHobbies.png";
+import RacingStuffLogo from "../../Assets/Sponsors/RacingstuffLogo.png";
+import Runcam from "../../Assets/Sponsors/Runcam.png";
+import SkyDrone from "../../Assets/Sponsors/SkyDrone.png";
+import Tmotor from "../../Assets/Sponsors/T-Motor.png";
+import Meps from "../../Assets/Sponsors/meps.png";
+import SponsorsWall from "./SponsorsWall";
 
 function DroneFleet() {
    const { t } = useTranslation();
@@ -34,6 +45,58 @@ function DroneFleet() {
             desc: t("dji_neo_desc"),
          },
       ];
+   
+   const sponsors = [
+      {
+         name: "Brute Power",
+         image: BrutePower,
+      }
+      ,
+      {
+          name: "Diatone",
+         image: Diatone,
+      }
+      ,
+      {
+         name: "Folienrabe",
+         image: FolienrabeLogo,
+      }
+       ,
+      {
+         name: "Gemfan",
+         image: Gemfan,
+      }
+       ,
+      {
+         name: "iHobbies",
+         image: iHobbies,
+      }
+       ,
+      {
+         name: "RacingStuff",
+         image: RacingStuffLogo,
+      }
+       ,
+      {
+         name: "Runcam",
+         image: Runcam,
+      }
+       ,
+      {
+         name: "SkyDrone",
+         image: SkyDrone,
+      }
+       ,
+      {
+         name: "T-motor",
+         image: Tmotor,
+      }
+       ,
+      {
+         name: "MEPS",
+         image: Meps,
+      }
+   ];
 
    return (
       <Card
@@ -73,6 +136,15 @@ function DroneFleet() {
                      </div>
                   </div>
                </div>
+            </div>
+            <div className="sponsors-container">
+               <h2>{t("sponsors")}</h2>
+               <p>{t("sponsors_desc")}</p>
+               <SponsorsWall
+                  items={sponsors}
+                  direction="horizontal"
+                  pauseOnHover={false}
+               />
             </div>
          </Card.Body>
       </Card>

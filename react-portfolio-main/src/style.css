@@ -860,6 +860,7 @@ nav#backGroundNavbar {
   align-items: center;
   margin-top: 8vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .drone-card-container, .drones, .cert-container{
@@ -2320,13 +2321,27 @@ blockquote h1{
   margin-top: 5vh;
 }
 
+.sponsorsWall-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin: 0 auto;
+  max-width: 100%;
+  width: 90%;
+  color: var(--color-text);
+}
+
 .wrapper--vertical {
   flex-direction: row;
   justify-content: center;
   height: 100%;
 }
 
-.marquee {
+/* --------- */
+/*  Carousel */
+/* --------- */
+
+.marquee, .sponsor {
   position: relative;
   display: flex;
   overflow: hidden;
@@ -2348,7 +2363,7 @@ blockquote h1{
   height: 100%;
 }
 
-.marquee--vertical {
+.marquee--vertical, .sponsor--vertical {
   flex-direction: column;
   height: 100%;
   mask-image: linear-gradient(
@@ -2362,7 +2377,7 @@ blockquote h1{
   mask-repeat: no-repeat;
 }
 
-.marquee__group {
+.marquee__group, .sponsor__group {
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -2371,16 +2386,16 @@ blockquote h1{
   animation: scroll-x var(--duration) linear infinite;
 }
 
-.marquee--reverse .marquee__group {
+.marquee--reverse .marquee__group, .sponsor--reverse .sponsor__group {
   animation-direction: reverse;
   animation-delay: -3s;
 }
 
-.marquee__group {
+.marquee__group, .sponsor__group {
   min-width: 100%;
 }
 
-.marquee--vertical .marquee__group {
+.marquee--vertical .marquee__group, .sponsor--vertical .sponsor__group {
   min-width: auto;
   min-height: 100%;
   flex-direction: column;
@@ -2405,7 +2420,7 @@ blockquote h1{
   }
 }
 
-.paused .marquee__group {
+.paused .marquee__group, .paused .sponsor__group {
   animation-play-state: paused !important;
 }
 
@@ -2416,7 +2431,7 @@ blockquote h1{
   border: 2px solid #fff;
 }
 
-.marquee__item{
+.marquee__item {
   width: 500px;
   display: flex;
   flex-direction: row;
@@ -2425,6 +2440,15 @@ blockquote h1{
   padding: 20px;
   border-radius: 14px;
   border: 1px solid #fff;
+  background-color: var(--imp-background-color);
+}
+
+.sponsor__item{
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: var(--imp-background-color);
 }
 
@@ -2472,6 +2496,23 @@ blockquote h1{
 .marquee__item-text>p:last-child{
   font-style: italic;
   text-align: left;
+}
+
+.sponsors-container{
+  margin-top: 8vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors-container p{
+  text-align: justify;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-inline: 2vh;
+  margin-top: 2vh;
 }
 
 /* --------- */
