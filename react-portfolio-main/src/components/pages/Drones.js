@@ -6,11 +6,17 @@ import Mavic from "../../Assets/Drones/mavicinfo.jpg";
 import Diatone from "../../Assets/Drones/diatoneh.jpg";
 import Freestyle from "../../Assets/Drones/fpvh.jpg";
 import Racing from "../../Assets/Drones/racing.jpg";
+import { useState } from "react";
 
 import { FaBalanceScale, FaClock, FaRocket, FaSignal, FaVideo } from "react-icons/fa";
 
 const Drones = () => {
    const { t } = useTranslation();
+   const [loadedImages, setLoadedImages] = useState({});
+
+   const handleImageLoad = (index) => {
+      setLoadedImages((prev) => ({ ...prev, [index]: true }));
+   };
 
    const stabilizedDrones = [
       {
@@ -95,7 +101,19 @@ const Drones = () => {
                   {stabilizedDrones.map((drone, index) => (
                      <div key={index} className="drone-stabilized">
                         <div className="drone-img">
-                           <img src={drone.image} alt={drone.name} />
+                           {!loadedImages[index] && (
+                              <div className="skeleton-loader"></div>
+                           )}
+                           <img
+                              src={drone.image}
+                              alt={drone.name}
+                              onLoad={() => handleImageLoad(index)}
+                              style={{
+                                 display: loadedImages[index]
+                                    ? "block"
+                                    : "none",
+                              }}
+                           />
                         </div>
                         <h4>{drone.name}</h4>
                         <p>{drone.desc}</p>
@@ -132,7 +150,19 @@ const Drones = () => {
                   {fpvDrones.map((drone, index) => (
                      <div key={index} className="drone-fpv">
                         <div className="drone-img">
-                           <img src={drone.image} alt={drone.name} />
+                           {!loadedImages[index] && (
+                              <div className="skeleton-loader"></div>
+                           )}
+                           <img
+                              src={drone.image}
+                              alt={drone.name}
+                              onLoad={() => handleImageLoad(index)}
+                              style={{
+                                 display: loadedImages[index]
+                                    ? "block"
+                                    : "none",
+                              }}
+                           />
                         </div>
                         <h4>{drone.name}</h4>
                         <p>{drone.desc}</p>
@@ -170,7 +200,19 @@ const Drones = () => {
                   {racingDrones.map((drone, index) => (
                      <div key={index} className="drone-fpvracing">
                         <div className="drone-img">
-                           <img src={drone.image} alt={drone.name} />
+                           {!loadedImages[index] && (
+                              <div className="skeleton-loader"></div>
+                           )}
+                           <img
+                              src={drone.image}
+                              alt={drone.name}
+                              onLoad={() => handleImageLoad(index)}
+                              style={{
+                                 display: loadedImages[index]
+                                    ? "block"
+                                    : "none",
+                              }}
+                           />
                         </div>
                         <h4>{drone.name}</h4>
                         <p>{drone.desc}</p>
