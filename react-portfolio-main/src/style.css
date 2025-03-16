@@ -2327,7 +2327,7 @@ blockquote h1{
   gap: var(--gap);
   margin: 0 auto;
   max-width: 100%;
-  width: 90%;
+  width: 90vw;
   color: var(--color-text);
 }
 
@@ -2377,8 +2377,16 @@ blockquote h1{
   mask-repeat: no-repeat;
 }
 
-.marquee__group, .sponsor__group {
+.marquee__group{
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  animation: scroll-x var(--duration) linear infinite;
+}
+
+.sponsor__group {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -2391,7 +2399,7 @@ blockquote h1{
   animation-delay: -3s;
 }
 
-.marquee__group, .sponsor__group {
+.marquee__group{
   min-width: 100%;
 }
 
@@ -2450,6 +2458,10 @@ blockquote h1{
   align-items: center;
   justify-content: center;
   background-color: var(--imp-background-color);
+}
+
+.sponsor__group img{
+  width: 120px;
 }
 
 @media screen and (max-width: 768px){
