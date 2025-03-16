@@ -2471,7 +2471,7 @@ blockquote h1{
     width: 250px;
     justify-content: flex-start;
     margin-left: 1vh;
-    height: 44vh;
+    height: 47vh;
   }
 
   .marquee__group{
@@ -2520,7 +2520,7 @@ blockquote h1{
 }
 
 .sponsors-container p{
-  text-align: justify;
+  text-align: center;
   font-weight: 600;
   font-size: 1.1rem;
   margin-inline: 2vh;
