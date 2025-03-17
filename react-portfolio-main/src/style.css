@@ -136,7 +136,7 @@ html {
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute !important;
-  left: 12px !important;
+  left: 24px !important;
   top: 10px !important;
   transform: rotate(135deg) !important;
   opacity: 0.9 !important;
@@ -150,7 +150,7 @@ html {
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
   position: absolute !important;
-  left: 12px !important;
+  left: 24px !important;
   top: 10px !important;
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
@@ -2383,7 +2383,7 @@ blockquote h1{
   align-items: center;
   justify-content: space-around;
   gap: var(--gap);
-  animation: scroll-x var(--duration) linear infinite;
+  animation: scroll-x-left var(--duration) linear infinite;
 }
 
 .sponsor__group {
@@ -2391,7 +2391,7 @@ blockquote h1{
   align-items: center;
   justify-content: space-around;
   gap: var(--gap);
-  animation: scroll-x var(--duration) linear infinite;
+  animation: scroll-x-right var(--duration) linear infinite;
 }
 
 .marquee--reverse .marquee__group, .sponsor--reverse .sponsor__group {
@@ -2410,12 +2410,21 @@ blockquote h1{
   animation-name: scroll-y;
 }
 
-@keyframes scroll-x {
+@keyframes scroll-x-left {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-x-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
