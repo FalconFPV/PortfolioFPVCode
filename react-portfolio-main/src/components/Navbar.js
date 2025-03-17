@@ -122,7 +122,7 @@ function NavBar() {
          <Navbar.Brand
             href={
                isServicePage || isWorksPage || isPrivacyPolicyPage
-                  ? "/"
+                  ? "/PortfolioFalcon"
                   : "#home"
             }
          >
