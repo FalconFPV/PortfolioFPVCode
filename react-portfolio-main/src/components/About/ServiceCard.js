@@ -79,7 +79,7 @@ const Description = styled.p`
    color: #fff;
 `;
 
-const ServiceCard = ({ name, icon, desc, delay, img, link }) => {
+const ServiceCard = ({index, name, icon, desc, delay, img, link }) => {
    const [isVisible, setIsVisible] = useState(false);
    const cardRef = useRef(null);
    const { t } = useTranslation();
@@ -116,7 +116,11 @@ const ServiceCard = ({ name, icon, desc, delay, img, link }) => {
          delay={delay}
          style={{ backgroundImage: `url(${img})` }}
       >
-         <div className="service-content">
+         <div
+            className="service-content"
+            data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+            data-aos-duration="2000"
+         >
             <IconContainer>
                <Icon>{icon}</Icon>
             </IconContainer>

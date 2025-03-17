@@ -66,10 +66,11 @@ const services = [
                   {services.map((service, index) => (
                      <ServiceCard
                         key={index}
+                        index={index}
                         name={service.name}
                         icon={service.icon}
                         desc={service.desc}
-                        delay={`${index * 0.1}s`} 
+                        delay={`${index * 0.1}s`}
                         img={service.img}
                         link={service.link}
                      />
