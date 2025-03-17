@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import eventImg from "../../Assets/ServiceImg/wedding.jpg"; // Imagen del servicio
-import eventmenubg from "../../Assets/ServiceImg/event-bg.jpg"; // Imagen de fondo de las preguntas
-import eventquestionsbg from "../../Assets/ServiceImg/event-qbg.jpg"; // Imagen de fondo de las preguntas
+import eventImg from "../../Assets/ServiceImg/wedding.webp"; // Imagen del servicio
+import eventmenubg from "../../Assets/ServiceImg/event-bg.webp"; // Imagen de fondo de las preguntas
+import eventquestionsbg from "../../Assets/ServiceImg/event-qbg.webp"; // Imagen de fondo de las preguntas
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";

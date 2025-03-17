@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import aerial from "../../Assets/ServiceImg/aerial.jpeg"; // Imagen específica del servicio
-import aerialmenubg from "../../Assets/ServiceImg/aerial-bg.jpg"; // Imagen de fondo de las preguntas
-import aerialquestionsbg from "../../Assets/ServiceImg/aerial-qbg.jpg"; // Imagen de fondo de las preguntas
+import aerial from "../../Assets/ServiceImg/aerial.webp"; // Imagen específica del servicio
+import aerialmenubg from "../../Assets/ServiceImg/aerial-bg.webp"; // Imagen de fondo de las preguntas
+import aerialquestionsbg from "../../Assets/ServiceImg/aerial-qbg.webp"; // Imagen de fondo de las preguntas
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";

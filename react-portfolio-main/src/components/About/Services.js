@@ -9,11 +9,11 @@ import {
 // Importar iconos lenguajes
 import ServiceCard from "./ServiceCard";
 import { useTranslation } from "react-i18next";
-import aerial from "../../Assets/ServiceImg/aerial.jpeg";
-import realEstate from "../../Assets/ServiceImg/realstate.jpg";
-import event from "../../Assets/ServiceImg/wedding.jpg";
-import inspection from "../../Assets/ServiceImg/inspec.jpg";
-import fpv from "../../Assets/ServiceImg/fpv.jpg";
+import aerial from "../../Assets/ServiceImg/aerial.webp";
+import realEstate from "../../Assets/ServiceImg/realstate.webp";
+import event from "../../Assets/ServiceImg/wedding.webp";
+import inspection from "../../Assets/ServiceImg/inspec.webp";
+import fpv from "../../Assets/ServiceImg/fpv.webp";
 
 const Services = () => {
    const { t } = useTranslation();

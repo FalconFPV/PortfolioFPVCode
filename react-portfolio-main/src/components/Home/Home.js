@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Container, Row } from "react-bootstrap";
-// import TypeWriter from "./TypeWriter";
+import { Container, Row, Spinner } from "react-bootstrap";
 import About from "../About/About";
 import { FaArrowDown } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -11,8 +10,28 @@ import SplitText from "./SplitText";
 
 function Home() {
    const { t } = useTranslation();
-  const [showText, setShowText] = useState(false);
+   const [showText, setShowText] = useState(false);
+   const [videoLoaded, setVideoLoaded] = useState(false);
    const videoRef = useRef(null);
+
+      useEffect(() => {
+         const handleLoadedData = () => {
+            setVideoLoaded(true);
+         };
+
+         if (videoRef.current) {
+            videoRef.current.addEventListener("loadeddata", handleLoadedData);
+         }
+
+         return () => {
+            if (videoRef.current) {
+               videoRef.current.removeEventListener(
+                  "loadeddata",
+                  handleLoadedData
+               );
+            }
+         };
+      }, []);
 
      useEffect(() => {
         const timeout = setTimeout(() => {
@@ -20,7 +39,7 @@ function Home() {
               videoRef.current.play();
            }
             setShowText(true);
-        }, 1200); 
+        }, 1000); 
 
         return () => clearTimeout(timeout); 
      }, []);
@@ -31,6 +50,16 @@ function Home() {
            <Row className="home-content">
               <Row className="home-row">
                  <div className="video-background">
+                    {!videoLoaded && (
+                       <div className="img-loader">
+                          <Spinner
+                             animation="border"
+                             style={{
+                                color: "var(--imp-text-color)",
+                             }}
+                          />
+                       </div>
+                    )}
                     <video
                        id="player"
                        className="y-video"

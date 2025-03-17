@@ -9,7 +9,6 @@ function About() {
   return (
      <Container fluid className="about-section">
         <Row className="about-row">
-           {/* <Row className="img-about"></Row> */}
            <Row className="about">
               <Aboutcard />
               <div

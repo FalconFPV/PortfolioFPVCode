@@ -42,9 +42,11 @@ function NavBar() {
       "/policy",
       "/conditions",
    ];
+
    const isServicePage = serviceRoutes.includes(location.pathname);
    const isWorksPage = workdrones.includes(location.pathname);
    const isPrivacyPolicyPage = privacyPolicy.includes(location.pathname);
+
    useEffect(() => {
       const storedLanguage = localStorage.getItem("selectedLanguage");
       if (storedLanguage) {
@@ -104,10 +106,10 @@ function NavBar() {
       });
    };
 
-      const handleToggleClick = () => {
-         updateExpanded(!expand);
-         updateBackground(!backGround); // Cambia el estado de backGround
-      };
+   const handleToggleClick = () => {
+      updateExpanded(!expand);
+      updateBackground(!backGround); // Cambia el estado de backGround
+   };
 
    return (
       <Navbar
@@ -118,7 +120,11 @@ function NavBar() {
          id={backGround ? "backGroundNavbar" : ""}
       >
          <Navbar.Brand
-            href={isServicePage || isWorksPage || isPrivacyPolicyPage ? "/PortfolioFalcon" : "#home"}
+            href={
+               isServicePage || isWorksPage || isPrivacyPolicyPage
+                  ? "/"
+                  : "#home"
+            }
          >
             <img src={LofoFalcon} className="logo" alt="brand" style={{}} />
          </Navbar.Brand>

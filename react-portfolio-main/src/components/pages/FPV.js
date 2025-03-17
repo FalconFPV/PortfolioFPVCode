@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import fpvImg from "../../Assets/ServiceImg/fpv.jpg"; // Imagen del servicio
-import fpvmenubg from "../../Assets/ServiceImg/fpv-bg.jpg"; // Imagen de fondo de las preguntas
-import fpvquestionsbg from "../../Assets/ServiceImg/fpv-qbg.jpg"; // Imagen de fondo de las preguntas
+import fpvImg from "../../Assets/ServiceImg/fpv.webp"; // Imagen del servicio
+import fpvmenubg from "../../Assets/ServiceImg/fpv-bg.webp"; // Imagen de fondo de las preguntas
+import fpvquestionsbg from "../../Assets/ServiceImg/fpv-qbg.webp"; // Imagen de fondo de las preguntas
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";

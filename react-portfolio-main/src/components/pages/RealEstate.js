@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import realEstateImg from "../../Assets/ServiceImg/realstate.jpg"; // Imagen del servicio
-import realEstatemenubg from "../../Assets/ServiceImg/realstate-bg.jpg"; // Imagen de fondo de las preguntas
-import realEstatequestionsbg from "../../Assets/ServiceImg/realstate-qbg.jpg"; // Imagen de fondo de las preguntas
+import realEstateImg from "../../Assets/ServiceImg/realstate.webp"; // Imagen del servicio
+import realEstatemenubg from "../../Assets/ServiceImg/realstate-bg.webp"; // Imagen de fondo de las preguntas
+import realEstatequestionsbg from "../../Assets/ServiceImg/realstate-qbg.webp"; // Imagen de fondo de las preguntas
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";

@@ -29,7 +29,7 @@ function App() {
    useEffect(() => {
       const timer = setTimeout(() => {
          updateLoad(false);
-      }, 1300);
+      }, 1100);
       Aos.init();
       return () => clearTimeout(timer);
    }, []);

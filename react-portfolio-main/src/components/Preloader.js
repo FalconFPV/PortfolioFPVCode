@@ -7,8 +7,8 @@ function Preloader({ load }) {
    useEffect(() => {
       if (load) {
          let start = 0;
-         const increment = 1; // Incremento en porcentaje
-         const intervalTime = 12; // Tiempo de intervalo en milisegundos (1200ms / 100 incrementos)
+         const increment = 2; // Incremento en porcentaje
+         const intervalTime = 18; // Tiempo de intervalo en milisegundos (1200ms / 100 incrementos)
 
          const timer = setInterval(() => {
             start += increment; // Incrementar en pequeños pasos para mayor fluidez

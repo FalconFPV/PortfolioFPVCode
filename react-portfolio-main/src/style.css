@@ -2471,6 +2471,7 @@ blockquote h1{
 
 .sponsor__group img{
   width: 120px;
+  height: auto;
 }
 
 @media screen and (max-width: 768px){
@@ -2903,4 +2904,13 @@ blockquote h1{
 @keyframes loading {
    0% { background-position: 100% 0; }
    100% { background-position: -100% 0; }
+}
+
+.img-loader{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }

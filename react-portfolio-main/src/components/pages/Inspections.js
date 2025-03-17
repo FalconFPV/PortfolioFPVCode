@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import inspectionImg from "../../Assets/ServiceImg/inspec.jpg"; // Imagen del servicio
+import inspectionImg from "../../Assets/ServiceImg/inspec.webp"; // Imagen del servicio
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";
