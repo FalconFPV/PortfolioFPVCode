@@ -32,3 +32,7 @@ El sitio web está construido con las siguientes tecnologías:
 - **React i18next**: Para la implementación de la funcionalidad multilingüe.
 - **React Router**: Para la navegación entre páginas y secciones.
 - **CSS personalizado**: Estilos adicionales para personalizar el diseño.
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
