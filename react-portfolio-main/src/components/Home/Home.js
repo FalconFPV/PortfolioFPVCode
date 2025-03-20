@@ -56,6 +56,7 @@ function Home() {
                              animation="border"
                              style={{
                                 color: "var(--imp-text-color)",
+                                opacity: 0.2,
                              }}
                           />
                        </div>
