@@ -863,6 +863,14 @@ nav#backGroundNavbar {
   overflow: hidden;
 }
 
+.about-container{
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
 .drone-card-container, .drones, .cert-container{
   width: 100%;
 }

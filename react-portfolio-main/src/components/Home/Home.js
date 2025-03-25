@@ -114,7 +114,7 @@ function Home() {
            </Row>
         </Container>
         <Container fluid className="home-about-section" id="about">
-           <Row className="about">
+           <Row className="about-container">
               <About />
            </Row>
         </Container>
