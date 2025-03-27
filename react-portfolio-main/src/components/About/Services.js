@@ -62,6 +62,12 @@ const services = [
          <div className="frame-hab-container">
             <div className="habilities">
                <h1>{t("services")}</h1>
+               <p>
+                  {t("services_desc")}
+                  <strong>
+                     {t("services_desc_strong")}
+                  </strong>
+               </p>
                <div className="hab-container">
                   {services.map((service, index) => (
                      <ServiceCard

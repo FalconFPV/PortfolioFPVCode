@@ -994,6 +994,18 @@ nav#backGroundNavbar {
   padding-inline: 4vh;
 }
 
+.habilities>p:first-of-type {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-inline: 2vh;
+    margin-top: 6vh;
+}
+
+.habilities>p:first-of-type>strong {
+  color: var(--imp-text-color);
+}
+
 .hab-container{
   margin-top: 10vh;
   display: flex;
@@ -1888,7 +1900,7 @@ blockquote h1{
 /* --------- */
 
 .cert-container {
-  margin-top: 5vh;
+  margin-top: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
