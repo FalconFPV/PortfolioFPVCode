@@ -17,7 +17,7 @@
 body {
   margin: 0;
   font-family: "DMSansLight", serif !important;
-  background-color: rgb(4, 4, 4) !important;
+  background-color: var(--imp-background-light-color) !important;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
