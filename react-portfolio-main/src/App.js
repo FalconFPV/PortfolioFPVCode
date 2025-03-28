@@ -22,6 +22,7 @@ import Policy from "./components/Policy";
 import Conditions from "./components/Conditions";
 import Works from "./components/pages/Works";
 import Drones from "./components/pages/Drones";
+import NotFound from "./components/pages/NotFound";
 
 function App() {
    const [load, updateLoad] = useState(true);
@@ -54,6 +55,7 @@ function App() {
                   <Route path="/events" component={Events} />
                   <Route path="/inspections" component={Inspections} />
                   <Route path="/fpv" component={FPV} />
+                  <Route component={NotFound} />
                </Switch>
                <Footer />
                <ScrollToTopButton />
