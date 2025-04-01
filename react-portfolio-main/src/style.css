@@ -881,6 +881,64 @@ nav#backGroundNavbar {
   align-items: center;
 }
 
+.experience-container{
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4vh;
+}
+
+.experience-counters{
+  margin-top: 4vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.years-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hours-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hours-container p, .years-container p{
+  font-size: 1.25rem;
+  margin-top: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+  .experience-counters{
+    flex-direction: column;
+  }
+
+  .experience-container{
+    margin-top: 0;
+  }
+
+  .years-container{
+    margin-bottom: 6vh;
+  }
+
+  .hours-container p, .years-container p{
+    font-size: 1rem !important;
+  }
+}
+
 #fleet{
   margin-top: 8vh;
 }
@@ -2996,4 +3054,49 @@ blockquote h1{
   transition-delay: 100ms;
 }
 
+/* --------- */
+/* Counter */
+/* --------- */
 
+.counter-container {
+  position: relative;
+  display: inline-block;
+}
+
+.counter-counter {
+  display: flex;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.counter-digit {
+  position: relative;
+  width: 1ch;
+  font-variant-numeric: tabular-nums;
+}
+
+.counter-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient-container {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

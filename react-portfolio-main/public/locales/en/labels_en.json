@@ -136,5 +136,13 @@
         "race_d": "Maximum distance 5 km",
         "race_v": "Maximum speed 230 km/h",
         "race_w": "Weight 220 g"
-    }
+    },
+    "notfound": {
+        "subtitle": "Page not found!",
+        "message": "Sorry, the page you are looking for does not exist or has been moved.",
+        "text": "Go back home"
+    },
+    "experience": "Experience",
+    "years_flying": "Years flying drones",
+    "flight_hours": "Flight hours"
 }

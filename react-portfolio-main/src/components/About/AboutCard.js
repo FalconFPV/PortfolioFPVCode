@@ -1,13 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Card from "react-bootstrap/Card";
 import myImg from "../../Assets/banner_joancompany3.png";
 import Carousel from "react-bootstrap/Carousel"; 
 import { useTranslation } from "react-i18next";
-
+import Counter from "../Counter";
 
 function AboutCard() {
-      const { t } = useTranslation();
-   const containersRef = useRef([]); // Inicializamos como un array vacío
+   const { t } = useTranslation();
+   const containersRef = useRef([]);
+   const [countersStarted, setCountersStarted] = useState(false);
    const carouselImages = [
       {
          src: require("../../Assets/bdr.jpg"),
@@ -39,11 +40,14 @@ function AboutCard() {
                );
                const carouselContainer =
                   entry.target.querySelector(".history-carousel");
+               const experienceContainer = entry.target.querySelector(
+                  ".experience-container");
 
                if (profilePic) profilePic.classList.add("visible");
                if (picShadow) picShadow.classList.add("visible");
                if (aboutTextContainer) aboutTextContainer.classList.add("visible");
                if (carouselContainer) carouselContainer.classList.add("visible");
+               if (experienceContainer) setCountersStarted(true);
             } else {
                const profilePic = entry.target.querySelector(".profile-pic");
                const picShadow = entry.target.querySelector(".pic-shadow");
@@ -142,6 +146,52 @@ function AboutCard() {
                         {t("experience_summary")}
                      </p>
                   </blockquote>
+               </div>
+            </div>
+            <div
+               className="about-card-container"
+               ref={(el) => el && containersRef.current.push(el)}
+            >
+               <div
+                  className="experience-container"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+               >
+                  <h2 className="heading-title">{t("experience")}</h2>
+                  <div className="experience-counters">
+                     <div className="years-container">
+                        {countersStarted && (
+                           <Counter
+                              value={7}
+                              places={[1]}
+                              fontSize={80}
+                              padding={5}
+                              gap={10}
+                              textColor="var(--imp-background-light-color)"
+                              fontWeight={900}
+                              duration={2}
+                           />
+                        )}
+                        <p className="years-text">
+                           {t("years_flying")}
+                        </p>
+                     </div>
+                     <div className="hours-container">
+                        {countersStarted && (
+                           <Counter
+                              value={1000}
+                              places={[1000, 100, 10, 1]}
+                              fontSize={80}
+                              padding={5}
+                              gap={10}
+                              textColor="var(--imp-background-light-color)"
+                              fontWeight={900}
+                              duration={2}
+                           />
+                        )}
+                        <p className="hours-text">{t("flight_hours")}</p>
+                     </div>
+                  </div>
                </div>
             </div>
          </Card.Body>

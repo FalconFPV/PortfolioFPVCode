@@ -136,5 +136,13 @@
             "race_d": "Distancia máxima de 5 km",
             "race_v": "Velocidad máxima de 230 km/h",
             "race_w": "Peso 220 g"
-        }
+        },
+    "notfound": {
+        "subtitle": "¡Página no encontrada!",
+        "message": "Lo sentimos, la página que buscas no existe o ha sido movida.",
+        "text": "Volver al inicio"
+    },
+    "experience": "Experiencia",
+    "years_flying": "Años pilotando drones",
+    "flight_hours": "Horas de vuelo"
 }
