@@ -2643,6 +2643,19 @@ blockquote h1{
   margin-bottom: 8vh;
 }
 
+#drones{
+  margin-bottom: 0;
+}
+
+#drones>#contact{
+  box-shadow: 0px -10px 10px 0px rgba(9, 5, 29, 0.171);
+}
+
+.works>#contact{
+  box-shadow: 0px -10px 10px 0px rgba(9, 5, 29, 0.171);
+  margin-top: 4vh;
+}
+
 .policy-conditions-container{
   background-color: rgb(4, 4, 4);
   display: flex;
@@ -2718,7 +2731,6 @@ blockquote h1{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 8vh;
 }
 
 .works-container{

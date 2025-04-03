@@ -78,7 +78,7 @@ const Drones = () => {
    ];
    
    return (
-      <div className="policy-conditions">
+      <div className="policy-conditions" id="drones">
          <div className="policy-conditions-container">
             <h2>{t("drones")}</h2>
             <p>{t("drones_info")}</p>
