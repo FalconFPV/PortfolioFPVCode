@@ -144,5 +144,22 @@
     },
     "experience": "Experiencia",
     "years_flying": "Años pilotando drones",
-    "flight_hours": "Horas de vuelo"
+    "flight_hours": "Horas de vuelo",
+    "succ_message": "¡Mensaje enviado con éxito! Revisa tu correo para más detalles.",
+    "error_message": "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
+    "name_required": "El nombre es obligatorio",
+    "email_required": "El correo electrónico es obligatorio",
+    "email_invalid": "El correo electrónico no es válido",
+    "phone_invalid": "El número de teléfono no es válido",
+    "message_required": "El mensaje es obligatorio",
+    "message_sent": "Mensaje enviado",
+    "server_error": "Error al conectar con el servidor.",
+    "sending": "Enviando...",
+    "send": "Enviar mensaje",
+    "close": "Cerrar",
+    "mess_placeholder": "Escribe tu mensaje aquí...",
+    "name_placeholder": "Nombre",
+    "email_placeholder": "Correo electrónico",
+    "phone_placeholder": "Número de teléfono (Opcional)",
+    "tell_us": "Cuéntame tu proyecto"
 }

@@ -4,6 +4,7 @@ import { FaPen } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import SocialMedia from "../SocialMedia";
 import Animations from "../../Animations";
+import ContactForm from "../ContactForm";
 
 const Contact = () => {
    const { t } = useTranslation();
@@ -47,6 +48,9 @@ const Contact = () => {
                   </div>
                </div>
             </Row>
+         </Container>
+         <Container id="contact-container">
+            <ContactForm />
          </Container>
       </Container>
    );

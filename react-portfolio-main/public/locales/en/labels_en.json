@@ -144,5 +144,22 @@
     },
     "experience": "Experience",
     "years_flying": "Years flying drones",
-    "flight_hours": "Flight hours"
+    "flight_hours": "Flight hours",
+        "succ_message": "Message sent successfully! Check your email for more details.",
+    "error_message": "Error sending the message. Please try again later.",
+    "name_required": "Name is required",
+    "email_required": "Email is required",
+    "email_invalid": "Invalid email address",
+    "phone_invalid": "Invalid phone number",
+    "message_required": "Message is required",
+    "message_sent": "Message sent",
+    "server_error": "Error connecting to the server.",
+    "sending": "Sending...",
+    "send": "Send message",
+    "close": "Close",
+    "mess_placeholder": "Write your message here...",
+    "name_placeholder": "Name",
+    "email_placeholder": "Email",
+    "phone_placeholder": "Phone number (Optional)",
+    "tell_us": "Tell me about your project"
 }
