@@ -732,7 +732,7 @@ nav#backGroundNavbar {
   margin-top: 4vh;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
   .history-carousel{
     width: 40vh;
     margin: auto;
@@ -2632,6 +2632,16 @@ blockquote h1{
   font-size: 1.1rem;
   margin-inline: 2vh;
   margin-top: 2vh;
+}
+
+.d-block{
+  height: 300px !important;
+}
+
+@media screen and (max-width: 768px){
+  .d-block{
+    height: 200px !important;
+  }
 }
 
 /* --------- */
