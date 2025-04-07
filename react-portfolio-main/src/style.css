@@ -2635,7 +2635,7 @@ blockquote h1{
 }
 
 .d-block{
-  height: 300px !important;
+  height: 360px !important;
 }
 
 @media screen and (max-width: 768px){
