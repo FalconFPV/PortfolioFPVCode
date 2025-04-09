@@ -1,11 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Contact from "../Home/Contact";
-import Neo from "../../Assets/Drones/neoinfo.jpg";
-import Mavic from "../../Assets/Drones/mavicinfo.jpg";
-import Diatone from "../../Assets/Drones/diatoneh.jpg";
-import Freestyle from "../../Assets/Drones/fpvh.jpg";
-import Racing from "../../Assets/Drones/racing.jpg";
+import Neo from "../../Assets/Drones/neoinfo.png";
+import Mavic from "../../Assets/Drones/mavicinfo.png";
+import Diatone from "../../Assets/Drones/diatoneh.png";
+import Freestyle from "../../Assets/Drones/fpvh.png";
+import Racing from "../../Assets/Drones/racing.png";
 import { useState } from "react";
 
 import { FaBalanceScale, FaClock, FaRocket, FaSignal, FaVideo } from "react-icons/fa";

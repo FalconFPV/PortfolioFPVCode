@@ -1,6 +1,6 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 function SocialMedia() {
@@ -9,7 +9,7 @@ function SocialMedia() {
      <ul className="home-about-social-links">
         <li className="social-icons">
            <a
-              href="mailto:joanfpv@gmail.com"
+              href="mailto:joan.falconfpv@gmail.com"
               target="_blank"
               rel="noreferrer"
               aria-label={t("mailto")}
@@ -38,6 +38,17 @@ function SocialMedia() {
               className="icon-colour home-social-icons"
            >
               <FaInstagram className="social-icon" />
+           </a>
+        </li>
+        <li className="social-icons">
+           <a
+              href="https://www.facebook.com/profile.php?id=100023819556799"
+              target="_blank"
+              rel="noreferrer"
+              aria-label={t("facebook")}
+              className="icon-colour home-social-icons"
+           >
+              <FaFacebook className="social-icon" />
            </a>
         </li>
      </ul>
