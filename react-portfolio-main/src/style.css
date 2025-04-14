@@ -1932,6 +1932,41 @@ blockquote h1{
   .scroll-to-top {
     display: none !important;
   }
+
+  .whatsapp-button {
+    bottom: 20px !important;
+  }
+}
+
+.whatsapp-button{
+  position: fixed;
+  bottom: 80px; /* Espacio desde la parte inferior de la pantalla */
+  right: 20px; /* Espacio desde la parte derecha de la pantalla */
+  background-color: #25D366; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 50%;
+  width: 50px; /* Tamaño del botón */
+  height: 50px; /* Tamaño del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.whatsapp-button svg{
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-button.visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
 }
 
 .code-logo-container{

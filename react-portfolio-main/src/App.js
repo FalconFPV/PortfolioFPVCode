@@ -23,6 +23,7 @@ import Conditions from "./components/Conditions";
 import Works from "./components/pages/Works";
 import Drones from "./components/pages/Drones";
 import NotFound from "./components/pages/NotFound";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
    const [load, updateLoad] = useState(true);
@@ -58,6 +59,7 @@ function App() {
                   <Route component={NotFound} />
                </Switch>
                <Footer />
+               <WhatsAppButton />
                <ScrollToTopButton />
             </Suspense>
          </div>
