@@ -1,11 +1,19 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import { useTransition, a } from "@react-spring/web";
+import { useHistory } from "react-router-dom";
 import "react-loading-skeleton/dist/skeleton.css"; // Importar estilos de Skeleton
 import { Spinner } from "react-bootstrap";
 
 function ExpoMedia({ data }) {
    const [columns, setColumns] = useState(2);
    const [loadedVideos, setLoadedVideos] = useState({}); // Estado para controlar carga de videos
+
+   const history = useHistory();
+
+   const handleClick = (title) => {
+      const slug = title.toLowerCase().replace(/\s+/g, "-");
+      history.push(`/works/${slug}`);
+   };
 
    useEffect(() => {
       const updateColumns = () => {
@@ -90,10 +98,12 @@ function ExpoMedia({ data }) {
             <a.div key={item.id} style={style}>
                <div
                   className="expoyt-project"
+                  onClick={() => handleClick(item.slug)}
                   style={{
                      boxShadow: "0 0 17px 0 #000000bf",
                      width: "100%",
                      height: "100%",
+                     cursor: "pointer",
                   }}
                >
                   {!loadedVideos[item.id] && (

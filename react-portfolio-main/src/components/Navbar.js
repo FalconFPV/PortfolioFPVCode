@@ -215,7 +215,7 @@ function NavBar() {
                            {t("opiniones")}
                         </Nav.Link>
                      </Nav.Item> */}
-                     {/* <Nav.Item>
+                     <Nav.Item>
                         <Nav.Link
                            as={NavLink}
                            to="/works"
@@ -224,7 +224,7 @@ function NavBar() {
                            <AiOutlineSolution style={{ marginBottom: "2px" }} />{" "}
                            {t("works")}
                         </Nav.Link>
-                     </Nav.Item> */}
+                     </Nav.Item>
                   </>
                )}
 

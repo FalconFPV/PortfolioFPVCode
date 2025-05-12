@@ -21,6 +21,7 @@ import FPV from "./components/pages/FPV";
 import Policy from "./components/Policy";
 import Conditions from "./components/Conditions";
 import Works from "./components/pages/Works";
+import WorkDetail from "./components/pages/WorkDetail";
 import Drones from "./components/pages/Drones";
 import NotFound from "./components/pages/NotFound";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -44,7 +45,8 @@ function App() {
                <ScrollToTop />
                <Switch>
                   <Route path="/" exact component={Home} />
-                  <Route path="/works" component={Works} />
+                  <Route path="/works/:videoName" component={WorkDetail} />
+                  <Route path="/works" exact component={Works} />
                   <Route path="/drones" component={Drones} />
                   <Route path="/policy" component={Policy} />
                   <Route path="/conditions" component={Conditions} />

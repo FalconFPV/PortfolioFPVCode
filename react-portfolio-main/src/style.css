@@ -1388,6 +1388,10 @@ nav#backGroundNavbar {
   margin-left: 10px;
 }
 
+.page-breadcrumb #sp{
+  margin-right: 10px;
+}
+
 .service-info-title{
   font-size: 2.5em;
   font-weight: 800;
@@ -2811,6 +2815,94 @@ blockquote h1{
   padding: 4vh;
   background-color: var(--imp-background-light-color);
 }
+
+.work-video-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.work-video-container div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-video-loader{
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 17px 0px;
+  border-radius: 14px;
+}
+
+.work-video-loader iframe{
+  border: none;
+}
+
+@media screen and (max-width: 768px){
+  .video-yt div{
+    width: 100%;
+    height: 200px;
+  }
+
+  .video-insta div{
+    width: 100%;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+  .video-yt div{
+    width: 100%;
+    height: 400px;
+  }
+
+  .video-insta div{
+    width: 80%;
+    height: 800px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+  .video-yt div{
+    width: 90%;
+    height: 600px;
+  }
+
+  .video-insta div{
+    width: 60%;
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+  .video-yt div{
+    width: 90%;
+    height: 700px;
+  }
+
+  .video-insta div{
+    width: 40%;
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2000px){
+  .video-yt div{
+    width: 90%;
+    height: 1000px;
+  }
+
+  .video-insta div{
+    width: 40%;
+    height: 1000px;
+  }
+}
+
 /* Expo imagenes */
 .masonry {
   position: relative;
@@ -2908,7 +3000,7 @@ blockquote h1{
 .expoyt-project h3 {
    margin: 0;
    padding: 10px;
-   color: var(--imp-text-color);
+   color: var(--color-text);
    background-color: var(--imp-background-color);
    font-weight: 800;
    width: 100%;
