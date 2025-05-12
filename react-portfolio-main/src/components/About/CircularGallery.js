@@ -235,6 +235,7 @@ class Media {
         uniform vec2 uImageSizes;
         uniform vec2 uPlaneSizes;
         uniform sampler2D tMap;
+        uniform vec3 uBackgroundColor; // Agregar color de fondo
         uniform float uBorderRadius;
         varying vec2 vUv;
         
@@ -255,6 +256,10 @@ class Media {
           );
           vec4 color = texture2D(tMap, uv);
           
+         if (color.a < 0.1) {
+            color = vec4(uBackgroundColor, 1.0); // Fondo de color
+         }
+
           // Apply rounded corners (assumes vUv in [0,1])
           float d = roundedBoxSDF(vUv - 0.5, vec2(0.5 - uBorderRadius), uBorderRadius);
           if(d > 0.0) {
@@ -271,6 +276,7 @@ class Media {
             uSpeed: { value: 0 },
             uTime: { value: 100 * Math.random() },
             uBorderRadius: { value: this.borderRadius },
+            uBackgroundColor: { value: [13 / 255, 13 / 255, 13 / 255] }, // Cambiar a #0d0d0d
          },
          transparent: true,
       });
@@ -354,16 +360,16 @@ class Media {
             ];
          }
       }
-      this.scale = this.screen.height / 1500;
+      this.scale = this.screen.height / 1000;
       this.plane.scale.y =
-         (this.viewport.height * (900 * this.scale)) / this.screen.height;
+         (this.viewport.height * (600 * this.scale)) / this.screen.height;
       this.plane.scale.x =
-         (this.viewport.width * (700 * this.scale)) / this.screen.width;
+         (this.viewport.width * (600 * this.scale)) / this.screen.width;
       this.plane.program.uniforms.uPlaneSizes.value = [
          this.plane.scale.x,
          this.plane.scale.y,
       ];
-      this.padding = 2;
+      this.padding = 0.6;
       this.width = this.plane.scale.x + this.padding;
       this.widthTotal = this.width * this.length;
       this.x = this.width * this.index;
@@ -393,6 +399,15 @@ class App {
       this.createMedias(items, bend, textColor, borderRadius, font);
       this.update();
       this.addEventListeners();
+
+      this.autoScrollInterval = 3; // segundos
+      this.scrollStep = this.medias[0].width;
+      this.currentIndex = 0;
+
+      setInterval(() => {
+         this.currentIndex = (this.currentIndex + 1) % this.medias.length;
+         this.scroll.target = this.currentIndex * this.scrollStep;
+      }, this.autoScrollInterval * 1000);
    }
    createRenderer() {
       this.renderer = new Renderer({ alpha: true });
