@@ -7,26 +7,29 @@ export const videos = [
    {
       id: 1,
       videoUrl: "https://www.youtube.com/embed/sECxvJXhaI8?si=dtSnXqzrMRvd_Wbk",
-      title: "Titulo YT Video 1",
+      title: "Titulo del proyecto del video 1",
       desc: "Descripcion YT Video 1",
       slug: "yt-video-1",
       type: "yt",
+      drone: "Drone FPV"
    },
    {
       id: 2,
       videoUrl: "https://www.instagram.com/p/CA4qFw2IFNb/",
       title: "Titulo Insta Video 2",
-      desc: "Descripcion Insta Video 2",
+      desc: "Titulo del proyecto del video 2",
       slug: "insta-video-2",
       type: "insta",
+      drone: "Drone Estabilizado"
    },
    {
       id: 3,
       videoUrl: "https://www.instagram.com/p/Ct81LB3gkOk/",
-      title: "Titulo Insta Video 3",
+      title: "Titulo del proyecto del video 3",
       desc: "Descripcion Insta Video 3",
       slug: "insta-video-3",
       type: "insta",
+      drone: "Drone Estabilizado"
    },
 ];
 

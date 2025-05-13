@@ -2997,16 +2997,47 @@ blockquote h1{
    border: none;
 }
 
-.expoyt-project h3 {
-   margin: 0;
-   padding: 10px;
-   color: var(--color-text);
-   background-color: var(--imp-background-color);
-   font-weight: 800;
-   width: 100%;
-   text-align: center;
+.expoyt-project-title {
+  margin: 0;
+  padding: 10px;
+  color: var(--color-text);
+  font-weight: 800;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expoyt-project-title h3{
+  background-color: #040404;
+  padding: 10px;
+  margin-bottom: 4px !important;
+  padding-inline: 15px;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  text-transform: none;
+}
+
+@media screen and (max-width: 768px){
+  .expoyt-project-title h3{
     font-size: 1rem;
-  margin-top: auto; 
+    padding-inline: 12px;
+  }
+}
+
+.expoyt-project-title p{
+  background-color: #0d0d0db5;
+  padding: 10px;
+  margin-bottom: 0px !important; 
+  padding-inline: 15px;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  text-transform: none;
 }
 
 /* --------- */

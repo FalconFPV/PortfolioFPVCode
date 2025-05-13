@@ -146,7 +146,10 @@ function ExpoMedia({ data }) {
                      }}
                   ></iframe>
 
-                  <h3>{item.title}</h3>
+                  <div className="expoyt-project-title">
+                     <h3>{item.title}</h3>
+                     <p>{item.drone}</p>
+                  </div>
                </div>
             </a.div>
          ))}

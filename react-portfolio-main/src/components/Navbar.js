@@ -44,7 +44,7 @@ function NavBar() {
    ];
 
    const isServicePage = serviceRoutes.includes(location.pathname);
-   const isWorksPage = workdrones.includes(location.pathname);
+   const isWorksPage = location.pathname.startsWith("/works") || location.pathname === "/drones";
    const isPrivacyPolicyPage = privacyPolicy.includes(location.pathname);
 
    useEffect(() => {
