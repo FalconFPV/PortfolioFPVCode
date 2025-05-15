@@ -39,7 +39,7 @@ const Works = () => {
       <div className="works">
          <div className="works-container">
             <h2>{t("works")}</h2>
-            <p>{t("last_update")}</p>
+            <p>{t("works_desc")}</p>
          </div>
          <div className="page-breadcrumb">
             <a href="/PortfolioFalcon">{t("home")}</a>

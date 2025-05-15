@@ -38,7 +38,7 @@ const WorkDetail = () => {
             <span id="sp">/</span>
             <a href="/PortfolioFalcon/works">{t("works")}</a>
             <span>/</span>
-            <span>{video.title}</span>
+            <span className="breadcrumb-title">{video.title}</span>
          </div>
          <div className="works-content">
             <div

@@ -1373,6 +1373,24 @@ nav#backGroundNavbar {
   padding-inline: 26px;
 }
 
+.breadcrumb-title {
+  max-width: 100px; /* o lo que consideres adecuado */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+  .breadcrumb-title {
+    max-width: none;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+}
+
 .page-breadcrumb a{
   color: #fff;
   text-decoration: none;
@@ -2728,6 +2746,8 @@ blockquote h1{
 
 .policy-conditions-container h2{
   color: var(--imp-text-color);
+  margin-top: 4vh;
+  margin-inline: 3vh;
 }
 
 .policy-conditions-content{
@@ -2800,10 +2820,13 @@ blockquote h1{
 
 .works-container p{
   color: #fff;
+  margin-inline: 3vh;
 }
 
 .works-container h2{
   color: var(--imp-text-color);
+  margin-top: 4vh;
+  margin-inline: 3vh;
 }
 
 .works-content{

@@ -111,6 +111,11 @@ function NavBar() {
       updateBackground(!backGround); // Cambia el estado de backGround
    };
 
+   const handleToggleProjects = () => {
+      updateBackground(false);
+      updateExpanded(false);
+   }
+
    return (
       <Navbar
          expanded={expand}
@@ -220,6 +225,7 @@ function NavBar() {
                            as={NavLink}
                            to="/works"
                            className={activeNav === "works" ? "act" : ""}
+                           onClick={handleToggleProjects}
                         >
                            <AiOutlineSolution style={{ marginBottom: "2px" }} />{" "}
                            {t("works")}
