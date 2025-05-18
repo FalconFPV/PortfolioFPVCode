@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Card from "react-bootstrap/Card";
-import myImg from "../../Assets/banner_joancompany3.png";
+import myImg from "../../Assets/banner_joancompany5.jpg";
 import Carousel from "react-bootstrap/Carousel"; 
 import { useTranslation } from "react-i18next";
 import Counter from "../Counter";

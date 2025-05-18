@@ -971,6 +971,8 @@ nav#backGroundNavbar {
   width: 40vh !important;
   margin-inline: 10vh;
   z-index: -1;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .profile-pic-container {

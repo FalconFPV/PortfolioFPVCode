@@ -11,25 +11,25 @@ export const videos = [
       desc: "Descripcion YT Video 1",
       slug: "yt-video-1",
       type: "yt",
-      drone: "Drone FPV"
+      drone: "Drone FPV",
    },
    {
       id: 2,
       videoUrl: "https://www.instagram.com/p/CA4qFw2IFNb/",
-      title: "Titulo Insta Video 2",
-      desc: "Titulo del proyecto del video 2",
+      title: 'Cinematic Shot "El Campet" - FPV',
+      desc: "Toma cinematica en el club de vuelo El Campet, Pollensa",
       slug: "insta-video-2",
       type: "insta",
-      drone: "Drone Estabilizado"
+      drone: "Drone FPV",
    },
    {
       id: 3,
-      videoUrl: "https://www.instagram.com/p/Ct81LB3gkOk/",
-      title: "Titulo del proyecto del video 3",
-      desc: "Descripcion Insta Video 3",
+      videoUrl: "https://www.instagram.com/p/DJJswWPt8QV/",
+      title: "Fira Náutica 2025 - FOSH (Vister Drone)",
+      desc: "Proyecto Realizado por Vister para FOSH Catering",
       slug: "insta-video-3",
       type: "insta",
-      drone: "Drone Estabilizado"
+      drone: "Drone Estabilizado",
    },
 ];
 
