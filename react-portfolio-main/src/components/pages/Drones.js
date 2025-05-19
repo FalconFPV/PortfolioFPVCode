@@ -5,6 +5,7 @@ import Neo from "../../Assets/Drones/neoinfo.png";
 import Mavic from "../../Assets/Drones/mavicinfo.png";
 import Diatone from "../../Assets/Drones/diatoneh.png";
 import Freestyle from "../../Assets/Drones/fpvh.png";
+import Pavo from "../../Assets/Drones/pavo.png";
 import Racing from "../../Assets/Drones/racing.png";
 import { useState } from "react";
 
@@ -61,6 +62,16 @@ const Drones = () => {
          distance: t("drones_content.tbp_d"),
          speed: t("drones_content.tbp_v"),
          weight: t("drones_content.tbp_w"),
+      },
+      {
+         name: t("drones_content.pavo_n"),
+         image: Pavo,
+         desc: t("drones_content.pavo_desc"),
+         time: t("drones_content.pavo_ft"),
+         quality: t("drones_content.pavo_q"),
+         distance: t("drones_content.pavo_d"),
+         speed: t("drones_content.pavo_v"),
+         weight: t("drones_content.pavo_w"),
       },
    ];
 

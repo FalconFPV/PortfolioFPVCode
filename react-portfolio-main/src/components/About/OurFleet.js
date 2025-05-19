@@ -4,6 +4,7 @@ import Drone5inch from "../../Assets/Drones/fpv.png";
 import Drone3inch from "../../Assets/Drones/diatone.png";
 import MavicPro from "../../Assets/Drones/mavic.png";
 import Neo from "../../Assets/Drones/neo.png";
+import Pavo from "../../Assets/Drones/pavo.png";
 import { useTranslation } from "react-i18next";
 import CircularGallery from "./CircularGallery";
 import { Link } from "react-router-dom";
@@ -33,6 +34,11 @@ function DroneFleet() {
             text: t("fpv_3"),
             image: Drone3inch,
             desc: t("fpv_3_desc"),
+         },
+         {
+            text: t("pavo"),
+            image: Pavo,
+            desc: t("pavo_desc"),
          },
          {
             text: t("mavic_pro"),
