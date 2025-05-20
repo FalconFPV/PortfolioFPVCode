@@ -16,7 +16,7 @@ export const videos = [
    {
       id: 2,
       videoUrl: "https://www.instagram.com/p/CA4qFw2IFNb/",
-      title: 'Cinematic Shot "El Campet" - FPV',
+      title: '"El Campet" - FPV Cinematic',
       desc: "Toma cinematica en el club de vuelo El Campet, Pollensa",
       slug: "insta-video-2",
       type: "insta",
@@ -25,7 +25,7 @@ export const videos = [
    {
       id: 3,
       videoUrl: "https://www.instagram.com/p/DJJswWPt8QV/",
-      title: "Fira Náutica 2025 - FOSH (Vister Drone)",
+      title: "Fira Náutica 2025 - FOSH (Vister)",
       desc: "Proyecto Realizado por Vister para FOSH Catering",
       slug: "insta-video-3",
       type: "insta",
