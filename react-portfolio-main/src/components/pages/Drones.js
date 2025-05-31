@@ -95,7 +95,7 @@ const Drones = () => {
             <p>{t("drones_info")}</p>
          </div>
          <div className="page-breadcrumb">
-            <a href="/PortfolioFalcon">{t("home")}</a>
+            <a href="/">{t("home")}</a>
             <span>/</span>
             <span>{t("drones")}</span>
          </div>

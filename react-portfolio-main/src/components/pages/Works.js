@@ -4,15 +4,15 @@ import Contact from "../Home/Contact";
 import ExpoMedia from "../ExpoMedia";
 
 export const videos = [
-   {
-      id: 1,
-      videoUrl: "https://www.youtube.com/embed/sECxvJXhaI8?si=dtSnXqzrMRvd_Wbk",
-      title: "Titulo del proyecto del video 1",
-      desc: "Descripcion YT Video 1",
-      slug: "yt-video-1",
-      type: "yt",
-      drone: "Drone FPV",
-   },
+   // {
+   //    id: 1,
+   //    videoUrl: "https://www.youtube.com/embed/sECxvJXhaI8?si=dtSnXqzrMRvd_Wbk",
+   //    title: "Titulo del proyecto del video 1",
+   //    desc: "Descripcion YT Video 1",
+   //    slug: "yt-video-1",
+   //    type: "yt",
+   //    drone: "Drone FPV",
+   // },
    {
       id: 2,
       videoUrl: "https://www.instagram.com/p/CA4qFw2IFNb/",
@@ -22,15 +22,15 @@ export const videos = [
       type: "insta",
       drone: "Drone FPV",
    },
-   {
-      id: 3,
-      videoUrl: "https://www.instagram.com/p/DJJswWPt8QV/",
-      title: "Fira Náutica 2025 - FOSH (Vister)",
-      desc: "Proyecto Realizado por Vister para FOSH Catering",
-      slug: "insta-video-3",
-      type: "insta",
-      drone: "Drone Estabilizado",
-   },
+   // {
+   //    id: 3,
+   //    videoUrl: "https://www.instagram.com/p/DJJswWPt8QV/",
+   //    title: "Fira Náutica 2025 - FOSH (Vister)",
+   //    desc: "Proyecto Realizado por Vister para FOSH Catering",
+   //    slug: "insta-video-3",
+   //    type: "insta",
+   //    drone: "Drone Estabilizado",
+   // },
 ];
 
 const Works = () => {
@@ -42,7 +42,7 @@ const Works = () => {
             <p>{t("works_desc")}</p>
          </div>
          <div className="page-breadcrumb">
-            <a href="/PortfolioFalcon">{t("home")}</a>
+            <a href="/">{t("home")}</a>
             <span>/</span>
             <span>{t("works")}</span>
          </div>

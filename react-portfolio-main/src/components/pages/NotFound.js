@@ -11,7 +11,7 @@ const NotFound = () => {
          </h1>
          <h2>{t("notfound.subtitle")}</h2>
          <p>{t("notfound.message")}</p>
-         <a href="/PortfolioFalcon" className="home-link">
+         <a href="/" className="home-link">
             {t("notfound.text")}
          </a>
       </div>

@@ -9,7 +9,7 @@ i18n
       fallbackLng: "es", // Idioma predeterminado
       lng: "es", // Idioma inicial
       backend: {
-         loadPath: "/PortfolioFalcon/locales/{{lng}}/labels_{{lng}}.json", // Ruta a los archivos XML
+         loadPath: "/locales/{{lng}}/labels_{{lng}}.json", // Ruta a los archivos XML
       },
       interpolation: {
          escapeValue: false, // Permite HTML en las traducciones

@@ -127,7 +127,7 @@ function NavBar() {
          <Navbar.Brand
             href={
                isServicePage || isWorksPage || isPrivacyPolicyPage
-                  ? "/PortfolioFalcon"
+                  ? "/"
                   : "#home"
             }
          >
@@ -237,7 +237,7 @@ function NavBar() {
                {(isServicePage || isWorksPage) && (
                   <>
                      <Nav.Item>
-                        <Nav.Link href="/PortfolioFalcon">
+                        <Nav.Link href="/">
                            <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
                            {t("home")}
                         </Nav.Link>

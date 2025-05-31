@@ -38,7 +38,7 @@ function App() {
    }, []);
 
    return (
-      <Router basename="/PortfolioFalcon">
+      <Router basename="/">
          <div className="App" id={load ? "no-scroll" : "scroll"}>
             <Suspense fallback={<div>Loading...</div>}>
                <Navbar />

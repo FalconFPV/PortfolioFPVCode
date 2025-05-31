@@ -11,7 +11,7 @@ const Conditions = () => {
              <p>{t("last_update")}</p>
           </div>
           <div className="page-breadcrumb">
-             <a href="/PortfolioFalcon">{t("home")}</a>
+             <a href="/">{t("home")}</a>
              <span>/</span>
              <span>{t("terms_and_conditions")}</span>
           </div>

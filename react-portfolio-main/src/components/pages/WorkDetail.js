@@ -34,9 +34,9 @@ const WorkDetail = () => {
             <p>{video.desc}</p>
          </div>
          <div className="page-breadcrumb">
-            <a href="/PortfolioFalcon">{t("home")}</a>
+            <a href="/">{t("home")}</a>
             <span id="sp">/</span>
-            <a href="/PortfolioFalcon/works">{t("works")}</a>
+            <a href="//works">{t("works")}</a>
             <span>/</span>
             <span className="breadcrumb-title">{video.title}</span>
          </div>
