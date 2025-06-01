@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "./components/Preloader";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import Footer from "./components/Footer";
-import ScrollToTopButton from "./components/ScrollToTopButton";
+import React, { useState, useEffect, Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ScrollToTop from "./components/ScrollToTop";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./i18n"; // Importa la configuración de i18next
-import { Suspense } from "react";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Preloader from "./components/Preloader";
+import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import WhatsAppButton from "./components/WhatsAppButton";
+
+import Home from "./components/Home/Home";
 import AerialPhotography from "./components/pages/AerialPhotography";
 import RealEstate from "./components/pages/RealEstate";
 import Events from "./components/pages/Events";
@@ -24,15 +22,18 @@ import Works from "./components/pages/Works";
 import WorkDetail from "./components/pages/WorkDetail";
 import Drones from "./components/pages/Drones";
 import NotFound from "./components/pages/NotFound";
-import WhatsAppButton from "./components/WhatsAppButton";
+import Links from "./components/BioLinks/BioLinks";
+
+import "./style.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./i18n"; // i18next
 
 function App() {
    const [load, updateLoad] = useState(true);
 
    useEffect(() => {
-      const timer = setTimeout(() => {
-         updateLoad(false);
-      }, 1100);
+      const timer = setTimeout(() => updateLoad(false), 1100);
       Aos.init();
       return () => clearTimeout(timer);
    }, []);
@@ -41,31 +42,56 @@ function App() {
       <Router basename="/">
          <div className="App" id={load ? "no-scroll" : "scroll"}>
             <Suspense fallback={<div>Loading...</div>}>
-               <Navbar />
-               <ScrollToTop />
                <Switch>
-                  <Route path="/" exact component={Home} />
-                  <Route path="/works/:videoName" component={WorkDetail} />
-                  <Route path="/works" exact component={Works} />
-                  <Route path="/drones" component={Drones} />
-                  <Route path="/policy" component={Policy} />
-                  <Route path="/conditions" component={Conditions} />
+                  {/* RUTA SIN NAVBAR NI FOOTER */}
+                  <Route path="/links" exact component={Links} />
+
+                  {/* TODAS LAS DEMÁS */}
                   <Route
-                     path="/aerial-photography"
-                     component={AerialPhotography}
+                     path="/"
+                     render={() => (
+                        <>
+                           <Navbar />
+                           <ScrollToTop />
+                           <Switch>
+                              <Route path="/" exact component={Home} />
+                              <Route
+                                 path="/works/:videoName"
+                                 component={WorkDetail}
+                              />
+                              <Route path="/works" exact component={Works} />
+                              <Route path="/drones" component={Drones} />
+                              <Route path="/policy" component={Policy} />
+                              <Route
+                                 path="/conditions"
+                                 component={Conditions}
+                              />
+                              <Route
+                                 path="/aerial-photography"
+                                 component={AerialPhotography}
+                              />
+                              <Route
+                                 path="/real-estate"
+                                 component={RealEstate}
+                              />
+                              <Route path="/events" component={Events} />
+                              <Route
+                                 path="/inspections"
+                                 component={Inspections}
+                              />
+                              <Route path="/fpv" component={FPV} />
+                              <Route component={NotFound} />
+                           </Switch>
+                           <Footer />
+                           <WhatsAppButton />
+                           <ScrollToTopButton />
+                        </>
+                     )}
                   />
-                  <Route path="/real-estate" component={RealEstate} />
-                  <Route path="/events" component={Events} />
-                  <Route path="/inspections" component={Inspections} />
-                  <Route path="/fpv" component={FPV} />
-                  <Route component={NotFound} />
                </Switch>
-               <Footer />
-               <WhatsAppButton />
-               <ScrollToTopButton />
             </Suspense>
+            <Preloader load={load} />
          </div>
-         <Preloader load={load} />
       </Router>
    );
 }
