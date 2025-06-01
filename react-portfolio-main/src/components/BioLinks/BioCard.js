@@ -51,8 +51,8 @@ const BioCard = () => {
    const handleShare = () => {
       const shareData = {
          title: "Joan Company - Links",
-         text: "Echa un vistazo a mi perfil!",
-         url: "https://joancompany.es/links", // Tu URL específica
+         text: "Echa un vistazo al perfil de Joan Company - Piloto de Drones Profesional!",
+         url: "https://www.joancompany.es/links",
       };
 
       if (navigator.share) {
