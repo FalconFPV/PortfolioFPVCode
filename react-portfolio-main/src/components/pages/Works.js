@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Contact from "../Home/Contact";
 import ExpoMedia from "../ExpoMedia";
+import { Helmet } from "react-helmet";
 
 export const videos = [
    // {
@@ -37,6 +38,13 @@ const Works = () => {
    const { t } = useTranslation();
    return (
       <div className="works">
+         <Helmet>
+            <title>Trabajos realizados con drones | Joan Company</title>
+            <meta
+               name="description"
+               content="Explora mis proyectos con drones: vídeos FPV, grabaciones aéreas para inmobiliarias, eventos y mucho más."
+            />
+         </Helmet>
          <div className="works-container">
             <h2>{t("works")}</h2>
             <p>{t("works_desc")}</p>

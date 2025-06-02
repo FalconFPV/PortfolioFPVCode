@@ -1064,7 +1064,7 @@ nav#backGroundNavbar {
 
 .habilities{
   height: 100%;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .habilities h1{

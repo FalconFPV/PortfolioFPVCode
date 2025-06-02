@@ -8,6 +8,7 @@ import Freestyle from "../../Assets/Drones/fpvh.png";
 import Pavo from "../../Assets/Drones/pavo.png";
 import Racing from "../../Assets/Drones/racing.png";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 import { FaBalanceScale, FaClock, FaRocket, FaSignal, FaVideo } from "react-icons/fa";
 
@@ -90,6 +91,13 @@ const Drones = () => {
    
    return (
       <div className="policy-conditions" id="drones">
+         <Helmet>
+            <title>Flota de drones | Joan Company</title>
+            <meta
+               name="description"
+               content="Descubre mi flota de drones para grabación aérea. Drones estabilizados, FPV y de carreras para capturar imágenes únicas."
+            />
+         </Helmet>
          <div className="policy-conditions-container">
             <h2>{t("drones")}</h2>
             <p>{t("drones_info")}</p>

@@ -6,12 +6,21 @@ import realEstatequestionsbg from "../../Assets/ServiceImg/realstate-qbg.webp"; 
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";
+import { Helmet } from "react-helmet";
 
 const RealEstate = () => {
    const { t } = useTranslation();
 
     return (
        <div className="service-container">
+          <Helmet>
+             <title>Grabación de vídeo para inmobiliarias con drones | Joan Company</title>
+             <meta
+                name="description"
+                content="Vídeos y fotos aéreas para el sector inmobiliario, destacando propiedades con tomas únicas y profesionales."
+             />
+          </Helmet>
+
           <ServiceInfo
              title={t("real_estate_services")}
              image={realEstatemenubg}

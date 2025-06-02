@@ -6,12 +6,20 @@ import aerialquestionsbg from "../../Assets/ServiceImg/aerial-qbg.webp"; // Imag
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";
+import { Helmet } from "react-helmet";
 
 const AerialPhotography = () => {
    const { t } = useTranslation();
 
     return (
        <div className="service-container">
+          <Helmet>
+             <title>Fotografía aérea profesional | Joan Company</title>
+             <meta
+                name="description"
+                content="Fotografía aérea con drones para inmobiliarias, turismo y eventos en Mallorca, con calidad y profesionalidad."
+             />
+          </Helmet>
           <ServiceInfo
              title={t("aerial_photography")}
              image={aerialmenubg}

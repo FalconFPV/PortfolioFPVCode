@@ -6,12 +6,20 @@ import eventquestionsbg from "../../Assets/ServiceImg/event-qbg.webp"; // Imagen
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";
+import { Helmet } from "react-helmet";
 
 const Events = () => {
    const { t } = useTranslation();
 
    return (
       <div className="service-container">
+         <Helmet>
+            <title>Grabación de eventos con drones | Joan Company</title>
+            <meta
+               name="description"
+               content="Cobertura aérea para eventos, bodas, conciertos y celebraciones con drones para capturar momentos únicos."
+            />
+         </Helmet>
          <ServiceInfo
             title={t("event_coverage")}
             image={eventmenubg}

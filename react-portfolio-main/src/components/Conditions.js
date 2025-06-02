@@ -1,11 +1,19 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 import Card from "react-bootstrap/Card";
+import { Helmet } from "react-helmet";
 
 const Conditions = () => {
     const { t } = useTranslation();
     return (
        <div className="policy-conditions">
+          <Helmet>
+             <title>Términos y condiciones | Joan Company</title>
+             <meta
+                name="description"
+                content="Consulta los términos y condiciones de los servicios de grabación y fotografía aérea con drones."
+             />
+          </Helmet>
           <div className="policy-conditions-container">
              <h2>{t("terms_and_conditions")}</h2>
              <p>{t("last_update")}</p>

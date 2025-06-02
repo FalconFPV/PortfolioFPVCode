@@ -6,12 +6,20 @@ import fpvquestionsbg from "../../Assets/ServiceImg/fpv-qbg.webp"; // Imagen de 
 import Contact from "../Home/Contact";
 import ServiceInfo from "./ServiceInfo";
 import Card from "react-bootstrap/Card";
+import { Helmet } from "react-helmet";
 
 const FPV = () => {
    const { t } = useTranslation();
 
     return (
        <div className="service-container">
+          <Helmet>
+             <title>Vídeos FPV y grabaciones dinámicas | Joan Company</title>
+             <meta
+                name="description"
+                content="Grabaciones FPV (First Person View) con drones para vídeos espectaculares y dinámicos en Mallorca."
+             />
+          </Helmet>
           <ServiceInfo
              title={t("fpv")}
              image={fpvmenubg}
