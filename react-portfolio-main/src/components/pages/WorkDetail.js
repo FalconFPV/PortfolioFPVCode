@@ -4,7 +4,7 @@ import { useState} from "react";
 import { useTranslation } from "react-i18next";
 import Contact from "../Home/Contact";
 import { Spinner } from "react-bootstrap";
-import { videos } from "./Works";
+import { useTranslatedVideos } from "./WorkVideos";
 
 function getEmbedUrl(url) {
    if (url.includes("youtube.com") || url.includes("youtu.be")) {
@@ -20,6 +20,7 @@ function getEmbedUrl(url) {
 const WorkDetail = () => {
    const [loadedVideos, setLoadedVideos] = useState({}); // Estado para controlar carga de videos
    const { t } = useTranslation();
+   const videos = useTranslatedVideos();
    const { videoName } = useParams();
    const video = videos.find((v) => v.slug === videoName);
 
@@ -36,7 +37,7 @@ const WorkDetail = () => {
          <div className="page-breadcrumb">
             <a href="/">{t("home")}</a>
             <span id="sp">/</span>
-            <a href="//works">{t("works")}</a>
+            <a href="/works">{t("works")}</a>
             <span>/</span>
             <span className="breadcrumb-title">{video.title}</span>
          </div>

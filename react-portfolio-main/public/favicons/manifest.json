@@ -1,6 +1,8 @@
 {
- "name": "App",
- "icons": [
+    "short_name": "Joan Drones",
+    "name": "Piloto de Drones Mallorca - Joan Company",
+    "description": "Grabaciones aéreas FPV, fotografía y vídeos profesionales con drones en Mallorca. Impulsa tu proyecto desde el cielo.",
+    "icons": [
   {
    "src": "\/android-icon-36x36.png",
    "sizes": "36x36",
@@ -37,5 +39,9 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "start_url": "/index.html",
+ "display": "standalone",
+ "theme_color": "#000000",
+ "background_color": "#ffffff"
 }

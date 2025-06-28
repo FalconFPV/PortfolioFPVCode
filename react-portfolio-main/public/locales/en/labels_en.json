@@ -171,5 +171,18 @@
     "name_placeholder": "Name",
     "email_placeholder": "Email",
     "phone_placeholder": "Phone number (Optional)",
-    "tell_us": "Tell me about your project"
+    "tell_us": "Tell me about your project",
+    "works_info":
+    {
+        "w1":{
+            "title": "Llucmajor Circuit -VISTER / FPV",
+            "desc": "Promo video for the Llucmajor Circuit, filmed with FPV drone and VISTER team."
+        },
+        "w2":{
+            "title": "MT-Fitness GYM - FPV",
+            "desc": "Promotional video for MT-Fitness GYM, filmed with FPV drone, Alcúdia."
+        }
+    },
+    "works_meta": "Works done with drones | Joan Company",
+    "drones_meta": "Drones fleet | Joan Company"
 }

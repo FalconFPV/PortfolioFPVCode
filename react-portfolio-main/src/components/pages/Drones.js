@@ -92,7 +92,7 @@ const Drones = () => {
    return (
       <div className="policy-conditions" id="drones">
          <Helmet>
-            <title>Flota de drones | Joan Company</title>
+            <title>{t("drones_meta")}</title>
             <meta
                name="description"
                content="Descubre mi flota de drones para grabación aérea. Drones estabilizados, FPV y de carreras para capturar imágenes únicas."

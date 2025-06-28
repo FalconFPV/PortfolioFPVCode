@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import CircularGallery from "./CircularGallery";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import BrutePower from "../../Assets/Sponsors/BrutePower.png";
+import Ovonic from "../../Assets/Sponsors/ovonic.png";
 import Diatone from "../../Assets/Sponsors/Diatone.png";
 import FolienrabeLogo from "../../Assets/Sponsors/FolienrabeLogo.png";
 import Gemfan from "../../Assets/Sponsors/Gemfan.png";
@@ -54,8 +54,8 @@ function DroneFleet() {
    
    const sponsors = [
       {
-         name: "Brute Power",
-         image: BrutePower,
+         name: "Ovonic",
+         image: Ovonic,
       }
       ,
       {

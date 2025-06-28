@@ -171,5 +171,18 @@
     "name_placeholder": "Nombre",
     "email_placeholder": "Correo electrónico",
     "phone_placeholder": "Número de teléfono (Opcional)",
-    "tell_us": "Cuéntame tu proyecto"
+    "tell_us": "Cuéntame tu proyecto",
+    "works_info":
+    {
+        "w1": {
+            "title": "Circuito de Llucmajor - VISTER / FPV",
+            "desc": "Vídeo promocional junto al equipo de VISTER del circuito de Llucmajor, Mallorca"
+        },
+        "w2": {
+            "title": "MT-Fitness GYM - FPV",
+            "desc": "Vídeo promocional en el gimnasio MT-Fitness, Alcúdia"
+        }
+    },
+    "works_meta": "Trabajos realizados con drones | Joan Company",
+    "drones_meta": "Flota de Drones | Joan Company"
 }
