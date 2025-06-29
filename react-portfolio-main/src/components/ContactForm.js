@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { FaRegCheckCircle, FaRegQuestionCircle, FaTimes } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
+
+   const [recaptchaToken, setRecaptchaToken] = useState(null);
+   const recaptchaRef = React.useRef();
    const { t } = useTranslation();
    const [formData, setFormData] = useState({
       name: "",
@@ -47,6 +51,11 @@ const ContactForm = () => {
    const handleSubmit = async (e) => {
       e.preventDefault();
 
+      if (!recaptchaToken) {
+         setSubmitMessage(t("captcha_required")); // Añade esta traducción
+         return;
+      }
+
       if (validateForm()) {
          setIsSubmitting(true);
 
@@ -56,7 +65,7 @@ const ContactForm = () => {
                {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(formData),
+                  body: JSON.stringify({ ...formData, recaptchaToken }), 
                }
             );
 
@@ -142,7 +151,11 @@ const ContactForm = () => {
                   <span className="error-message">{errors.message}</span>
                )}
             </div>
-
+            <ReCAPTCHA
+               sitekey="6LdDz3ErAAAAAAhHJsiE_QSd7FdcD0GEjhktCZkL"
+               onChange={(token) => setRecaptchaToken(token)}
+               ref={recaptchaRef}
+            />
             <button
                type="submit"
                className="submit-button"

@@ -184,5 +184,6 @@
         }
     },
     "works_meta": "Works done with drones | Joan Company",
-    "drones_meta": "Drones fleet | Joan Company"
+    "drones_meta": "Drones fleet | Joan Company",
+    "captcha_required": "Please complete the reCAPTCHA to continue."
 }

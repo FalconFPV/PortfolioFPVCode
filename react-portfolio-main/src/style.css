@@ -3434,6 +3434,7 @@ blockquote h1{
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 1rem;
 }
 
 .submit-button:hover {
