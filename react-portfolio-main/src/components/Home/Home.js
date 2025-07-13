@@ -4,7 +4,7 @@ import About from "../About/About";
 import { FaArrowDown } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Animations from "../../Animations";
-import video from "../../Assets/Video2.mp4"; 
+import video from "../../Assets/Video2.mp4";
 import Contact from "./Contact";
 import SplitText from "./SplitText";
 

@@ -11,15 +11,15 @@ function AboutCard() {
    const [countersStarted, setCountersStarted] = useState(false);
    const carouselImages = [
       {
-         src: require("../../Assets/bdr.jpg"),
+         src: require("../../Assets/bdr.webp"),
          alt: "Balearic Drone Racing",
       },
       {
-         src: require("../../Assets/toledo.jpg"),
+         src: require("../../Assets/toledo.webp"),
          alt: "Iberian Drone League - Toledo",
       },
       {
-         src: require("../../Assets/mdp.jpg"),
+         src: require("../../Assets/mdp.webp"),
          alt: "Mollerussa Drone Party 2020",
       },
       {

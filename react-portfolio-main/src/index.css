@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-
 @font-face {
   font-family: 'DMSansLight';
-  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-Medium.ttf");
+  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-Medium.woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'DMSansMedium';
-  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-SemiBold.ttf");
+  src: url("./Assets/fonts/DM_Sans/DM_Sans/static/DMSans-SemiBold.woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
