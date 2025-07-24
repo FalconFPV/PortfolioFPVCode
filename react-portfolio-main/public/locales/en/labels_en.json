@@ -189,6 +189,10 @@
         "w4":{
             "title": "Karting Llucmajor - VISTER / FPV",
             "desc": "Promotional video with the VISTER team at the Llucmajor Karting, Mallorca."
+        },
+        "w5":{
+            "title": "Windsurf -  FPV",
+            "desc": "Promotional video of the Balearic windsurf runner-up with FPV drone."
         }
     },
     "works_meta": "Works done with drones | Joan Company",

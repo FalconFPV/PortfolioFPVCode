@@ -13,6 +13,16 @@ export const useTranslatedVideos = () => {
       //    type: "yt",
       //    drone: "Drone FPV",
       // },
+
+      {
+         id: 5,
+         videoUrl: "https://www.instagram.com/p/DMXL8Uuo2hx/",
+         title: t("works_info.w5.title"),
+         desc: t("works_info.w5.desc"),
+         slug: "yt-video-5",
+         type: "insta",
+         drone: "Drone FPV",
+      },
       {
          id: 3,
          videoUrl: "https://www.instagram.com/p/DMFYr_sJuw4/",
