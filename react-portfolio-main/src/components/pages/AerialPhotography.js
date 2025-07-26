@@ -43,7 +43,7 @@ const AerialPhotography = () => {
                       />
                    </div>
                    <div className="service-info-image">
-                      <img src={aerial} alt={t("aerial_photography")} />
+                      <img src={aerial} alt={t("aerial_photography")} title={t("aerial_photography")} />
                    </div>
                 </div>
              </Card.Body>

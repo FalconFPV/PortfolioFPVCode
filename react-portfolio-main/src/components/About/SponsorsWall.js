@@ -32,14 +32,14 @@ function SponsorsWall({
             <div className="sponsor__group">
                {items.map((item) => (
                   <div className="sponsor__item" key={item.name}>
-                     <img src={item.image} alt={item.name} />
+                     <img src={item.image} alt={item.name} title={item.name} />
                   </div>
                ))}
             </div>
             <div className="sponsor__group" aria-hidden="true">
                {items.map((item) => (
                   <div className="sponsor__item" key={`dup1-${item.name}`}>
-                     <img src={item.image} alt={item.name} />
+                     <img src={item.image} alt={item.name} title={item.name} />
                   </div>
                ))}
             </div>

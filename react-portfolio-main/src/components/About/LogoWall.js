@@ -32,7 +32,7 @@ function LogoWall({
             <div className="marquee__group">
                {items.map((item) => (
                   <div className="marquee__item" key={item.name}>
-                     <img src={item.photo} alt={item.name} />
+                     <img src={item.photo} alt={item.name} title={item.name} />
                      <div className="marquee__item-text">
                         <p>{item.name}</p>
                         <p>{item.opinion}</p>
@@ -43,7 +43,7 @@ function LogoWall({
             <div className="marquee__group" aria-hidden="true">
                {items.map((item) => (
                   <div className="marquee__item" key={`dup1-${item.name}`}>
-                     <img src={item.photo} alt={item.name} />
+                     <img src={item.photo} alt={item.name} title={item.name} />
                      <div className="marquee__item-text">
                         <p>{item.name}</p>
                         <p>{item.opinion}</p>

@@ -89,6 +89,7 @@ const BioCard = () => {
                src={profileImage}
                alt="Falcon Image"
                className="bio-card-image"
+               title="Falcon Image"
             />
          </div>
          <div className="bio-card-content">

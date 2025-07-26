@@ -43,7 +43,7 @@ const FPV = () => {
                       />
                    </div>
                    <div className="service-info-image">
-                      <img src={fpvImg} alt={t("fpv")} />
+                      <img src={fpvImg} alt={t("fpv")} title={t("fpv")} />
                    </div>
                 </div>
              </Card.Body>

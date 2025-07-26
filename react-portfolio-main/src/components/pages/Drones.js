@@ -126,6 +126,7 @@ const Drones = () => {
                            <img
                               src={drone.image}
                               alt={drone.name}
+                              title={drone.name}
                               onLoad={() => handleImageLoad(index)}
                               style={{
                                  display: loadedImages[index]
@@ -175,6 +176,7 @@ const Drones = () => {
                            <img
                               src={drone.image}
                               alt={drone.name}
+                              title={drone.name}
                               onLoad={() => handleImageLoad(index)}
                               style={{
                                  display: loadedImages[index]
@@ -225,6 +227,7 @@ const Drones = () => {
                            <img
                               src={drone.image}
                               alt={drone.name}
+                              title={drone.name}
                               onLoad={() => handleImageLoad(index)}
                               style={{
                                  display: loadedImages[index]

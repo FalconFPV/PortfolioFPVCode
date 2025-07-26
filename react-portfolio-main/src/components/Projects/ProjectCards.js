@@ -30,7 +30,7 @@ function ProjectCards(props) {
             <h5>Technology/ies used:</h5>
             <div className="tech-img">
                {props.images.map((img, index) => (
-                  <img key={index} src={img} alt={`tech-img-${index}`} />
+                  <img key={index} src={img} alt={`tech-img-${index}`} title={"Technology used"} />
                ))}{" "}
             </div>
          </div>

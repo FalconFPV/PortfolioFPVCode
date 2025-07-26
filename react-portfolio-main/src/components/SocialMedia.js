@@ -14,6 +14,7 @@ function SocialMedia() {
               rel="noreferrer"
               aria-label={t("mailto")}
               className="icon-colour home-social-icons"
+              title={t("mailto")}
            >
               <MdEmail className="social-icon" />
            </a>
@@ -36,6 +37,7 @@ function SocialMedia() {
               rel="noreferrer"
               aria-label={t("instagram")}
               className="icon-colour home-social-icons"
+              title="Instagram"
            >
               <FaInstagram className="social-icon" />
            </a>
@@ -47,6 +49,7 @@ function SocialMedia() {
               rel="noreferrer"
               aria-label={t("facebook")}
               className="icon-colour home-social-icons"
+              title="Facebook"
            >
               <FaFacebook className="social-icon" />
            </a>

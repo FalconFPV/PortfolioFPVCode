@@ -19,13 +19,14 @@ function Footer() {
            <Col md="6" className="footer-copywright">
               <h2>{t("aesa")}</h2>
               <div className="aesa">
-                 <img className="aesa-logos" src={aesa} alt="AESA logo" />
+                 <img className="aesa-logos" src={aesa} alt="AESA logo" title="AESA logo" />
                  <img
                     className="aesa-logos"
                     src={gobesp}
                     alt="Gobierno de España logo"
+                    title="Gobierno de España logo"
                  />
-                 <img className="aesa-logos" src={easa} alt="EASA logo" />
+                 <img className="aesa-logos" src={easa} alt="EASA logo" title="EASA logo" />
               </div>
            </Col>
            <Col md="3" className="footer-body">
@@ -52,8 +53,8 @@ function Footer() {
            </Col>
            <Col md="6" className="footer-terms">
               <p>
-                 <Link to="/conditions">{t("terms_and_conditions")}</Link> |{" "}
-                 <Link to="/policy">{t("privacy_policy")}</Link>
+                 <Link to="/conditions" title={t("terms_and_conditions")}>{t("terms_and_conditions")}</Link> |{" "}
+                 <Link to="/policy" title={t("privacy_policy")}>{t("privacy_policy")}</Link>
               </p>
            </Col>
         </Row>

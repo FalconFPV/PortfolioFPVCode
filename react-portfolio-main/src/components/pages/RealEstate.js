@@ -47,6 +47,7 @@ const RealEstate = () => {
                       <img
                          src={realEstateImg}
                          alt={t("real_estate_services")}
+                         title={t("real_estate_services")}
                       />
                    </div>
                 </div>

@@ -102,7 +102,7 @@ const CertificationCard = ({ name, img, desc, delay }) => {
          id="droneCard"
       >
          <div>
-            <img className="drone" src={img} alt={name} />
+            <img className="drone" src={img} alt={name} title={name} />
             <div className="cert-text">
                <Name>{name}</Name>
                <Description>{desc}</Description>

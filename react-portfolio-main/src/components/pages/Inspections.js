@@ -33,7 +33,7 @@ const Inspections = () => {
                       />
                    </div>
                    <div className="service-info-image">
-                      <img src={inspectionImg} alt={t("inspections_surveys")} />
+                      <img src={inspectionImg} alt={t("inspections_surveys")} title={t("inspections_surveys")} />
                    </div>
                 </div>
              </Card.Body>

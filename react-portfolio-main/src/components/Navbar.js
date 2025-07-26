@@ -131,7 +131,7 @@ function NavBar() {
                   : "#home"
             }
          >
-            <img src={LofoFalcon} className="logo" alt="brand" style={{}} />
+            <img src={LofoFalcon} className="logo" alt="brand" title="Logo Falcon" style={{}} />
          </Navbar.Brand>
          <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -159,6 +159,7 @@ function NavBar() {
                            code={language === "es" ? "es" : "gb"}
                            className="lang-flag" // Texto dinámico
                            alt="Language flag"
+                           title="Language flag"
                         />
                      </div>
                   </Nav.Link>

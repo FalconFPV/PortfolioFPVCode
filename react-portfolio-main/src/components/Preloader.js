@@ -48,7 +48,7 @@ function Preloader({ load }) {
                strokeDashoffset={offset}
             />
          </svg>
-         <img src={LofoFalcon} className="logoPreloader" alt="logoFalcon" />
+         <img src={LofoFalcon} className="logoPreloader" alt="logoFalcon" title="Logo Falcon" />
       </div>
    );
 }

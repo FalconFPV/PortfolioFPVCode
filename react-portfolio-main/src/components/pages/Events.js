@@ -43,7 +43,7 @@ const Events = () => {
                      />
                   </div>
                   <div className="service-info-image">
-                     <img src={eventImg} alt={t("event_coverage")} />
+                     <img src={eventImg} alt={t("event_coverage")} title={t("event_coverage")} />
                   </div>
                </div>
             </Card.Body>

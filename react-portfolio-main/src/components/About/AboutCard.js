@@ -107,7 +107,7 @@ function AboutCard() {
                </div>
                <div className="profile-pic-container">
                   <div className="pic-shadow"></div>
-                  <img src={myImg} className="profile-pic" alt="avatar" />
+                  <img src={myImg} className="profile-pic" alt="avatar" title="Avatar" />
                </div>
             </div>
             <div
@@ -123,6 +123,7 @@ function AboutCard() {
                                  className="d-block"
                                  src={image.src}
                                  alt={image.alt}
+                                 title={image.alt}
                               />
                               <p>{image.alt}</p>
                            </Carousel.Item>
