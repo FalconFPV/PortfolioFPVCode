@@ -31,8 +31,8 @@ const WorkDetail = () => {
    return (
       <div className="works">
          <div className="works-container">
-            <h2>{video.title}</h2>
-            <p>{video.desc}</p>
+            <h1>{video.title}</h1>
+            <h2>{video.desc}</h2>
          </div>
          <div className="page-breadcrumb">
             <a href="/">{t("home")}</a>

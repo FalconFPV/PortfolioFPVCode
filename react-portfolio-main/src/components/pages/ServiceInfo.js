@@ -31,8 +31,8 @@ const ServiceInfo = ({ title, subtitle, image, description }) => {
                   />
                </div>
             )}
-            <h2 className="service-info-title">{title}</h2>
-            <h3 className="service-info-subtitle">{subtitle}</h3>
+            <h1 className="service-info-title">{title}</h1>
+            <h2 className="service-info-subtitle">{subtitle}</h2>
          </div>
          <div className="page-breadcrumb">
             <a href="/">{t("home")}</a>

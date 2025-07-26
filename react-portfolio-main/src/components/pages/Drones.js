@@ -99,8 +99,8 @@ const Drones = () => {
             />
          </Helmet>
          <div className="policy-conditions-container">
-            <h2>{t("drones")}</h2>
-            <p>{t("drones_info")}</p>
+            <h1>{t("drones")}</h1>
+            <h2>{t("drones_info")}</h2>
          </div>
          <div className="page-breadcrumb">
             <a href="/">{t("home")}</a>

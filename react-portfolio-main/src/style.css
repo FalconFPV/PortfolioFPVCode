@@ -2741,15 +2741,17 @@ blockquote h1{
   background-position: center;
 }
 
-.policy-conditions-container p{
+.policy-conditions-container h2{
   color: #fff;
   padding-inline: 4vh;
+  font-size: 1rem;
 }
 
-.policy-conditions-container h2{
+.policy-conditions-container h1{
   color: var(--imp-text-color);
   margin-top: 4vh;
   margin-inline: 3vh;
+  font-size: 2rem;
 }
 
 .policy-conditions-content{
@@ -2832,17 +2834,19 @@ blockquote h1{
   z-index: 1;
 }
 
-.works-container p{
+.works-container h2{
   color: #fff;
   margin-inline: 3vh;
   z-index: 2;
+  font-size: 1rem;
 }
 
-.works-container h2{
+.works-container h1{
   color: var(--imp-text-color);
   margin-top: 6vh;
   margin-inline: 3vh;
   z-index: 2;
+  font-size: 2rem;
 }
 
 .works-content{

@@ -15,8 +15,8 @@ const Conditions = () => {
              />
           </Helmet>
           <div className="policy-conditions-container">
-             <h2>{t("terms_and_conditions")}</h2>
-             <p>{t("last_update")}</p>
+             <h1>{t("terms_and_conditions")}</h1>
+             <h2>{t("last_update")}</h2>
           </div>
           <div className="page-breadcrumb">
              <a href="/">{t("home")}</a>

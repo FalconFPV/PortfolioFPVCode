@@ -19,8 +19,8 @@ const Works = () => {
             />
          </Helmet>
          <div className="works-container">
-            <h2>{t("works")}</h2>
-            <p>{t("works_desc")}</p>
+            <h1>{t("works")}</h1>
+            <h2>{t("works_desc")}</h2>
          </div>
          <div className="page-breadcrumb">
             <a href="/">{t("home")}</a>
