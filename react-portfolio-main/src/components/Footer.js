@@ -36,7 +36,7 @@ function Footer() {
               <h2>{t("contact")}</h2>
               <div className="contact-info-footer">
                  <MdEmail />
-                 <p>joan.falconfpv@gmail.com</p>
+                 <p>falcon@joancompany.es</p>
               </div>
               <div className="contact-info-footer">
                  <MdPhone />

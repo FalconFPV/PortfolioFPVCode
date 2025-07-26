@@ -4,7 +4,7 @@ import { FaEnvelope, FaFacebook, FaGlobe, FaInstagram, FaYoutube } from 'react-i
 const links = [
    {
       name: "Mail",
-      link: "mailto:joan.falconfpv@gmail.com",
+      link: "mailto:falcon@joancompany.es",
       icon: FaEnvelope,
    },
    {

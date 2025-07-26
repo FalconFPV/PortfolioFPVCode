@@ -9,7 +9,7 @@ function SocialMedia() {
      <ul className="home-about-social-links">
         <li className="social-icons">
            <a
-              href="mailto:joan.falconfpv@gmail.com"
+              href="mailto:falcon@joancompany.es"
               target="_blank"
               rel="noreferrer"
               aria-label={t("mailto")}
