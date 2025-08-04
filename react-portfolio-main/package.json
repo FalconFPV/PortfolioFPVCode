@@ -12,6 +12,7 @@
     "bootstrap": "^4.5.3",
     "caniuse-lite": "^1.0.30001700",
     "framer-motion": "^6.5.1",
+    "google-reviews-widget": "^1.0.4",
     "gsap": "^3.12.7",
     "i18next": "^24.1.2",
     "i18next-http-backend": "^3.0.1",

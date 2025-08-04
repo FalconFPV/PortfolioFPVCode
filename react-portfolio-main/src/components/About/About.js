@@ -21,14 +21,14 @@ function About() {
               </div>
               <OurFleet />
               {/* Opiniones */}
-              {/* <div
+              <div
                  className="skill-section-testimonials-container"
                  id="testimonials"
                  data-aos="fade-up"
                  data-aos-duration="2000"
               >
                  <Testimonials />
-              </div> */}
+              </div>
            </Row>
         </Row>
      </Container>
