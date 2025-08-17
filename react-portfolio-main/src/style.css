@@ -3645,4 +3645,14 @@ blockquote h1{
 .see_more{
   color: var(--imp-text-color);
   cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see_more:hover{
+  text-decoration: none;
+  color: var(--imp-text-color);
 }

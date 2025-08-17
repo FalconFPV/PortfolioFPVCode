@@ -87,17 +87,12 @@ const truncateText = (text, maxLength) => {
             <p className="text-sm leading-snug text-[#fafeff]">
                {truncateText(review.text, 134)}
             </p>
-            <p
+            <a
                className="see_more"
-               onClick={() =>
-                  window.open(
-                     "https://www.google.es/maps/place/Joan+Company+%7C+Grabaci%C3%B3n+con+drones+FPV/@39.8416043,3.1350653,856m/data=!3m1!1e3!4m18!1m9!3m8!1s0x7870bbf1f88da63:0x88e1e595d1d8bfa8!2sJoan+Company+%7C+Grabaci%C3%B3n+con+drones+FPV!8m2!3d39.8416043!4d3.1376402!9m1!1b1!16s%2Fg%2F11xnmykrlr!3m7!1s0x7870bbf1f88da63:0x88e1e595d1d8bfa8!8m2!3d39.8416043!4d3.1376402!9m1!1b1!16s%2Fg%2F11xnmykrlr?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D",
-                     "_blank"
-                  )
-               }
+               href="https://www.google.es/maps/place/Joan+Company+%7C+Grabaci%C3%B3n+con+drones+FPV/@39.8416043,3.1350653,856m/data=!3m1!1e3!4m18!1m9!3m8!1s0x7870bbf1f88da63:0x88e1e595d1d8bfa8!2sJoan+Company+%7C+Grabaci%C3%B3n+con+drones+FPV!8m2!3d39.8416043!4d3.1376402!9m1!1b1!16s%2Fg%2F11xnmykrlr!3m7!1s0x7870bbf1f88da63:0x88e1e595d1d8bfa8!8m2!3d39.8416043!4d3.1376402!9m1!1b1!16s%2Fg%2F11xnmykrlr?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D"
             >
                Ver más
-            </p>
+            </a>
             <img
                src="https://reviews.beaver.codes/widget/google.png"
                alt="google"
