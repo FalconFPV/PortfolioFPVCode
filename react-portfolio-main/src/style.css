@@ -2455,6 +2455,7 @@ blockquote h1{
 
 .testimonials{
   width: 90vw;
+  margin-top: 6vh;
 }
 
 :root {
@@ -3523,4 +3524,125 @@ blockquote h1{
 
 .beaver-widget_review-footer img{
   width: unset !important;
+}
+
+.review__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--imp-background-color);
+  border-radius: 14px;
+  border: 2px solid var(--imp-background-light-color);
+}
+
+.review__info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+}
+
+.review__author{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+}
+
+.review__time{
+  margin-bottom: 0;
+}
+
+.reviewsWall-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.review__img {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 20px;
+}
+
+.review {
+  display: flex;
+  gap: 1rem;
+  animation: scroll-x 40s linear infinite;
+}
+
+.review--vertical {
+  flex-direction: column;
+  animation: scroll-y 40s linear infinite;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.review__author-name{
+  font-weight: 600;
+  color: var(--imp-text-color);
+  margin-bottom: 0px;
+}
+
+.review__author-name:hover {
+  text-decoration: none;
+  color: var(--imp-text-color);
+}
+
+.review__group {
+  display: flex;
+  gap: 1rem;
+}
+
+.review--vertical .review__group {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .review{
+    animation: scroll-x-phone 40s linear infinite;
+  }
+  .review--vertical {
+    animation: scroll-y-phone 40s linear infinite;
+  }
+}
+
+@keyframes scroll-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes scroll-y {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+@keyframes scroll-x-phone {
+  from { transform: translateX(0); }
+  to { transform: translateX(-400%); }
+}
+
+@keyframes scroll-y-phone {
+  from { transform: translateY(0); }
+  to { transform: translateY(-400%); }
+}
+
+.beaver-widget_source-logo{
+  width: unset !important ;
+  height: 20px !important;
+}
+
+.see_more{
+  color: var(--imp-text-color);
+  cursor: pointer;
 }
