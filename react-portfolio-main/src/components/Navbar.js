@@ -208,7 +208,7 @@ function NavBar() {
                         </Nav.Link>
                      </Nav.Item>
                      {/* Opiniones */}
-                     {/* <Nav.Item>
+                     <Nav.Item>
                         <Nav.Link
                            href="#"
                            onClick={(e) => {
@@ -220,7 +220,7 @@ function NavBar() {
                            <AiOutlineStar style={{ marginBottom: "2px" }} />{" "}
                            {t("opiniones")}
                         </Nav.Link>
-                     </Nav.Item> */}
+                     </Nav.Item>
                      <Nav.Item>
                         <Nav.Link
                            as={NavLink}

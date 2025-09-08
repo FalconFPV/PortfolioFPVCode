@@ -25,9 +25,10 @@
     "history_content_2": "Mi pasión por los drones comenzó a los 13 años, inspirado por mi padre, que volaba aviones RC. Este hobby no solo me introdujo en el fascinante mundo de los drones de carreras, sino que también me dio la oportunidad de conocer a personas increíbles y participar en competiciones nacionales e internacionales.",
     "highlights_title": "Destacados:",
     "highlight_1": "Liga Balear de Drones de Carreras (Campeón Baleares)",
-    "highlight_2": "Iberian Drone League (con el equipo MPS en Toledo)",
-    "highlight_3": "Mollerussa Drone Party (2019 y 2020)",
-    "highlight_4": "Drone Champions League, representando al ",
+    "highlight_2": "3r Puesto en Iberian Drone League (con el equipo MPS en Toledo)",
+    "highlight_3": "Participación Mollerussa Drone Party (2019 y 2020)",
+    "highlight_4": "Drone Champions League 2020-22, representando al ",
+    "highlight_5": "7º Puesto Campeonato de España de Drones de Carreras 2025",
     "sdt": "Spain Drone Team",
     "experience_summary": "La experiencia adquirida en estas competiciones me llevó a dedicarme profesionalmente a la filmación con drones FPV e incrementar mi exigencia y atención al detalle. Este es el porque, sea el proyecto que sea, siempre haré lo posible para sobrepasar tus espectativas y hacer las mejores y más increíbles tomas.",
     "sponsors": "Patrocinadores",
@@ -197,5 +198,6 @@
     },
     "works_meta": "Trabajos realizados con drones | Joan Company",
     "drones_meta": "Flota de Drones | Joan Company",
-    "captcha_required": "Por favor, completa el reCAPTCHA para continuar."
+    "captcha_required": "Por favor, completa el reCAPTCHA para continuar.",
+    "see_more": "Ver más"
 }

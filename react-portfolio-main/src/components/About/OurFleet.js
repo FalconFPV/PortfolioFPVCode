@@ -13,8 +13,7 @@ import Ovonic from "../../Assets/Sponsors/ovonic.png";
 import Diatone from "../../Assets/Sponsors/Diatone.png";
 import FolienrabeLogo from "../../Assets/Sponsors/FolienrabeLogo.png";
 import Gemfan from "../../Assets/Sponsors/Gemfan.png";
-import iHobbies from "../../Assets/Sponsors/iHobbies.png";
-import RacingStuffLogo from "../../Assets/Sponsors/RacingstuffLogo.png";
+import iflight from "../../Assets/Sponsors/iflight.png";
 import Runcam from "../../Assets/Sponsors/Runcam.png";
 import SkyDrone from "../../Assets/Sponsors/SkyDrone.png";
 import Tmotor from "../../Assets/Sponsors/T-Motor.png";
@@ -74,16 +73,6 @@ function DroneFleet() {
       }
        ,
       {
-         name: "iHobbies",
-         image: iHobbies,
-      }
-       ,
-      {
-         name: "RacingStuff",
-         image: RacingStuffLogo,
-      }
-       ,
-      {
          name: "Runcam",
          image: Runcam,
       }
@@ -94,13 +83,17 @@ function DroneFleet() {
       }
        ,
       {
-         name: "T-motor",
+         name: "T-Hobby",
          image: Tmotor,
       }
        ,
       {
          name: "MEPS",
          image: Meps,
+      },
+      {
+         name: "iFlight",
+         image: iflight,
       }
    ];
 

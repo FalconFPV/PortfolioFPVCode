@@ -107,7 +107,12 @@ function AboutCard() {
                </div>
                <div className="profile-pic-container">
                   <div className="pic-shadow"></div>
-                  <img src={myImg} className="profile-pic" alt="avatar" title="Avatar" />
+                  <img
+                     src={myImg}
+                     className="profile-pic"
+                     alt="avatar"
+                     title="Avatar"
+                  />
                </div>
             </div>
             <div
@@ -136,6 +141,7 @@ function AboutCard() {
                      <h2 className="heading-title">{t("highlights_title")}</h2>
                      <ul className="heading-description blockquote">
                         <li>{t("highlight_1")}</li>
+                        <li>{t("highlight_5")}</li>
                         <li>{t("highlight_2")}</li>
                         <li>{t("highlight_3")}</li>
                         <li>
@@ -173,9 +179,7 @@ function AboutCard() {
                               duration={2}
                            />
                         )}
-                        <p className="years-text">
-                           {t("years_flying")}
-                        </p>
+                        <p className="years-text">{t("years_flying")}</p>
                      </div>
                      <div className="hours-container">
                         {countersStarted && (
