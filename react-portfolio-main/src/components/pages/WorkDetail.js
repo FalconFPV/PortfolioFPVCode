@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import Contact from "../Home/Contact";
 import { Spinner } from "react-bootstrap";
 import { useTranslatedVideos } from "./WorkVideos";
+import { Helmet } from "react-helmet";
 
 function getEmbedUrl(url) {
    if (url.includes("youtube.com") || url.includes("youtu.be")) {
@@ -30,6 +31,13 @@ const WorkDetail = () => {
 
    return (
       <div className="works">
+         <Helmet>
+            <title>{video.title}</title>
+            <meta
+               name="description"
+               content={video.desc}
+            />
+         </Helmet>
          <div className="works-container">
             <h1>{video.title}</h1>
             <h2>{video.desc}</h2>

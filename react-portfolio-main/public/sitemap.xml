@@ -71,4 +71,46 @@
       <priority>0.3</priority>
    </url>
    
+   <url>
+      <loc>https://www.joancompany.es/works/windsurf</loc>
+      <lastmod>2025-09-11</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>https://www.joancompany.es/works/lunas</loc>
+      <lastmod>2025-09-11</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>https://www.joancompany.es/works/milano-beach</loc>
+      <lastmod>2025-09-11</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>https://www.joancompany.es/works/circuito-llucmajor</loc>
+      <lastmod>2025-09-11</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>https://www.joancompany.es/works/mt-fitness</loc>
+      <lastmod>2025-09-11</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>https://www.joancompany.es/works/karting-llucmajor</loc>
+      <lastmod>2025-09-11</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
 </urlset>

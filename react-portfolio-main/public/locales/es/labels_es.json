@@ -194,7 +194,12 @@
         "w5": {
             "title": "Windsurf -  FPV",
             "desc": "Vídeo promocional del subcampeón de windsurf Balear con dron FPV"
+        },
+        "w6": {
+            "title": "Milano Beach -  FPV",
+            "desc": "Vídeo promocional en Milano Beach, Alcúdia"
         }
+
     },
     "works_meta": "Trabajos realizados con drones | Joan Company",
     "drones_meta": "Flota de Drones | Joan Company",
