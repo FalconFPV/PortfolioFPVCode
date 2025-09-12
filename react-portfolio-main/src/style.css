@@ -3053,6 +3053,13 @@ blockquote h1{
    border: none;
 }
 
+.expoyt-project-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+}
+
 .expoyt-project-title {
   margin: 0;
   padding: 10px;
@@ -3067,6 +3074,7 @@ blockquote h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .expoyt-project-title h3{

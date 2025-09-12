@@ -1,4 +1,10 @@
 import { useTranslation } from "react-i18next";
+import Windsurf from "../../Assets/Works/windsurf.webp";
+import Lunas from "../../Assets/Works/lunasgrill.webp";
+import MilanoBeach from "../../Assets/Works/milanobeach.webp";
+import CircuitoLlucmajor from "../../Assets/Works/motosllm.webp";
+import MtFitness from "../../Assets/Works/mtfitness.webp";
+import KartingLlucmajor from "../../Assets/Works/karts.webp";
 
 export const useTranslatedVideos = () => {
    const { t } = useTranslation();
@@ -22,6 +28,7 @@ export const useTranslatedVideos = () => {
          slug: "windsurf",
          type: "insta",
          drone: "Drone FPV",
+         fpimg: Windsurf,
       },
       {
          id: 3,
@@ -31,6 +38,7 @@ export const useTranslatedVideos = () => {
          slug: "lunas",
          type: "insta",
          drone: "Drone FPV",
+         fpimg: Lunas,
       },
       {
          id: 6,
@@ -40,6 +48,7 @@ export const useTranslatedVideos = () => {
          slug: "milano-beach",
          type: "insta",
          drone: "Drone FPV",
+         fpimg: MilanoBeach,
       },
       {
          id: 1,
@@ -49,6 +58,7 @@ export const useTranslatedVideos = () => {
          slug: "circuito-llucmajor",
          type: "insta",
          drone: "Drone FPV",
+         fpimg: CircuitoLlucmajor,
       },
       {
          id: 2,
@@ -58,6 +68,7 @@ export const useTranslatedVideos = () => {
          slug: "mt-fitness",
          type: "insta",
          drone: "Drone FPV",
+         fpimg: MtFitness,
       },
       {
          id: 4,
@@ -67,6 +78,7 @@ export const useTranslatedVideos = () => {
          slug: "karting-llucmajor",
          type: "insta",
          drone: "Drone FPV",
+         fpimg: KartingLlucmajor,
       },
    ];
 };

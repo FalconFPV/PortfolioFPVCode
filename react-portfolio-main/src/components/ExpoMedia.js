@@ -77,16 +77,16 @@ function ExpoMedia({ data }) {
       trail: 25,
    });
 
-   const getEmbedUrl = (url) => {
-      if (url.includes("youtube.com") || url.includes("youtu.be")) {
-         return url.includes("embed") ? url : url.replace("watch?v=", "embed/");
-      } else if (url.includes("instagram.com")) {
-         return `https://www.instagram.com/p/${
-            url.split("/p/")[1].split("/")[0]
-         }/embed/`;
-      }
-      return url;
-   };
+   // const getEmbedUrl = (url) => {
+   //    if (url.includes("youtube.com") || url.includes("youtu.be")) {
+   //       return url.includes("embed") ? url : url.replace("watch?v=", "embed/");
+   //    } else if (url.includes("instagram.com")) {
+   //       return `https://www.instagram.com/p/${
+   //          url.split("/p/")[1].split("/")[0]
+   //       }/embed/`;
+   //    }
+   //    return url;
+   // };
 
    return (
       <div
@@ -116,6 +116,7 @@ function ExpoMedia({ data }) {
                            justifyContent: "center",
                            width: "100%",
                            height: "100%",
+                           zIndex: 0
                         }}
                      >
                         <Spinner
@@ -127,7 +128,7 @@ function ExpoMedia({ data }) {
                      </div>
                   )}
 
-                  <iframe
+                  {/* <iframe
                      width="100%"
                      height="100%"
                      src={getEmbedUrl(item.videoUrl)}
@@ -144,7 +145,18 @@ function ExpoMedia({ data }) {
                      style={{
                         display: loadedVideos[item.id] ? "block" : "none",
                      }}
-                  ></iframe>
+                  ></iframe> */}
+
+                  <div className="expoyt-project-image">
+                     <img src={item.fpimg} alt={item.title}
+                        onLoad={() =>
+                           setLoadedVideos((prev) => ({
+                              ...prev,
+                              [item.id]: true,
+                           }))
+                        }
+                     />
+                  </div>
 
                   <div className="expoyt-project-title">
                      <h3>{item.title}</h3>
